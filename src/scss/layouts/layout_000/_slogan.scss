@@ -1,0 +1,11 @@
+.slogan {
+  font-size: rem(36px);
+  font-weight: $mediumFontWeight;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: $loganColor;
+  text-transform: uppercase;
+  text-shadow: 1px 1px $white, -1px 1px $white, 1px -1px $white,
+    -1px -1px $white;
+}

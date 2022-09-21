@@ -67,3 +67,15 @@
   $prefix: if(variable-exists(prefix), #{$prefix}, "");
   #{$cssProp}: var(--#{$prefix}#{$cssVar});
 }
+
+@mixin before($img, $w, $h) {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(#{$i}#{$img}) no-repeat;
+    width: $w;
+    height: $h;
+    @content;
+  }
+}

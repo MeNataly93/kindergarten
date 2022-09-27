@@ -1,8 +1,0 @@
-:root {
-  @include setCssVar(font-family, $baseFontFamily);
-  @include setCssVar(font-size, $baseFontSize);
-
-  @each $color, $value in $colors {
-    @include setCssVar($color, $value);
-  }
-}

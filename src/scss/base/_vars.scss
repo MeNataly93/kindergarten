@@ -1,37 +1,40 @@
-//fonts
-$google-font: "https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,400&display=swap";
+//FONTS
+$google-font: "https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:wght@300;400&family=Nunito:wght@600;700&family=Quicksand:wght@400;600;700&display=swap";
 
-$prefix: prefix- !default;
-$baseFontSize: 16px;
-$baseFontFamily: "Ubuntu", sans-serif;
-$mediumFontWeight: 500;
+$baseFontFamily: "Quicksand", sans-serif;
 
-$mobilePadding: 12px;
-$desktopPadding: 1rem;
+// $prefix: prefix- !default;
+// $baseFontSize: 16px;
+// $baseFontFamily: "Ubuntu", sans-serif;
+// $mediumFontWeight: 500;
 
-// Paths
+// $mobilePadding: 12px;
+// $desktopPadding: 1rem;
 
-$i: "../i/";
-$fontsPath: "../fonts/";
+// // Paths
 
-// Colors
-$black: #000000;
+// $i: "../../../i/";
+// $fontsPath: "../fonts/";
+
+// // COLORS
+$black: #222222;
+$bottom: #2B5AE1;
 $white: #ffffff;
-$redColor: #9c2323;
-$mainColor: #7e7e7e;
-$blackColor: #2d2d2d;
-$bgColor: #f2f2f2;
-$navColor: #cbcbcb;
-$darkGray: #696969;
-$loganColor: #a9a9a9;
-$blockBgcolor: #ededed;
+// $redColor: #9c2323;
+// $mainColor: #7e7e7e;
+// $blackColor: #2d2d2d;
+// $bgColor: #f2f2f2;
+// $navColor: #cbcbcb;
+// $darkGray: #696969;
+// $loganColor: #a9a9a9;
+// $blockBgcolor: #ededed;
 
-$colors: (
-  "black": $black,
-  "white": $white,
-  "mainColor": $mainColor,
-  "blackColor": $blackColor,
-  "bgColor": $bgColor,
-  "navColor": $navColor,
-  "redColor": $redColor,
-) !default;
+// $colors: (
+//   "black": $black,
+//   "white": $white,
+//   "mainColor": $mainColor,
+//   "blackColor": $blackColor,
+//   "bgColor": $bgColor,
+//   "navColor": $navColor,
+//   "redColor": $redColor,
+// ) !default;

@@ -1,0 +1,140 @@
+.header {
+  
+  width: 86.4%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-family: $baseFontFamily;
+  font-weight: 400;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 44px;
+
+  // LOGO
+  &__logo {
+    width: 187px;
+    height: 60px;
+    
+  }
+
+  // DESKTOP
+  &__desktop {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 15px;
+    padding-top: 0;
+    
+  }
+
+// NAV-LIST
+  &__nav-list {
+    display: flex;
+    
+    list-style: none;
+    align-items: center;
+    margin-block: 0;
+    padding-inline-start: 0;
+    
+
+      &__sign-in {
+        color: $black;
+    }
+
+      &__item {
+        display: flex;
+        align-items: center;
+        padding-top: 0;
+        width: fit-content;
+        
+
+        &_sign-in {
+          display: flex;
+          align-items: center;
+      }
+    }
+
+  }
+
+  // BUTTON
+  &__button {
+    background-color: $bottom;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    padding: 14px 32px;
+    height: 50px;
+    margin-left: 53px;
+  
+}
+  
+
+
+// MOBILE
+  &__mobile {
+    display: none;
+  }
+
+  // LANGUAGE
+  &__lang {
+    margin-left: 51px;
+    
+  }
+}
+
+// BLACK-ARROW
+.black-arrow-down {
+    &::after {
+      content: "";
+      background: url(../../../i/optim/black-arrow-down.svg) no-repeat;
+      width: 16px;
+      height: 18px;
+      background-position: 7px;
+      padding-left: 24px;
+      margin-right: 37px;
+}
+    &_lang::after {
+      margin-right: 0;
+
+    }
+  
+}
+
+// SIGN-IN-ARROW
+.sign-in::after {
+  content: "";
+  background: url(../../../i/optim/sign-in.svg) no-repeat;
+  width: 18px;
+  height: 21px; 
+  display: block;
+  padding-right: 9px;
+  background-position-y: center;
+  
+}
+
+// PLUS
+.plus::after {
+  content: "";
+  background: url(../../../i/optim/plus.svg) no-repeat;
+  width: 14px;
+  height: 14px;
+  display: block;
+  padding-right: 4px;
+}
+
+// LANG
+.lang::after {
+  content: "";
+  background: url(../../../i/optim/flag.svg) no-repeat;
+  width: 25px;
+  height: 17px;
+  display: block;
+  margin-left: 7px;
+  margin-top: 3px;
+  margin-right: 12px;
+}

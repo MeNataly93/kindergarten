@@ -1,105 +1,368 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>title</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <div class="container">
-    <header class="header-box">
-      <h1 class="header-box__title">
-        <span class="sr-only">Welcome</span>
-      </h1>
-
-      <nav class="nav">
-        <ul class="nav-box">
-          <li class="nav-box__item nav-box__item_home">
-            <a href="#" class="nav-box__link nav-box__link_home">Main</a>
-          </li>
-          <li class="nav-box__item nav-box__item_photo">
-            <a href="#" class="nav-box__link nav-box__link_photo">About us</a>
-          </li>
-          <li class="nav-box__item nav-box__item_about">
-            <a href="#" class="nav-box__link nav-box__link_about">Contacts</a>
-          </li>
-        </ul>
+  <head>
+    <title>Doremi</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="bg">
+      <img src="i/img/header-bg.png" alt="bg" />
+    </section>
+    <!-- HEADER -->
+    <header class="header">
+      <a class="header__logo" href="#"
+        ><img src="./i/optim/logo.svg" alt="Doremi"
+      /></a>
+      <section class="header__desktop">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list__item">
+              Explore
+              <p class="black-arrow-down"><span class="sr-only">Arrow</span></p>
+            </li>
+            <li class="header__nav-list__item">
+              About Us
+              <p class="black-arrow-down"><span class="sr-only">Arrow</span></p>
+            </li>
+            <li class="header__nav-list__item">
+              Pages
+              <p class="black-arrow-down"><span class="sr-only">Arrow</span></p>
+            </li>
+            <li class="header__nav-list__item header__nav-list__item_sing-in">
+              <p class="sign-in"><span class="sr-only">Sign-in</span></p>
+              <a class="header__nav-list__sign-in" href="#"
+                >Sign in or Register
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__button">
+          <p class="plus"><span class="sr-only">Plus</span></p>
+          List An Item
+        </button>
+        <p class="header__lang">Eng</p>
+        <p class="lang"><span class="sr-only">Lang</span></p>
+        <p class="black-arrow-down black-arrow-down_lang">
+          <span class="sr-only">Arrow</span>
+        </p>
+      </section>
+      <nav class="header__mobile">
+        <img class="header__mobile__menu" src="./i/optim/menu.svg" alt="Menu" />
       </nav>
-
-      <div class="form-box">
-        <form class="form-box__form">
-          <input type="text" class="form-box__control">
-        </form>
-      </div>
-
     </header>
 
-    <p class="slogan">Welcome to our site</p>
+    <!-- MAIN -->
+    <main>
+      <!-- BANNER -->
+      <section>
+        <h1>Get Anything On Rent</h1>
+        <p>Find Thousands of Items (Almost Anything) For Rent</p>
+        <input
+          type="textarea"
+          placeholder="Cars, Drones, Electronics, Clothes etc"
+        />
+        <input type="button" value="Search" />
+        <p>Popular Searches</p>
+        <ul>
+          <li>
+            <a href="#"><img src="./i/icon1.svg" alt="flats" /></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#"><img src="./i/icon2.svg" alt="cars" /></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#"><img src="./i/icon3.svg" alt="products" /></a>
+          </li>
+        </ul>
+        <p>Or <a href="#">List An Item For Rent</a></p>
+      </section>
 
-    <div class="content-box">
-      <div class="col col_left">
+      <!-- ACTIONS -->
+      <section>
+        <p>Rent Things The Easier Way</p>
+        <h2>How It Works</h2>
+        <p>
+          Eiusmod temporl incididunt utys labore dolore magna aliqua sed enim
+          aud lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <ul>
+          <li>
+            <h3>Find Your Perfect Item</h3>
+            <p>
+              Eiusmod tempora incididunt dolore magna aliqua sed enim lorem
+              ipsum sit amet consectetur.
+            </p>
+          </li>
+          <li>
+            <h3>Book Item With Seller</h3>
+            <p>
+              Eiusmod tempora incididunt dolore magna aliqua sed enim lorem
+              ipsum sit amet consectetur.
+            </p>
+          </li>
+          <li>
+            <h3>Play And Return Item</h3>
+            <p>
+              Eiusmod tempora incididunt dolore magna aliqua sed enim lorem
+              ipsum sit amet consectetur.
+            </p>
+          </li>
+        </ul>
+      </section>
 
-        <article class="post">
-          <div class="post__right">
-            <h2 class="post__title"><a href="#">Article 1</a></h2>
-            <p class="post__meta">04 грудня 2021</p>
-            <p class="post__content">Lorem ipsum dolor sit amet, sit diam ut sed jus consequat nunc incassum fatua, sed
-              genitus, virtus, saepius pagus. Autem bene ingenium aptent aliquam inhibeo, accumsan nonummy proprius
-              pneum reprobo letalis vindico duis elit.</p>
-            <a href="#" aria-hidden="true" class="post__link">Read more...</a>
-            <span aria-hidden="true" class="post__number">1</span>
-          </div>
-          <div class="post__left">
-            <img src="i/upload/one.jpg" class="fluid-box__img ">
-          </div>
-        </article><!--  /.post -->
+      <!-- CATEGORIES -->
+      <section>
+        <p>Rent Things The Easier Way</p>
+        <h2>Popular Categories</h2>
+        <p>
+          Eiusmod temporl incididunt utys labore dolore magna aliqua sed enim
+          aud lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <ul>
+          <li>
+            <img src="./i/item1.svg" alt="electronic-items" />
+            <h3>Electronic Items</h3>
+            <p>508 Searches</p>
+          </li>
+          <li>
+            <img src="./i/item2.svg" alt="cars-or-bikes" />
+            <h3>Cars Or Bikes</h3>
+            <p>2k Searches</p>
+          </li>
+          <li>
+            <img src="./i/item3.svg" alt="new-clothes" />
+            <h3>New Clothes</h3>
+            <p>74 Searches</p>
+          </li>
+          <li>
+            <img src="./i/item4.svg" alt="dslr-cameras" />
+            <h3>DSLR Cameras</h3>
+            <p>158 Searches</p>
+          </li>
+          <li>
+            <img src="./i/item5.svg" alt="drones" />
+            <h3>Drones</h3>
+            <p>120 Searches</p>
+          </li>
+          <li>
+            <img src="./i/item6.svg" alt="properties" />
+            <h3>Properties</h3>
+            <p>68 Searches</p>
+          </li>
+        </ul>
+      </section>
 
-        <article class="post">
-          <div class="post__right">
-            <h2 class="post__title"><a href="#">Article 2</a></h2>
-            <p class="post__meta">04 грудня 2021</p>
-            <p class="post__content">Lorem ipsum dolor sit amet, sit diam ut sed jus consequat nunc incassum fatua, sed
-              genitus, virtus, saepius pagus. Autem bene ingenium aptent aliquam inhibeo, accumsan nonummy proprius
-              pneum reprobo letalis vindico duis elit.</p>
-            <a href="#" aria-hidden="true" class="post__link">Read more...</a>
-            <span aria-hidden="true" class="post__number">1</span>
-          </div>
-          <div class="post__left">
-            <img src="i/upload/two.jpg" class="fluid-box__img ">
-          </div>
-        </article><!--  /.post -->
-        <article class="post">
-          <div class="post__right">
-            <h2 class="post__title"><a href="#">Article 3</a></h2>
-            <p class="post__meta">04 грудня 2021</p>
-            <p class="post__content">Lorem ipsum dolor sit amet, sit diam ut sed jus consequat nunc incassum fatua, sed
-              genitus, virtus, saepius pagus. Autem bene ingenium aptent aliquam inhibeo, accumsan nonummy proprius
-              pneum reprobo letalis vindico duis elit.</p>
-            <a href="#" aria-hidden="true" class="post__link">Read more...</a>
-            <span aria-hidden="true" class="post__number">1</span>
-          </div>
-          <div class="post__left">
-            <img src="i/upload/three.jpg" class="fluid-box__img ">
-          </div>
-        </article><!--  /.post -->
+      <!-- ITEMS -->
+      <section>
+        <p>Rent Things The Easier Way</p>
+        <h2>Featured Items</h2>
+        <p>
+          Eiusmod temporl incididunt utys labore dolore magna aliqua sed enim
+          aud lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <ul>
+          <li><img src="./i/gray.svg" alt="#" /></li>
+          <h3>Canon 3D - MK III</h3>
+          <p>Best DSLR Camera available that...</p>
+          <p>Rent For <span>$45/Day</span></p>
+          <p>(205 Reviews)</p>
+          <p>Daniel Thomson</p>
+          <p>32 Simple Rd, NY 020103</p>
+        </ul>
 
+        <ul>
+          <li><img src="./i/gray.svg" alt="#" /></li>
+          <h3>Inspired Drone 2020</h3>
+          <p>This drone takes your everything that...</p>
+          <p>Rent For <span>$45/Day</span></p>
+          <p>(205 Reviews)</p>
+          <p>Daniel Thomson</p>
+          <p>32 Simple Rd, NY 020103</p>
+        </ul>
 
-      </div><!-- /.col-left -->
-      <div class="col col_right"></div><!-- /.col-right -->
-    </div><!-- /.content-box -->
+        <ul>
+          <li><img src="./i/gray.svg" alt="#" /></li>
+          <h3>Audi A8 Model 2021</h3>
+          <p>Stylish & comfortable Audi sports car...</p>
+          <p>Rent For <span>$45/Day</span></p>
+          <p>(205 Reviews)</p>
+          <p>Daniel Thomson</p>
+          <p>32 Simple Rd, NY 020103</p>
+        </ul>
 
-    <footer class="footer">
-      Footer
+        <ul>
+          <li><img src="./i/gray.svg" alt="#" /></li>
+          <h3>MacBook Pro 2020</h3>
+          <p>Apple Macbook 17inch, i9 Intel chip...</p>
+          <p>Rent For <span>$45/Day</span></p>
+          <p>(205 Reviews)</p>
+          <p>Daniel Thomson</p>
+          <p>32 Simple Rd, NY 020103</p>
+        </ul>
+
+        <ul>
+          <li><img src="./i/gray.svg" alt="#" /></li>
+          <h3>Instant Stove</h3>
+          <p>Happy cooking with 6L pressure cooker...</p>
+          <p>Rent For <span>$45/Day</span></p>
+          <p>(205 Reviews)</p>
+          <p>Daniel Thomson</p>
+          <p>32 Simple Rd, NY 020103</p>
+        </ul>
+
+        <ul>
+          <li><img src="./i/gray.svg" alt="#" /></li>
+          <h3>Outwell Double Tent</h3>
+          <p>Large Tent has 2 bedrooms big enough...</p>
+          <p>Rent For <span>$45/Day</span></p>
+          <p>(205 Reviews)</p>
+          <p>Daniel Thomson</p>
+          <p>32 Simple Rd, NY 020103</p>
+        </ul>
+
+        <input type="button" value="Start your search" />
+      </section>
+
+      <!-- ABOUT -->
+      <section>
+        <h2>Get Anything On Rent With Doremi’s Rental Service</h2>
+        <ul>
+          <li>
+            <img src="./i/easy1.svg" alt="#" />
+            <h3>Easier to buy, sell or rent</h3>
+            <p>
+              Eiusmod tempora incididunt dolore magna aliqua enim lorem ipsum
+              sit amet consectetur.
+            </p>
+          </li>
+          <li>
+            <img src="./i/easy2.svg" alt="#" />
+            <h3>Easier to buy, sell or rent</h3>
+            <p>
+              Eiusmod tempora incididunt dolore magna aliqua enim lorem ipsum
+              sit amet consectetur.
+            </p>
+          </li>
+          <li>
+            <img src="./i/easy3.svg" alt="#" />
+            <h3>Easier to buy, sell or rent</h3>
+            <p>
+              Eiusmod tempora incididunt dolore magna aliqua enim lorem ipsum
+              sit amet consectetur.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- APPS -->
+      <section>
+        <h2>Access Everything On The Go With Doremi App</h2>
+        <p>
+          By using our app it’s all fun to discover some great stuff for your
+          buy, rent or sell purpose in low price.
+        </p>
+        <a href="#"><img src="./i/AppStore.svg" alt="AppStore" /></a>
+        <a href="#"><img src="./i/PlayStore.svg" alt="PlayStore" /></a>
+      </section>
+
+      <!-- FEEDBACK -->
+      <section>
+        <p>Read The User’s Testimonials</p>
+        <h2>What People Saying</h2>
+        <p>
+          Eiusmod tempor dui incididunt utes labore dolore magna ipsum aliqua
+          sed enim aud lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <ul>
+          <li>
+            <p>
+              Eiusmod temporl incididunt utys labore dolor magna aliqua sed enim
+              audy. Lorem ipsum do dolor sit amet consectetur adipisicing elit
+              sed eiusmod tempor incididunt.
+            </p>
+            <p>Oliver Zendu</p>
+            <p>Rental Review</p>
+          </li>
+          <li>
+            <p>
+              Eiusmod temporl incididunt utys labore dolor magna aliqua sed enim
+              audy. Lorem ipsum do dolor sit amet consectetur adipisicing elit
+              sed eiusmod tempor incididunt.
+            </p>
+            <p>Ameda Hilson</p>
+            <p>Rental Review</p>
+          </li>
+          <li>
+            <p>
+              Eiusmod temporl incididunt utys labore dolor magna aliqua sed enim
+              audy. Lorem ipsum do dolor sit amet consectetur adipisicing elit
+              sed eiusmod tempor incididunt.
+            </p>
+            <p>Oliver Zendu</p>
+            <p>Linus William</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- COMPANIES -->
+      <section>
+        <h3>As Seen & featured In...</h3>
+        <ul>
+          <li><img src="./i/comp1.svg" alt="#" /></li>
+          <li><img src="./i/comp2.svg" alt="#" /></li>
+          <li><img src="./i/comp3.svg" alt="#" /></li>
+          <li><img src="./i/comp4.svg" alt="#" /></li>
+          <li><img src="./i/comp5.svg" alt="#" /></li>
+        </ul>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <a href="#"><img src="./i/logo.svg" alt="Doremi" /></a>
+      <p>
+        Eiusmod tempora incididunt dolore magna aliqua sed enim lorem ipsum sit
+        amet consectetur.
+      </p>
+      <p>Email: <a href="mailto:support@domain.com">support@domain.com</a></p>
+      <p>Phone: <a href="tel: +1 (040) 2351 3690">+1 (040) 2351 3690</a></p>
+      <h3>Ameda Hilson</h3>
+      <ul>
+        <li>Our Company</li>
+        <li>Our Blog</li>
+        <li>Support</li>
+        <li>How It Works</li>
+        <li>List An Item</li>
+        <li>Disclaimers</li>
+      </ul>
+      <h3>Other Links</h3>
+      <ul>
+        <li>Login Or Register</li>
+        <li>Gurantee</li>
+        <li>Browse Items</li>
+        <li>Read FAQ’s</li>
+        <li>Terms of Service</li>
+        <li>Leave Feedback</li>
+      </ul>
+      <h3>Join Our Community</h3>
+      <p>Continue exploring the great places.</p>
+      <a href="#"><img src="./i/AppStore.svg" alt="AppStore" /></a>
+      <a href="#"><img src="./i/PlayStore.svg" alt="PlayStore" /></a>
+      <h3>Connect Socially</h3>
+      <ul>
+        <li><a href="#"></a><img src="./i/tw.svg" alt="Twitter" /></li>
+        <li><a href="#"></a><img src="./i/fb.svg" alt="Facebook" /></li>
+        <li><a href="#"></a><img src="./i/inst.svg" alt="Instagram" /></li>
+        <li><a href="#"></a><img src="./i/pint.svg" alt="Pinterest" /></li>
+        <li><a href="#"></a><img src="./i/youtube.svg" alt="Youtube" /></li>
+      </ul>
+      <p>&#169; 2020 Doremi - Buy Sell or Rent. All rights reserved.</p>
     </footer>
-
-  </div>
-  <!--  JavaScript here -->
-  <!-- <script src="js/app.js"></script> -->
-  <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>

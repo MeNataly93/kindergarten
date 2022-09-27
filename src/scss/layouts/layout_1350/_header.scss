@@ -40,6 +40,20 @@
 
       &__sign-in {
         color: $black;
+        display: flex;
+        align-items: center;
+
+        // SIGN-IN-ARROW
+
+        &::before {
+            content: "";
+            background: url(../../../i/optim/sign-in.svg) no-repeat;
+            width: 18px;
+            height: 21px; 
+            display: block;
+            background-position-y: center;
+           padding-right: 9px;
+          }
     }
 
       &__item {
@@ -47,15 +61,26 @@
         align-items: center;
         padding-top: 0;
         width: fit-content;
+
+        &__link {
+          text-decoration: none;
+// BLACK-ARROW
+
+          &::after {
+            content: "";
+            background: url(../../../i/optim/black-arrow-down.svg) no-repeat;
+            width: 16px;
+            height: 18px;
+            background-position: 7px;
+            padding-left: 24px;
+            margin-right: 37px;
+      }
+        }
+        
         
 
-        &_sign-in {
-          display: flex;
-          align-items: center;
-      }
-    }
 
-  }
+  }}
 
   // BUTTON
   &__button {
@@ -70,6 +95,7 @@
     padding: 14px 32px;
     height: 50px;
     margin-left: 53px;
+    cursor: pointer;
   
 }
   
@@ -83,39 +109,34 @@
   // LANGUAGE
   &__lang {
     margin-left: 51px;
-    
+    font-size: 16px;
+    line-height: 18px;
+    appearance: none;
+    cursor: pointer;
+    width: 90px;
+    background: url(../../../i/optim/flag.svg) 37px no-repeat, 
+    url(../../../i/optim/black-arrow-down.svg) 74px no-repeat;
+
+    &__eng {
+      font-size: 16px;
+        line-height: 18px;
+        
+        &::after {
+          background: url(../../../i/optim/black-arrow-down.svg) no-repeat;
+      width: 16px;
+      height: 18px;
+      display: block;
+      padding-left: 24px;
+      margin-left: 0;
+      background-position-y: center;
+        }
+    }
   }
 }
 
-// BLACK-ARROW
-.black-arrow-down {
-    &::after {
-      content: "";
-      background: url(../../../i/optim/black-arrow-down.svg) no-repeat;
-      width: 16px;
-      height: 18px;
-      background-position: 7px;
-      padding-left: 24px;
-      margin-right: 37px;
-}
-    &_lang::after {
-      margin-right: 0;
 
-    }
-  
-}
 
-// SIGN-IN-ARROW
-.sign-in::after {
-  content: "";
-  background: url(../../../i/optim/sign-in.svg) no-repeat;
-  width: 18px;
-  height: 21px; 
-  display: block;
-  padding-right: 9px;
-  background-position-y: center;
-  
-}
+
 
 // PLUS
 .plus::after {
@@ -125,16 +146,4 @@
   height: 14px;
   display: block;
   padding-right: 4px;
-}
-
-// LANG
-.lang::after {
-  content: "";
-  background: url(../../../i/optim/flag.svg) no-repeat;
-  width: 25px;
-  height: 17px;
-  display: block;
-  margin-left: 7px;
-  margin-top: 3px;
-  margin-right: 12px;
 }

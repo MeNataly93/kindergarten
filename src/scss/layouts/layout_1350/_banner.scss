@@ -1,0 +1,64 @@
+.banner {
+
+
+    &__title {
+        
+        margin: 161px auto auto 386px;
+            }
+
+            &__description {
+                
+                margin: 8px auto 18px 389px;
+            }
+
+            &__input {
+                margin-left: 382px;
+                
+                width: 766px;
+                
+                
+                    &__search {
+                    
+                        width: 750px;
+                        position: relative;
+                                
+                }
+                
+                
+                
+                }
+
+                // BUTTON
+
+                &__button {
+                    position: absolute;
+                    margin: 0;
+                    margin-top: -69px;
+                    margin-left: 965px;
+                    
+                }
+
+                // POPULAR-SEARCHES
+
+&__section-items {
+    margin-top: 35px;
+    margin-left: 389px;
+   
+}
+
+&__text1 {
+}
+
+
+
+
+&__text2 {
+    order: 3;
+    margin: 0;
+
+
+}
+
+
+
+        }

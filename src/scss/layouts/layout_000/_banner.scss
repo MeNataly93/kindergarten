@@ -1,0 +1,199 @@
+.banner {
+
+
+    &__title {
+        font-family: $titleFontFamily;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 49px;
+        letter-spacing: -0.025em;
+        margin: 76px 62px auto 43px;
+            }
+
+    &__description {
+        font-family: $descriptionFontFamily;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: -0.025em;
+        margin: 21px 93px 34px 48px;
+    }
+
+    &__input-search {
+background-color: $white;
+width: 294.44px;
+height: 31.72px;
+border: 1px solid $borderColor;
+border-radius: 33px;
+margin-left: auto;
+margin-right: auto;
+z-index: 1000;
+
+
+&::placeholder {
+    color: transparent;
+    padding-left: 64px;
+   }
+
+
+
+&_bg {
+background-color: $white;
+width: 301.11px;
+height: 40px;
+opacity: 0.5;
+border-radius: 41px;
+color: transparent;
+display: flex;
+align-items: center;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+z-index: 1;
+
+
+}
+&_icon {
+position: absolute;
+left: 13px;
+cursor: pointer;
+z-index: 2000;
+}}
+
+
+
+
+// BUTTON
+
+&__button {
+    background-color: $buttonColor; 
+    padding: 18px 55px;
+    border-radius: 28px;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $baseFontFamily;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.025em;
+    display: block;
+    margin: 8px auto auto;
+    cursor: pointer;
+    
+}
+
+
+// POPULAR-SEARCHES
+
+&__items {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding-inline-start: 0px;
+
+&_icon {
+    display: block;
+    width: 38.17px;
+    height: 38.17px;
+    color: transparent;
+
+    &_1 {
+         background: url(../../../i/optim/banner_icon1.svg) no-repeat;
+         background-size:38.17px 38.17px;
+
+    }
+
+    &_2 {
+        background: url(../../../i/optim/banner_icon2.svg) no-repeat;
+        background-size:38.17px 38.17px;
+
+   }
+
+   &_3 {
+    background: url(../../../i/optim/banner_icon3.svg) no-repeat;
+    background-size:38.17px 38.17px;
+
+}
+
+&:hover {
+    background: none;
+}
+
+}
+
+&__li1{
+    position: relative;
+&__black-search {
+    @include black-search (-20px, hidden);
+    }
+
+&:hover 
+     {
+        background: url(../../../i/optim/banner_icon1_hov.svg) no-repeat;
+        background-size:38.17px 38.17px;
+
+        & .banner__items__li1__black-search {
+            @include black-search (-20px, visible);}
+    }
+
+    
+}
+
+&__li2{
+    position: relative;
+    &__black-search {
+        @include black-search (-20px, hidden);
+        }
+
+&:hover 
+     {
+        background: url(../../../i/optim/banner_icon2_hov.svg) no-repeat;
+        background-size:38.17px 38.17px;
+        & .banner__items__li2__black-search {
+            @include black-search (-20px, visible);}
+}}
+
+&__li3 {
+    position: relative;
+    &__black-search {
+        @include black-search (-20px, hidden);
+        }
+    &:hover 
+     {
+        background: url(../../../i/optim/banner_icon3_hov.svg) no-repeat;
+        background-size:38.17px 38.17px;
+        & .banner__items__li3__black-search {
+            @include black-search (-20px, visible);}
+}
+
+
+}
+}
+
+&__text1 {
+    font-family: $baseFontFamily;
+    font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: -0.025em;
+margin: 66px auto auto auto;
+text-align: center;
+}
+
+&__text2 {
+    font-family: $baseFontFamily;
+    font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: -0.025em;
+margin: 0 auto auto auto;
+text-align: center;
+
+&_link {
+    color: $buttonColor;
+}
+}
+}

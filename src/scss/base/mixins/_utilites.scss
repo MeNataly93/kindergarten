@@ -1,3 +1,28 @@
+@mixin black-search ($left, $visibility) {
+    width: 80px;
+    position: absolute;
+    left: $left;
+    display: block;
+    font-family: "Quicksand", sans-serif;
+    color: $white;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 10px;
+    letter-spacing: -0.025em;
+    padding-left: 18px;
+    text-transform: uppercase;
+    background: url(../../../i/optim/black-bottom.svg) no-repeat;
+    background-size: 80px 36px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    margin-top: 12px;
+    visibility: $visibility;
+    @content;
+}
+
+
 // @function image($file) {
 //   @return url($imagesPath + $file);
 // }

@@ -8,14 +8,28 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <section class="bg">
-      <img src="i/img/header-bg.png" alt="bg" />
-    </section>
-    <!-- HEADER -->
+    <!--------------------------- HEADER --------------------------->
     <header class="header">
-      <a class="header__logo" href="#"
-        ><img src="./i/optim/logo.svg" alt="Doremi"
-      /></a>
+      <!-- LOGO -->
+      <section class="header__logo">
+        <a class="header__logo__link" href="#"
+          ><svg
+            class="header__logo__img"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28.7"
+            height="28.7"
+            viewBox="0 0 29 29"
+          >
+            <use xlink: href="i/sprite.svg#logo"/>
+          </svg>
+        </a>
+        <a href="#" class="header__logo__text"
+          ><p class="header__logo__title">Doremi</p>
+          <p class="header__logo__description">Buy, Sell Or Rent</p></a
+        >
+      </section>
+      <!-- DESKTOP -->
+
       <section class="header__desktop">
         <nav class="header__nav">
           <ul class="header__nav-list">
@@ -35,6 +49,8 @@
             </li>
           </ul>
         </nav>
+
+        <!-- BUTTON -->
         <button class="header__button">
           <p class="plus"><span class="sr-only">Plus</span></p>
           List An Item
@@ -48,39 +64,83 @@
         </form>
       </section>
       <nav class="header__mobile">
-        <img class="header__mobile__menu" src="./i/optim/menu.svg" alt="Menu" />
+        <svg
+          class="header__mobile__menu"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="19"
+          viewBox="0 0 26 19"
+        >
+          <use xlink: href="i/sprite.svg#menu"/>
+        </svg>
       </nav>
     </header>
 
+    <!--------------------------- HEADER END--------------------------->
+
     <!-- MAIN -->
     <main>
-      <!-- BANNER -->
-      <section>
-        <h1>Get Anything On Rent</h1>
-        <p>Find Thousands of Items (Almost Anything) For Rent</p>
-        <input
-          type="textarea"
-          placeholder="Cars, Drones, Electronics, Clothes etc"
-        />
-        <input type="button" value="Search" />
-        <p>Popular Searches</p>
-        <ul>
-          <li>
-            <a href="#"><img src="./i/icon1.svg" alt="flats" /></a>
+      <!--------------------------- BANNER --------------------------->
+      <section class="banner">
+        <h1 class="banner__title">Get Anything On Rent</h1>
+        <p class="banner__description">
+          Find Thousands of Items (Almost Anything) For Rent
+        </p>
+
+        <!-- INPUT-SEARCH -->
+        <div class="banner__input-search_bg">
+          <input
+            class="banner__input-search"
+            type="textarea"
+            placeholder="Cars, Drones, Electronics, Clothes etc"
+          />
+          <svg
+            class="banner__input-search_icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="13"
+            height="14"
+            viewBox="0 0 19 20"
+          >
+            <use xlink: href="i/sprite.svg#search"/>
+          </svg>
+        </div>
+
+        <!-- BUTTON -->
+        <input class="banner__button" type="button" value="Search" />
+
+        <!-- POPULAR-SEARCHES -->
+        <ul class="banner__items">
+          <!-- 1 -->
+          <li class="banner__items__li1">
+            <a class="banner__items_icon banner__items_icon_1" href="#"
+              >Item1</a
+            >
+            <p class="banner__items__li1__black-search">Search</p>
+          </li>
+
+          <!-- 2 -->
+          <li class="banner__items__li2">
+            <a class="banner__items_icon banner__items_icon_2" href="#"
+              >Item2</a
+            >
+            <p class="banner__items__li2__black-search">Search</p>
+          </li>
+
+          <!-- 3 -->
+          <li class="banner__items__li3">
+            <a class="banner__items_icon banner__items_icon_3" href="#"
+              >Item3</a
+            >
+            <p class="banner__items__li3__black-search">Search</p>
           </li>
         </ul>
-        <ul>
-          <li>
-            <a href="#"><img src="./i/icon2.svg" alt="cars" /></a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#"><img src="./i/icon3.svg" alt="products" /></a>
-          </li>
-        </ul>
-        <p>Or <a href="#">List An Item For Rent</a></p>
+        <p class="banner__text1">Popular Searches</p>
+
+        <p class="banner__text2">
+          Or <a class="banner__text2_link" href="#">List An Item For Rent</a>
+        </p>
       </section>
+      <!--------------------------- BANNER END --------------------------->
 
       <!-- ACTIONS -->
       <section>

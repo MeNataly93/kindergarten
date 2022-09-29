@@ -8,15 +8,19 @@ body {
         
        
 }
-
-.bg {
-    width: 1090px;
-    position: absolute;
-    z-index: -1;
-    top: 22px;
-    left: -954px;
-    
+body {
+    background: url(../../../i/img/header-bg.png) no-repeat;
+    background-position: -409px 22px;
+    background-size: 1090px 640px;
 }
+// .bg {
+//     width: 1090px;
+//     position: absolute;
+//     z-index: -1;
+//     top: 22px;
+//     left: -954px;
+    
+// }
 
 
 

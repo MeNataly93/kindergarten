@@ -11,12 +11,12 @@
   margin-right: auto;
   margin-top: 44px;
 
-  // LOGO
-  &__logo {
-    width: 187px;
-    height: 60px;
+  // // LOGO
+  // &__logo {
+  //   width: 187px;
+  //   height: 60px;
     
-  }
+  // }
 
   // DESKTOP
   &__desktop {
@@ -122,6 +122,7 @@
         line-height: 18px;
         
         &::after {
+          content: "";
           background: url(../../../i/optim/black-arrow-down.svg) no-repeat;
       width: 16px;
       height: 18px;

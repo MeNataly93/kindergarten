@@ -1,0 +1,50 @@
+.banner {
+
+
+    &__title {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 82px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin: 114px 124px auto 53px;
+            }
+
+            &__description {
+                font-family: $baseFontFamily;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 17px;
+                margin: 8px 263px 18px 56px;
+            }
+
+
+            &__input-search {
+                width: 675px;
+                height: 66px;
+                
+                
+                
+                
+                &::placeholder {
+                    font-family: $baseFontFamily;
+                    color: $black;
+                    padding-left: 64px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 15px;
+                    letter-spacing: -0.025em;
+
+                   }
+                
+                
+                
+                &_bg {
+                width: 695px;
+                height: 82px;
+                
+                
+                
+                
+                }}
+        }

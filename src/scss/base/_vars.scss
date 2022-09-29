@@ -1,7 +1,9 @@
 //FONTS
-$google-font: "https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:wght@300;400&family=Nunito:wght@600;700&family=Quicksand:wght@400;600;700&display=swap";
+$google-font: "https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:wght@300;400&family=Nunito:wght@600;700;800&family=Quicksand:wght@400;600;700&display=swap";
 
 $baseFontFamily: "Quicksand", sans-serif;
+$titleFontFamily: "Nunito", sans-serif;
+$descriptionFontFamily: "Lato", sans-serif;
 
 // $prefix: prefix- !default;
 // $baseFontSize: 16px;
@@ -20,6 +22,9 @@ $baseFontFamily: "Quicksand", sans-serif;
 $black: #222222;
 $bottom: #2B5AE1;
 $white: #ffffff;
+$borderColor: rgba(34, 34, 34, 0.1);
+$buttonColor: #E63A28;
+
 // $redColor: #9c2323;
 // $mainColor: #7e7e7e;
 // $blackColor: #2d2d2d;

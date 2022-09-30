@@ -1,0 +1,220 @@
+.actions {
+
+&__intro {
+    width: 218px;
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: -0.025em;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    text-align: center;
+
+
+&::before {
+content: "";
+background: url(../../../i/optim/red-stripe.svg) no-repeat;
+width: 33px;
+height: 16px;
+position: absolute;
+left: -33px;
+top: 50%;
+}
+
+&::after {
+    content: "";
+    background: url(../../../i/optim/red-stripe.svg) no-repeat;
+    width: 33px;
+    height: 16px;
+    position: absolute;
+    right: -33px;
+    top: 50%;
+    }
+}
+
+&__title {
+font-family: $titleFontFamily;
+    font-weight: 700;
+font-size: 36px;
+line-height: 49px;
+text-align: center;
+letter-spacing: -0.025em;
+margin-top: 22px;
+}
+
+&__description {
+    width: 267px;
+    font-family: $descriptionFontFamily;
+    font-weight: 400;
+font-size: 14px;
+line-height: 26px;
+text-align: center;
+letter-spacing: -0.025em;
+margin-right: auto;
+margin-left: auto;
+padding-bottom: 15px;
+}
+
+&__list {
+    padding-inline-start: 0px;
+
+    &__item {
+        list-style: none;
+
+        &__title {
+            font-family: $titleFontFamily;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+            letter-spacing: -0.025em;
+            width: 197px;
+            margin-left: 48px;
+            margin-top: 123px;
+            z-index: 1000;
+            position: relative;
+
+
+            &_1 {
+                margin-top: 108px;
+                position: relative;
+                &::before {
+                    content: "";
+                    background: url(../../../i/optim/actions_item1.svg) no-repeat;
+                    background-size: 77px 58px;  
+                    position: absolute;  
+                    top: -77px;
+                    z-index: 1;
+                    width: 77px;
+                    height: 58px;
+                    
+                    
+                } 
+            }
+
+            &_2 {
+                position: relative;
+                &::before {
+                    content: "";
+                    background: url(../../../i/optim/actions_item2.svg) no-repeat;
+                    background-size: 77px 58px;  
+                    position: absolute;  
+                    top: -77px;
+                    z-index: 1;
+                    width: 77px;
+                    height: 58px;
+            }}
+
+            &_3 {
+                position: relative;
+                &::before {
+                    content: "";
+                    background: url(../../../i/optim/actions_item3.svg) no-repeat;
+                    background-size: 77px 58px;  
+                    position: absolute;  
+                    top: -77px;
+                    z-index: 1;
+                    width: 77px;
+                    height: 58px;
+            }
+        }
+    }
+        &__description {
+            font-family: $descriptionFontFamily;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: -0.025em;
+            margin-right: 39px;
+            // width: 210px;
+            margin-left: 48px;
+            margin-top: 21px;
+            position: relative;
+
+            &_1 {
+                position: relative;
+
+                &::before {
+                    content: "";
+                    background: $light-pink;
+                    width: 78px;
+                    height: 78px;  
+                    border-radius: 22px;
+                    position: absolute;  
+                    left: -28px;
+                    top: -81px;
+                    z-index: -1;
+                    
+                } 
+
+                &::after {
+                    content: "";
+                    background: url(../../../i/optim/violet-arrow.svg) no-repeat;
+                    background-size: 125px 29px;  
+                    position: absolute;  
+                    top:108px;
+                    right: -8px;
+                    z-index: 1;
+                    width: 125px;
+                    height: 29px;
+                    transform: rotate(94.95deg);
+                }
+
+            }
+
+            &_2 {
+                position: relative;
+
+                &::before {
+                    content: "";
+                    background: $light-green;
+                    width: 78px;
+                    height: 78px;  
+                    border-radius: 22px;
+                    position: absolute;  
+                    left: -28px;
+                    top: -81px;
+                    z-index: -1;
+                    
+                } 
+                &::after {
+                    content: "";
+                    background: url(../../../i/optim/violet-arrow.svg) no-repeat;
+                    background-size: 125px 29px;  
+                    position: absolute;  
+                    top:103px;
+                    right: -21px;
+                    z-index: 1;
+                    width: 125px;
+                    height: 29px;
+                    transform: rotate(90deg);
+                }
+            }
+            
+            &_3 {
+                margin-bottom: 31px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    background: $light-blue;
+                    width: 78px;
+                    height: 78px;  
+                    border-radius: 22px;
+                    position: absolute;  
+                    left: -28px;
+                    top: -81px;
+                    z-index: -1;
+                    
+                } 
+            }
+
+
+        }
+    }
+}
+    }

@@ -1,0 +1,35 @@
+.categories {
+
+&__intro {
+    @include red-stripes (102px, 37px, -57px, -57px);
+    width: 182px;
+    font-weight: 300;
+    line-height: 19px;
+    font-family: $descriptionFontFamily;
+}
+
+&__title {
+    font-family: $titleFontFamily;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: -0.025em;
+    display: block;
+    margin: 21px 74px auto;
+}
+
+&__description {
+    font-family: $descriptionFontFamily;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.025em;
+    margin: 31px 32px auto;
+
+}
+
+
+
+}

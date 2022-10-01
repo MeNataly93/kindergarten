@@ -1,9 +1,19 @@
 //FONTS
 $google-font: "https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:wght@300;400&family=Nunito:wght@600;700;800&family=Quicksand:wght@400;600;700&display=swap";
 
-$baseFontFamily: "Quicksand", sans-serif;
+@font-face {
+    font-family: "QuicksandBook";  
+    src: url("../../fonts/QuicksandBook-Regular.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+     }
+
+$baseFontFamily: "QuicksandBook", sans-serif;
 $titleFontFamily: "Nunito", sans-serif;
 $descriptionFontFamily: "Lato", sans-serif;
+$baseFontFamilyOriginal: "Quicksand", sans-serif;
+
+
 
 // $prefix: prefix- !default;
 // $baseFontSize: 16px;

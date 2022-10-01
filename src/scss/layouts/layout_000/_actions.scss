@@ -1,7 +1,7 @@
 .actions {
 
 &__intro {
-    width: 218px;
+    width: 212px;
     display: flex;
     font-weight: 400;
     font-size: 16px;
@@ -10,8 +10,6 @@
     margin-top: 48px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
     position: relative;
     text-align: center;
 
@@ -22,7 +20,7 @@ background: url(../../../i/optim/red-stripe.svg) no-repeat;
 width: 33px;
 height: 16px;
 position: absolute;
-left: -33px;
+left: -43px;
 top: 50%;
 }
 
@@ -32,7 +30,7 @@ top: 50%;
     width: 33px;
     height: 16px;
     position: absolute;
-    right: -33px;
+    right: -43px;
     top: 50%;
     }
 }
@@ -48,7 +46,7 @@ margin-top: 22px;
 }
 
 &__description {
-    width: 267px;
+    width: 275px;
     font-family: $descriptionFontFamily;
     font-weight: 400;
 font-size: 14px;
@@ -101,12 +99,12 @@ padding-bottom: 15px;
                 &::before {
                     content: "";
                     background: url(../../../i/optim/actions_item2.svg) no-repeat;
-                    background-size: 77px 58px;  
+                    background-size: 54px 57px;  
                     position: absolute;  
                     top: -77px;
                     z-index: 1;
-                    width: 77px;
-                    height: 58px;
+                    width: 54px;
+                    height: 57px;
             }}
 
             &_3 {
@@ -114,12 +112,12 @@ padding-bottom: 15px;
                 &::before {
                     content: "";
                     background: url(../../../i/optim/actions_item3.svg) no-repeat;
-                    background-size: 77px 58px;  
+                    background-size: 65px 56px;  
                     position: absolute;  
                     top: -77px;
                     z-index: 1;
-                    width: 77px;
-                    height: 58px;
+                    width: 65px;
+                    height: 56px;
             }
         }
     }

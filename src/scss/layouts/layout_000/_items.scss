@@ -35,6 +35,12 @@ margin: 0 20px 57px;
     flex-wrap: wrap;
     list-style: none;
     max-width: 1140px;
+    background-color: $blueBg;
+    border-radius: 10px;
+    padding-inline-start: 0px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 
     &__item {
         
@@ -43,15 +49,16 @@ margin: 0 20px 57px;
 
         &__img {
            margin-bottom: 33px;
+           width: 300px;
         }
 
         &__title {
             margin: 0 auto 5px 13px;
             font-family: $titleFontFamily;
             font-weight: 600;
-font-size: 24px;
-line-height: 33px;
-letter-spacing: -0.025em;
+            font-size: 24px;
+            line-height: 33px;
+            letter-spacing: -0.025em;
         }
 
         &__description {
@@ -65,13 +72,99 @@ letter-spacing: -0.025em;
 
         &__price {
             font-weight: 400;
-font-size: 18px;
-line-height: 17px;
-letter-spacing: -0.025em;
-margin: 0 auto 10px 14px;
+            font-size: 18px;
+            line-height: 17px;
+            letter-spacing: -0.025em;
+            margin: 0 auto 6px 14px;
+            font-family: $baseFontFamily;
+            
+
+            &_red {
+                font-family: $priceFont;
+                font-size: 24px;
+                line-height: 27px;
+                color: $buttonColor;
+                font-weight: 800;
+
+
+            }
+        }
+
+        &__reviews {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 11px;
+            letter-spacing: -0.025em;
+            color: $itemsGrey;
+            margin-left: 3px;
+
+            
+
+        }
+
+        &__person {
+            font-family: $baseFontFamilyOriginal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: -0.025em;
+            margin: 0px auto 13px 40px;
+            position: relative;
+            border-top: 1px solid $itemsStripe;
+            padding-top: 25px;
+
+            &::before {
+                content: "";
+                background: url(../../../i/optim/items_icon-man.svg) no-repeat;
+                background-size: 16px 18px;
+                width: 16px;
+                height: 18px;
+                position: absolute;
+                left: -24px;
+                
+
+            
+            }
+        }
+
+        &__adress {
+
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 13px;
+            letter-spacing: -0.025em;
+            margin: 0 auto 41px 40px;
+            position: relative;
+
+        &::before {
+                content: "";
+                background: url(../../../i/optim/items_icon-geo.svg) no-repeat;
+                background-size: 16px 18px;
+                width: 16px;
+                height: 18px;
+                position: absolute;
+                left: -24px;
+                top: -2px;
+
+}
+
+
         }
     }
 
 }
 
+&__stars {
+    display: flex;
+    width: 81px;
+    justify-content: space-between;
+}
+
+&__star-reviews {
+    display: flex;
+    width: 280px;
+    align-items: center;
+    margin: 0 auto 25px 16px;
+   
+}
 }

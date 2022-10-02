@@ -8,10 +8,25 @@ $google-font: "https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:w
     font-weight: normal;
      }
 
+     @font-face {
+        font-family: "FontAwesome";  
+        src: url("../../fonts/FontAwesome\ Regular.otf") format("truetype"); 
+        font-style: normal; 
+        font-weight: normal;
+         }
+
+     @font-face {
+        font-family: "MyriadArabicRegular";  
+        src: url("../../fonts/Myriad\ Arabic\ Regular.ttf") format("truetype"); 
+        font-style: normal; 
+        font-weight: normal;
+         }
+
 $baseFontFamily: "QuicksandBook", sans-serif;
 $titleFontFamily: "Nunito", sans-serif;
 $descriptionFontFamily: "Lato", sans-serif;
 $baseFontFamilyOriginal: "Quicksand", sans-serif;
+$priceFont: "MyriadArabicRegular", sans-serif;
 
 
 
@@ -38,6 +53,12 @@ $light-pink: #FAEEEE;
 $light-green: #E5F7E5;
 $light-blue: #EAF8F9;
 $beige: #FFFDF5;
+$itemsGrey: #777777;
+$itemsStripe: #DDDDDD;
+$blueBg: rgba(245, 247, 250, 1);
+
+
+
 
 // $redColor: #9c2323;
 // $mainColor: #7e7e7e;

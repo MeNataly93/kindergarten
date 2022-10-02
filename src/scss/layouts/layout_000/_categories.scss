@@ -42,7 +42,8 @@ z-index: -1;
     line-height: 26px;
     text-align: center;
     letter-spacing: -0.025em;
-    margin: 31px 32px 63px;
+    width: 257px;
+    margin: 31px auto 63px;
     position: relative;
 
 }
@@ -66,7 +67,30 @@ z-index: -1;
         width: 250px;
         height: 290px;
         &__img {
-            margin: 66px auto 48px;        
+            
+            &_1{
+                margin: 61px auto 42px;
+            }
+
+            &_2{
+                margin: 64px auto 45px;
+            }
+
+            &_3{
+                margin: 50px auto 32px;
+            }
+            
+            &_4{
+                margin: 66px auto 48px;
+            }
+
+            &_5{
+                margin: 53px auto 35px;
+            }
+
+            &_6{
+                margin: 56px auto 37px;
+            }
         }
 
         &__title {
@@ -86,8 +110,9 @@ z-index: -1;
 }
 
 &__stripes {
-    margin: 49px auto 50px;
+    margin: 49px auto 0px;
     text-align: center;
+    padding-bottom: 50px;
 
     &__red {
         margin-right: 15px;

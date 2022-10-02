@@ -1,0 +1,77 @@
+.items {
+
+&__intro {
+    @include red-stripes (61px, 37px, -55px, -55px);
+    width: 184px;
+    font-family: $descriptionFontFamily;
+    line-height: 19px;
+}
+
+&__title {
+font-family: $titleFontFamily;
+font-weight: 700;
+font-size: 36px;
+line-height: 49px;
+text-align: center;
+letter-spacing: -0.025em;
+margin-top: 28px;
+width: auto;
+margin: 28px 40px 38px;
+}
+
+&__description {
+font-family: $descriptionFontFamily;
+font-weight: 400;
+font-size: 14px;
+line-height: 26px;
+text-align: center;
+letter-spacing: -0.025em;
+width: auto;
+margin: 0 20px 57px;
+}
+
+&__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    max-width: 1140px;
+
+    &__item {
+        
+      
+        width: 300px;
+
+        &__img {
+           margin-bottom: 33px;
+        }
+
+        &__title {
+            margin: 0 auto 5px 13px;
+            font-family: $titleFontFamily;
+            font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+letter-spacing: -0.025em;
+        }
+
+        &__description {
+            font-family: $baseFontFamily;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 13px;
+            letter-spacing: -0.025em;
+            margin: 0 auto 17px 14px;
+        }
+
+        &__price {
+            font-weight: 400;
+font-size: 18px;
+line-height: 17px;
+letter-spacing: -0.025em;
+margin: 0 auto 10px 14px;
+        }
+    }
+
+}
+
+}

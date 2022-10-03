@@ -1,0 +1,56 @@
+.items {
+
+&__intro {
+    @include red-stripes (119px, 37px, -60px, -60px);
+   
+}
+
+
+
+&__description {
+
+margin: 0 681.5px 61px;
+}
+
+&__list {
+    flex-wrap: wrap;
+    width: 1140px;
+    max-width: 1140px;
+    
+    
+&__item_3 {
+    margin-right: 0;
+}
+
+&__item_4 {
+    margin-top: 36px;
+}
+&__item_5 {
+    margin-top: 36px;
+}
+
+&__item_6 {
+    margin-right: 0;
+    margin-top: 36px;
+
+}
+    
+
+}
+
+
+
+
+
+
+
+&__button {
+   margin-top: 70px;
+    margin-bottom: 120px;
+}
+}
+
+.categories__stripes_items {
+    display: none;
+  
+}

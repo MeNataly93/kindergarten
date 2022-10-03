@@ -32,20 +32,22 @@ margin: 0 20px 57px;
 
 &__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     list-style: none;
     max-width: 1140px;
-    background-color: $blueBg;
-    border-radius: 10px;
     padding-inline-start: 0px;
     width: 300px;
     margin-left: auto;
     margin-right: auto;
+    
 
     &__item {
         
-      
+        background-color: $blueBg;
+        border-radius: 10px;
         width: 300px;
+        margin-right: 20px;
+     
 
         &__img {
            margin-bottom: 33px;
@@ -108,9 +110,8 @@ margin: 0 20px 57px;
             font-size: 16px;
             line-height: 20px;
             letter-spacing: -0.025em;
-            margin: 0px auto 13px 40px;
+            margin: 0px auto 13px 30px;
             position: relative;
-            border-top: 1px solid $itemsStripe;
             padding-top: 25px;
 
             &::before {
@@ -123,6 +124,8 @@ margin: 0 20px 57px;
                 left: -24px;
                 
 
+                
+
             
             }
         }
@@ -133,7 +136,7 @@ margin: 0 20px 57px;
             font-size: 14px;
             line-height: 13px;
             letter-spacing: -0.025em;
-            margin: 0 auto 41px 40px;
+            margin: 0 auto 41px 30px;
             position: relative;
 
         &::before {
@@ -167,4 +170,39 @@ margin: 0 20px 57px;
     margin: 0 auto 25px 16px;
    
 }
+
+&__person-adress {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid $itemsStripe;
+
+}
+
+&__button {
+    color: $white;
+    text-transform: uppercase;
+    background-color: $buttonColor;
+    padding: 19.5px 41.5px;  
+    border-radius: 30px;
+    display: block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 89px;
+    font-family: $baseFontFamilyOriginal;
+    font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+letter-spacing: -0.025em;
+cursor: pointer;
+}
+}
+
+.categories__stripes_items {
+    margin-top: 23px;
+    padding-bottom: 0;
+    margin-bottom: 45px;
+  
 }

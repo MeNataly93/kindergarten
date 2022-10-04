@@ -2,15 +2,17 @@
 
 
     &__title {
+        width: 67.2%;
         font-family: $titleFontFamily;
         font-weight: 700;
         font-size: 36px;
         line-height: 49px;
         letter-spacing: -0.025em;
-        margin: 76px 62px auto 43px;
+        margin: 76px auto auto 43px;
             }
 
     &__description {
+        width: 179px;
         font-family: $descriptionFontFamily;
         font-weight: 300;
         font-size: 16px;

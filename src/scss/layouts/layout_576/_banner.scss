@@ -2,6 +2,7 @@
 
 
     &__title {
+        width: 77%;
         font-weight: 700;
         font-size: 60px;
         line-height: 82px;
@@ -11,6 +12,7 @@
             }
 
             &__description {
+                width: 449px;
                 font-family: $baseFontFamily;
                 font-weight: 400;
                 font-size: 18px;

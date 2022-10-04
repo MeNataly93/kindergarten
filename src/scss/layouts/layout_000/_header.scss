@@ -1,11 +1,15 @@
 .header {
-  width: 85%;
+  
   margin-left: 23px;
   margin-right: 23px;
-  margin-top: 25px;
+  margin-top: 27px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &__main {
+    margin-right: 0px;
+  }
 
   &__logo {
   display: flex;

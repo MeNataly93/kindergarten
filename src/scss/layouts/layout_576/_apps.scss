@@ -2,12 +2,13 @@
 background-size: 2514px 819.67px;
 background-position-x: -783px;
 margin-top: 0px;
-position: relative;
+padding-bottom: 0px;
+
 
 &__title {
     font-size: 60px;
-line-height: 82px;
-    width: 681px;
+    line-height: 82px;
+    width: 685px;
     margin: 0 auto 30px 57px;
     padding-top: 70px;
 }
@@ -16,49 +17,71 @@ line-height: 82px;
 &__text-section {
 
     position: relative;
+    height: 554px;
+    overflow:hidden;
+
 
 &__text {
     font-family: $baseFontFamily;
     font-size: 24px;
     line-height: 38px;
-    width: 640px;
-    margin: 0 auto 478px 57px;
+    width: 634px;
+    margin: 0 auto 0 57px;
 }
 
 &__bg-pics {
-width: 1920px;
-height: 626px;
-// position: absolute;
-right: 0px;
-top: 0px;
+width: 757px;
+position: absolute;
+left: 170px;
+top: 45px;
+
+}}
+
+
+
+&__icon-section {
+    position: relative;
+
+
+
+
+&__playstore-min {
+display: none;
+
 
 }
 
-&__playstore {
-width: 42px;
-height: 42px;
-// position: absolute;
-left: 83px;
-top: 423px;
-
-}
-
-&__appstore {
-    width: 42px;
-    height: 42px;
-    // position: absolute;
-    left: 170px;
-    top: 423px;
+&__appstore-min {
+   display: none;
     
     }
 
+    &__playstore {
+        display: block;
+        position: absolute;
+        top: -313px;
+        left: 57px;
+
+        &__img {
+           width: 220px;
+            height: 65px; 
+        }
+        
+        }
+
+        &__appstore {
+            display: block;
+            position: absolute;
+            top: -418px;
+            left: 57px;
+
+        &__img {
+            width: 220px;
+            height: 65px; 
+         }
+            
+            }
+
 }
 }
 
-.apps-block {
-    display: flex;
-    justify-content: space-between;
-    width: 129px;
-    margin-left: 83px;
-    padding-bottom: 26.51px;
-}

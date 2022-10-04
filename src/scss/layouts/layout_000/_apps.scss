@@ -1,0 +1,71 @@
+.apps {
+background-image: url(../../../i/img/apps_bg.jpg);
+background-size: 2124px 692px;
+background-position-x: -756px;
+margin-top: 52px;
+position: relative;
+
+&__title {
+    font-family: $titleFontFamily;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: -0.025em;
+    color: $white;
+    width: 292px;
+    margin: 0 auto 29px 13px;
+    padding-top: 25px;
+}
+
+
+&__text-section {
+
+    position: relative;
+
+&__text {
+    font-family: $descriptionFontFamily;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.025em;
+    color: $white;
+    width: 270px;
+    margin: 0 auto 295px 13px;
+}
+
+&__bg-pics {
+width: 997px;
+position: absolute;
+left: -492px;
+top: 69px;
+
+}
+
+&__playstore {
+width: 42px;
+height: 42px;
+// position: absolute;
+left: 83px;
+top: 423px;
+
+}
+
+&__appstore {
+    width: 42px;
+    height: 42px;
+    // position: absolute;
+    left: 170px;
+    top: 423px;
+    
+    }
+
+}
+}
+
+.apps-block {
+    display: flex;
+    justify-content: space-between;
+    width: 129px;
+    margin-left: 83px;
+    padding-bottom: 26.51px;
+}

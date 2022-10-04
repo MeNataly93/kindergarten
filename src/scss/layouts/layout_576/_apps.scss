@@ -1,0 +1,64 @@
+.apps {
+background-size: 2514px 819.67px;
+background-position-x: -783px;
+margin-top: 0px;
+position: relative;
+
+&__title {
+    font-size: 60px;
+line-height: 82px;
+    width: 681px;
+    margin: 0 auto 30px 57px;
+    padding-top: 70px;
+}
+
+
+&__text-section {
+
+    position: relative;
+
+&__text {
+    font-family: $baseFontFamily;
+    font-size: 24px;
+    line-height: 38px;
+    width: 640px;
+    margin: 0 auto 478px 57px;
+}
+
+&__bg-pics {
+width: 1920px;
+height: 626px;
+// position: absolute;
+right: 0px;
+top: 0px;
+
+}
+
+&__playstore {
+width: 42px;
+height: 42px;
+// position: absolute;
+left: 83px;
+top: 423px;
+
+}
+
+&__appstore {
+    width: 42px;
+    height: 42px;
+    // position: absolute;
+    left: 170px;
+    top: 423px;
+    
+    }
+
+}
+}
+
+.apps-block {
+    display: flex;
+    justify-content: space-between;
+    width: 129px;
+    margin-left: 83px;
+    padding-bottom: 26.51px;
+}

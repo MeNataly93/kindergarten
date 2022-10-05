@@ -16,7 +16,13 @@ margin-top: 22px;
 }
 
 &__description {
-    width: 275px;
+    width: 85.9%;
+    margin-left: auto;
+    margin-right: auto;
+    // width: 275px;
+
+
+    
     font-family: $descriptionFontFamily;
     font-weight: 400;
 font-size: 14px;
@@ -30,9 +36,17 @@ padding-bottom: 15px;
 
 &__list {
     padding-inline-start: 0px;
+// ПРАВКИ
+        // width: 231px;
+        width: 72.1%;
+        margin-left: 50px;
+        margin-right: auto;
+    
 
     &__item {
         list-style: none;
+
+
 
         &__title {
             font-family: $titleFontFamily;
@@ -40,8 +54,8 @@ padding-bottom: 15px;
             font-size: 20px;
             line-height: 27px;
             letter-spacing: -0.025em;
-            width: 197px;
-            margin-left: 48px;
+            // width: 197px;
+            // margin-left: 48px;
             margin-top: 123px;
             z-index: 1000;
             position: relative;
@@ -97,9 +111,9 @@ padding-bottom: 15px;
             font-size: 14px;
             line-height: 26px;
             letter-spacing: -0.025em;
-            margin-right: 39px;
+            // margin-right: 39px;
             // width: 210px;
-            margin-left: 48px;
+            // margin-left: 48px;
             margin-top: 21px;
             position: relative;
 

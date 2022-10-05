@@ -35,20 +35,29 @@ left: -53px;
 font-size: 16px;
 line-height: 26px;
 padding-bottom: 0px;
-padding-left: 15px;
-padding-right: 15px;
+padding-left: 33px;
+padding-right: 33px;
+margin-left: auto;
+margin-right: auto;
 }
 
 &__list {
+    width: 653px;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 9.5%;
+    margin-right: auto;
+    justify-content: space-between;
+
+   
 
     &__item {
         flex-basis: 37%;
-        margin-left: 72px;
+        // flex-basis: 285px;
+
 
         &_2 {
-            margin-left: 81px;
+            // margin-left: 81px;
         }
 
         &__title {
@@ -106,7 +115,8 @@ padding-right: 15px;
             font-size: 16px;
             margin-left: 0px;
             margin-right: 0px;
-            width: 285px;
+            // width: 285px;
+            width: 100%;
             max-width: 285px;
             margin-top: 15px;
 

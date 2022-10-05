@@ -2,25 +2,48 @@
 
 
     &__title {
-        margin: 161px auto auto 386px;
+        margin: 161px auto auto 20.1%;
             }
 
             &__description {
                 
-                margin: 8px auto 18px 389px;
+                margin: 8px auto 18px 20.26%;
             }
 
             &__input {
-                margin-left: 382px;
+                margin-left: 19.9%;
+                // margin-left: 382px;
                 
                 width: 766px;
-                
+                position: relative;
+                &__button-for-desctop{
+                            display: block;
+                            position: absolute;
+                            background-color: $buttonColor; 
+                            padding: 18px 55px;
+                            border-radius: 28px;
+                            color: $white;
+                            text-transform: uppercase;
+                            font-family: $baseFontFamily;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 20px;
+                            letter-spacing: -0.025em;
+                            display: block;
+                            cursor: pointer;
+                            top: 13px;
+                            left: 581px;
+
+                           
+                        }
+                          
                 
                     &__search {
                     
                         width: 750px;
                         position: relative;
-                                
+
+                              
                 }
                 
                 
@@ -30,10 +53,12 @@
                 // BUTTON
 
                 &__button {
-                    position: absolute;
-                    margin: 0;
-                    margin-top: -69px;
-                    margin-left: 965px;
+                    // position: absolute;
+                    // margin: 0;
+                    // margin-top: -69px;
+                    // margin-left: 50.2%;
+                    // // margin-left: 965px;
+                    visibility: hidden;
                     
                 }
 
@@ -41,7 +66,7 @@
 
 &__section-items {
     margin-top: 35px;
-    margin-left: 389px;
+    margin-left: 20.26%;
    
 }
 

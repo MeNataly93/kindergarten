@@ -3,7 +3,7 @@
     background-color: $beige;
 
     &__bg{
-width: 1067px;
+width: 333.4%x;
 height: 336px;
 position: absolute;
 top: -71px;
@@ -53,6 +53,9 @@ z-index: -1;
     display: flex;
     justify-content: space-between;
     padding-inline-start: 0px;
+    overflow-x: hidden;
+    margin-left: auto;
+    margin-right: auto;
 
    
 

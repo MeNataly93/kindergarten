@@ -1,4 +1,6 @@
 .banner {
+    margin-left: auto;
+    margin-right: auto;
 
 
     &__title {
@@ -8,7 +10,7 @@
         font-size: 36px;
         line-height: 49px;
         letter-spacing: -0.025em;
-        margin: 76px auto auto 43px;
+        margin: 76px auto auto 13.4%;
             }
 
     &__description {
@@ -18,7 +20,7 @@
         font-size: 16px;
         line-height: 19px;
         letter-spacing: -0.025em;
-        margin: 21px 93px 34px 48px;
+        margin: 21px 93px 34px 15%;
     }
 
     // INPUT
@@ -33,6 +35,10 @@ justify-content: center;
 margin-left: auto;
 margin-right: auto;
 
+  &__button-for-desctop{
+            display: none;
+        }
+
     &__search {
        background-image: url(../../../i/optim/search.svg);
         background-repeat: no-repeat;
@@ -45,6 +51,8 @@ margin-right: auto;
         border: 1px solid $borderColor;
         border-radius: 33px;
         padding-left: 40.4px;
+
+      
 
 &::placeholder {
     color: transparent;
@@ -86,9 +94,12 @@ margin-right: auto;
     display: flex;
     justify-content: space-between;
     margin-top: 55px;
-    margin-left: 90px;
-    margin-right: 90px;
+    // margin-left: 90px;
+    // margin-right: 90px;
     padding-inline-start: 0px;
+
+    width: 40.3%;
+    margin-left: auto;margin-right: auto;
 
 &_icon {
     display: block;

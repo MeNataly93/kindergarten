@@ -1,0 +1,29 @@
+.companies {
+
+    &__title {
+        
+        width: 13.23%;
+        min-width: 254px;
+        margin: 113px auto 64px;
+
+    }
+
+
+    &__list {
+        width: 1140px;
+        margin: 0 auto 114px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+        &__item {
+        margin-top: 0;
+        margin-right: 0;
+
+        
+
+        
+           
+        }
+    }
+}

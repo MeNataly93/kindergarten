@@ -1,0 +1,38 @@
+.companies {
+
+    &__title {
+        font-family: $titleFontFamily;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: -0.025em;
+        width: 78.4%;
+        margin: 69px auto 51px;
+
+    }
+
+
+    &__list {
+        list-style: none;
+        width: 300px;
+        margin: 0 auto 54px;
+        padding-inline-start: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__item {
+        margin-top: 43px;
+
+        &_1, &_2 {
+            margin-top: 0;
+        }
+
+            &__img {
+                width: 138px;
+
+            }
+        }
+    }
+}

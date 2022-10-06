@@ -1,0 +1,34 @@
+.companies {
+
+    &__title {
+        
+        width: 32.68%;
+        margin: 175px auto 85px;
+
+    }
+
+
+    &__list {
+        width: 670px;
+        margin: 0 auto 65px;
+        justify-content: flex-start;
+
+
+        &__item {
+        margin-top: 60px;
+
+        &_1, &_2, &_3 {
+            margin-top: 0;
+        }
+
+        &_1, &_2, &_4 {
+            margin-right: 35px;
+        }
+
+            &__img {
+                width: 200px;
+
+            }
+        }
+    }
+}

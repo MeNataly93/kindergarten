@@ -1,0 +1,57 @@
+.feedback {
+
+&__intro {
+    @include red-stripes (106px, 37px, -60px, -60px) {
+
+        width: 221px;
+        &::before {
+            background: url(../../../i/optim/blue-stripe.svg) no-repeat;}
+        &::after {
+            background: url(../../../i/optim/blue-stripe.svg) no-repeat;}
+    
+        
+    }
+}
+
+&__title {
+    font-size: 60px;
+    line-height: 82px;
+    width: 28.6%;
+
+}
+
+&__description {
+
+width: 32%;
+margin: 0 auto 61px;
+
+}
+
+
+&__main {
+    width: 1687px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__list {
+        position: relative;
+        width: 1687px;
+
+        // !!!!!!
+        top: auto;
+        right: auto;
+
+
+       
+
+    }
+}
+&__list {
+    
+   margin-bottom: 70px;
+
+  
+}
+
+
+}

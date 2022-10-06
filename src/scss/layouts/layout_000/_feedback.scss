@@ -38,6 +38,7 @@ margin: 0 auto 42px;
     list-style: none;
     padding-inline-start: 0px;
     display: flex;
+    margin-bottom: 51px;
 
    
 
@@ -113,5 +114,11 @@ margin: 0 auto 42px;
 
 }
 
-
+&__stripes {
+    display: flex;
+    width: 105px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
 }

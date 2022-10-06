@@ -1,0 +1,122 @@
+.feedback {
+
+&__intro {
+    @include red-stripes (167px, 37px, -60px, -60px) {
+
+        width: 221px;
+        &::before {
+            background: url(../../../i/optim/blue-stripe.svg) no-repeat;}
+        &::after {
+            background: url(../../../i/optim/blue-stripe.svg) no-repeat;}
+    
+        
+    }
+}
+
+&__title {
+    font-size: 60px;
+    line-height: 82px;
+    width: 71%;
+    margin: 18px auto 8px;
+
+}
+
+&__description {
+font-family: $baseFontFamily;
+font-size: 16px;
+line-height: 26px;
+width: 80%;
+margin: 0 auto 60px;
+
+}
+
+
+&__main {
+    width: 1713px;
+
+    
+
+
+    &__list {
+        position: relative;
+        width: 1713px;
+
+        top: 0;
+        right: 25.5%;
+        // right: 450px;
+
+    }
+}
+&__list {
+    list-style: none;
+    padding-inline-start: 0px;
+    display: flex;
+   margin-bottom: 85px;
+
+    
+
+   
+
+    &__item {
+        
+        padding: 50px 46px 52px 111px;
+        display: flex;
+        flex-direction: column;
+        width: 515px;
+        position: relative;
+        box-shadow: 0px 0px 50px rgba(18, 53, 87, 0.12);
+        margin-right: 71px;
+        margin-left: 0;
+        
+
+        &_1{
+        }
+        &_2{
+            display: block;
+        }
+        &_3{
+            display: block;
+            margin-right: 0;
+        }
+
+&__text {
+
+    font-family: $baseFontFamily;
+    font-size: 16px;
+    width: 358px;
+
+}
+
+&__name {
+    
+    margin: 21px auto 14px 0px;
+}
+
+&__name-stars {
+    
+
+&__stars {
+    
+    position: absolute;
+    left: 139px;
+    top: 25px;
+}}
+
+
+&__about {
+
+}
+
+&__img {
+    margin: 0;
+    position: absolute;
+    left: -26px;
+    top: 55px;
+    
+}
+    }
+
+}
+
+
+}

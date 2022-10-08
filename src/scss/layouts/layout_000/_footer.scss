@@ -96,13 +96,59 @@ letter-spacing: -0.025em;
         letter-spacing: -0.025em;
       }
     }
+
+    &__4 {
+      margin: 0 auto 37px 36px;
+
+      &__title {
+       font-family: $baseFontFamilyOriginal;
+       font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -0.025em;
+        margin-bottom: 22px;
+      }
+
+&__list {
+  list-style: none;
+  display: flex;
+  width: 252px;
+  justify-content: space-between;
+  margin: 0 auto 0 0;
+  padding-inline-start: 0;
+}
+
+      &__item {
+
+           
+        &__tw, &__fb, &__inst, &__pint, &__youtube {
+          --iconBg: #FFFFFF;
+          --iconMain: #5F8AD4;
+
+          &:hover {
+            --iconBg: #E63A28;
+          --iconMain: #FFFFFF;
+          }
+        }
+        
+        
+      
+        
+        
+      }
+    }
   }
 
   &__icon-section {
+    width: 129px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 51px 90px;
 
-
-    &__playstore, &__appstore {
+    
+&__appstore, &__playstore {
       display: none;
+      
     }
 
     &__playstore-min, &__appstore-min {
@@ -111,4 +157,23 @@ width: 42px;     }
     }
   }
 
-}
+
+  &__copyright {
+    margin: 0;
+    border-top: 1px solid $itemsStripe;
+    
+    
+
+    &__text {
+      font-family: $descriptionFontFamily;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      width: 63.125%;
+     margin: 14px auto 0 49px;
+     padding-bottom: 13px;
+
+    }
+  }
+  }

@@ -19,6 +19,8 @@
           display: flex;
           flex-direction: column;
 margin-top: 36px;
+
+
         }
       &__title {
         font-family: $titleFontFamily;
@@ -28,6 +30,7 @@ margin-top: 36px;
         line-height: 49px;
         letter-spacing: -0.025em;
         margin: 0;
+        
       
       }
       &__description {
@@ -48,6 +51,7 @@ font-size: 16px;
 line-height: 26px;
 letter-spacing: -0.025em;
 margin: 32px auto 19px 36px;
+width: 88.75%;
         
       }
 

@@ -1131,16 +1131,35 @@
 
 
 
-    <!-- FOOTER -->
-    <footer>
-      <a href="#"><img src="./i/logo.svg" alt="Doremi" /></a>
-      <p>
+    <!--------------------------- FOOTER --------------------------->
+    <footer class="footer">
+      <!-- LOGO -->
+      <section class="footer__logo">
+        <a class="footer__logo__link" href="#"
+          ><svg
+            class="footer__logo__img"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28.7"
+            height="28.7"
+            viewBox="0 0 29 29"
+          >
+            <use xlink: href="i/sprite.svg#logo"/>
+          </svg>
+        </a>
+        <a href="#" class="footer__logo__text"
+          ><p class="footer__logo__title">Doremi</p>
+          <p class="footer__logo__description">Buy, Sell Or Rent</p></a
+        >
+      </section>
+      <p class="footer__text">
         Eiusmod tempora incididunt dolore magna aliqua sed enim lorem ipsum sit
         amet consectetur.
       </p>
-      <p>Email: <a href="mailto:support@domain.com">support@domain.com</a></p>
-      <p>Phone: <a href="tel: +1 (040) 2351 3690">+1 (040) 2351 3690</a></p>
-      <h3>Ameda Hilson</h3>
+      <p class="footer__email">Email: <a class="footer__email__link" href="mailto:support@domain.com">support@domain.com</a></p>
+      <p class="footer__tel">Phone: <a class="footer__tel_num" href="tel: +1 (040) 2351 3690">+1 (040) 2351 3690</a></p>
+      
+      <!-- PART-1 -->
+      <h3 class="footer__title__part-1">Ameda Hilson</h3>
       <ul>
         <li>Our Company</li>
         <li>Our Blog</li>
@@ -1149,7 +1168,9 @@
         <li>List An Item</li>
         <li>Disclaimers</li>
       </ul>
-      <h3>Other Links</h3>
+
+      <!-- PART-2 -->
+      <h3 class="footer__title__part-2">Other Links</h3>
       <ul>
         <li>Login Or Register</li>
         <li>Gurantee</li>
@@ -1158,11 +1179,36 @@
         <li>Terms of Service</li>
         <li>Leave Feedback</li>
       </ul>
-      <h3>Join Our Community</h3>
-      <p>Continue exploring the great places.</p>
-      <a href="#"><img src="./i/AppStore.svg" alt="AppStore" /></a>
-      <a href="#"><img src="./i/PlayStore.svg" alt="PlayStore" /></a>
-      <h3>Connect Socially</h3>
+
+      <!-- PART-3 -->
+      <h3 class="footer__title__part-3">Join Our Community</h3>
+      <p class="footer__title__part-3__text">Continue exploring the great places.</p>
+      
+      <!-- APPS -->
+      <section class="footer__icon-section">
+        <a class="footer__icon-section__playstore-min" href="#"
+          ><img src="i/optim/apps_playstore-min.svg" alt="AppStore"
+        /></a>
+        <a class="footer__icon-section__appstore-min" href="#"
+          ><img src="i/optim/apps_appstore-min.svg" alt="PlayStore"
+        /></a>
+
+        <a class="footer__icon-section__playstore" href="#"
+          ><img
+            class="footer__icon-section__playstore__img"
+            src="i/optim/apps_playstore.svg"
+            alt="AppStore"
+        /></a>
+        <a class="footer__icon-section__appstore" href="#"
+          ><img
+            class="footer__icon-section__appstore__img"
+            src="i/optim/apps_appstore.svg"
+            alt="PlayStore"
+        /></a>
+      </section>
+
+      <!-- PART-4 -->
+      <h3 class="footer__title__part-4">Connect Socially</h3>
       <ul>
         <li><a href="#"></a><img src="./i/tw.svg" alt="Twitter" /></li>
         <li><a href="#"></a><img src="./i/fb.svg" alt="Facebook" /></li>
@@ -1170,7 +1216,7 @@
         <li><a href="#"></a><img src="./i/pint.svg" alt="Pinterest" /></li>
         <li><a href="#"></a><img src="./i/youtube.svg" alt="Youtube" /></li>
       </ul>
-      <p>&#169; 2020 Doremi - Buy Sell or Rent. All rights reserved.</p>
+      <p class="footer__copyright">&#169; 2020 Doremi - Buy Sell or Rent. All rights reserved.</p>
     </footer>
   </body>
 </html>

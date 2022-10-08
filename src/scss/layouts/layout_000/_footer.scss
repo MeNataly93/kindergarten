@@ -43,7 +43,72 @@ margin-top: 36px;
       }
 
       &__text {
+        font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+letter-spacing: -0.025em;
+margin: 32px auto 19px 36px;
         
       }
+
+    &__contacts{
+      margin: 0 auto 51px 36px;
+    
+    &__email, &__tel {
+font-family: $priceFont;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+letter-spacing: -0.025em;
+
+&__link, &__num {
+  text-decoration: none;
+  color: $black;
+  font-family: $baseFontFamily;
+  font-size: 16px;
+}
+    }
+  }
+
+  &__section {
+
+    &__1, &__2 {
+      display: none;
+    }
+
+    &__3 {
+      margin: 0 auto 43px 36px;
+
+      &__title {
+        font-family: $baseFontFamilyOriginal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -0.025em;
+        margin-bottom: 19px;
+      }
+
+      &__text {
+        font-family: $baseFontFamily;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 34px;
+        letter-spacing: -0.025em;
+      }
+    }
+  }
+
+  &__icon-section {
+
+
+    &__playstore, &__appstore {
+      display: none;
+    }
+
+    &__playstore-min, &__appstore-min {
+      &__img{
+width: 42px;     } 
+    }
+  }
 
 }

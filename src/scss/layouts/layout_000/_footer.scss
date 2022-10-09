@@ -1,183 +1,199 @@
-.footer {
-    background-color: $footerBlueBg;
 
-    &__logo {
-        display: flex;
-        align-items: center;
-        margin-left: 36px;
-      
-        &__img {
-          width: 54px;
-          height: 54px;
-          margin-right: 14px;
-          margin-top: 42px;
-        }
-      
-        &__text {
-          text-decoration: none;
-          color: $black;
-          display: flex;
-          flex-direction: column;
-margin-top: 36px;
+      .footer {
+        width: 100%;
+        background-color: $footerBlueBg;
+        padding-top: 36px;
+        padding-bottom: 13px;
+
+        // <!-- LOGO -->
+&__logo {
+position: relative;
+         margin: 0px auto 32px 36px;
 
 
-        }
-      &__title {
-        font-family: $titleFontFamily;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 36px;
-        line-height: 49px;
-        letter-spacing: -0.025em;
-        margin: 0;
-        
-      
-      }
-      &__description {
-        font-family: $baseFontFamily;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 13px;
-        letter-spacing: 0.01em;
-        margin: 0;
-        margin-top: -4px;
-      
-      }
-      }
+  &__img {
+    width: 54px;
+  }
 
-      &__text {
-        font-weight: 400;
+  &__link {
+        text-decoration: none;
+  }
+
+  &__name {
+    font-family: $titleFontFamily;
+    font-weight: 800;
+font-size: 36px;
+line-height: 49px;
+letter-spacing: -0.025em;
+color: $black;
+position: absolute;
+left: 68px;
+top: -6px;
+  }
+
+  &__text {
+    font-weight: 400;
+font-size: 14px;
+line-height: 13px;
+letter-spacing: 0.01em;
+position: absolute;
+left: 69px;
+top: 41px;
+  }
+}
+
+
+// <!-- MAIN TEXT -->
+
+&__main-text {
+  font-weight: 400;
 font-size: 16px;
 line-height: 26px;
 letter-spacing: -0.025em;
-margin: 32px auto 19px 36px;
-width: 88.75%;
-        
-      }
+margin-bottom: 19px;
 
-    &__contacts{
-      margin: 0 auto 51px 36px;
-    
-    &__email, &__tel {
-font-family: $priceFont;
-font-weight: 400;
+width: 281px;
+margin-left: 36px;
+
+&__text {
+  margin-bottom: 19px;
+}
+
+&__email-tel {
+  font-family: $priceFont;
+  font-weight: 400;
 font-size: 22px;
 line-height: 26px;
 letter-spacing: -0.025em;
 
-&__link, &__num {
-  text-decoration: none;
-  color: $black;
+&__link {
   font-family: $baseFontFamily;
-  font-size: 16px;
+  font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+letter-spacing: -0.025em;
+text-decoration: none;
+color: $black;
 }
-    }
+}}
+
+// <!-- AMEDA HILSON-->
+      
+&__ameda {
+display: none;}
+
+
+// <!-- OTHER LINKS -->
+
+
+&__other {
+  display: none;
+}
+
+
+
+// <!-- JOIN OUR COMMUNITY -->
+
+&__join {
+  margin: 51px auto 0px 36px;
+
+  &__title {
+font-family: $baseFontFamilyOriginal;
+font-weight: 600;
+font-size: 24px;
+line-height: 30px;
+letter-spacing: -0.025em;
+margin-bottom: 19px;}
+
+&__text {
+  font-weight: 400;
+font-size: 16px;
+line-height: 34px;
+letter-spacing: -0.025em;
+margin-bottom: 43px;
+
+}
+
+  
+}
+
+
+// <!-- APPS -->
+
+
+&__apps {
+  position: relative;
+  padding-bottom: 93px;
+
+  &__playstore, &__appstore {
+    display: none;
   }
 
-  &__section {
+  &__appstore-min {
+    position: absolute;
+    left: 54px;
+    top: 0;
+  }
 
-    &__1, &__2 {
-      display: none;
-    }
-
-    &__3 {
-      margin: 0 auto 43px 36px;
-
-      &__title {
-        font-family: $baseFontFamilyOriginal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 30px;
-        letter-spacing: -0.025em;
-        margin-bottom: 19px;
-      }
-
-      &__text {
-        font-family: $baseFontFamily;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 34px;
-        letter-spacing: -0.025em;
-      }
-    }
-
-    &__4 {
-      margin: 0 auto 37px 36px;
-
-      &__title {
-       font-family: $baseFontFamilyOriginal;
-       font-weight: 600;
-        font-size: 24px;
-        line-height: 30px;
-        letter-spacing: -0.025em;
-        margin-bottom: 22px;
-      }
-
-&__list {
-  list-style: none;
-  display: flex;
-  width: 252px;
-  justify-content: space-between;
-  margin: 0 auto 0 0;
-  padding-inline-start: 0;
+  &__playstore-min {
+    position: absolute;
+    left: 141px;
+    top: 0;
+  }
 }
 
-      &__item {
 
-           
-        &__tw, &__fb, &__inst, &__pint, &__youtube {
-          --iconBg: #FFFFFF;
-          --iconMain: #5F8AD4;
+// <!-- CONNECT SOCIALLY -->
+
+&__connect {
+  margin: 0px auto 0px 37px;
+
+  &__title {
+    font-family: $titleFontFamily;
+    font-weight: 600;
+font-size: 24px;
+line-height: 30px;
+letter-spacing: -0.025em;
+
+margin-bottom: 22px;
+  }
+
+  &__list {
+    list-style: none;
+    padding-inline-start: 0px;
+
+    display: flex;
+    width: 252px;
+    justify-content: space-between;
+    margin-bottom: 37px;
+
+    &__svg {
+      --iconBg: #FFFFFF;
+      --iconMain: #5F8AD4;
 
           &:hover {
             --iconBg: #E63A28;
-          --iconMain: #FFFFFF;
-          }
-        }
-        
-        
-      
-        
-        
-      }
-    }
-  }
-
-  &__icon-section {
-    width: 129px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto 51px 90px;
-
-    
-&__appstore, &__playstore {
-      display: none;
-      
+          --iconMain: #FFFFFF;}
     }
 
-    &__playstore-min, &__appstore-min {
-      &__img{
-width: 42px;     } 
-    }
   }
 
+}
 
-  &__copyright {
-    margin: 0;
-    border-top: 1px solid $itemsStripe;
-    
-    
+//  <!-- COPYRIGHT -->
 
-    &__text {
-      font-family: $descriptionFontFamily;
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 24px;
-      text-align: center;
-      width: 63.125%;
-     margin: 14px auto 0 49px;
-     padding-bottom: 13px;
+&__copyright {
+width: 100%;
+border-top: 1px solid $itemsStripe;
 
-    }
-  }
-  }
+&__text {
+  margin: 14px auto 0px 49px;
+  width: 202px;
+  font-family: $descriptionFontFamily;
+  font-weight: 300;
+font-size: 14px;
+line-height: 24px;
+text-align: center;
+}
+}
+}

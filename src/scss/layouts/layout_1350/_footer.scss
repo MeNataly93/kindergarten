@@ -1,16 +1,16 @@
 
       .footer {
        
-        padding-top: 42px;
-        padding-bottom: 22px;
+        padding-top: 100px;
+        padding-bottom: 41px;
 
-        display: flex;
-        flex-wrap: wrap;
+        // display: flex;
+        // flex-wrap: wrap;
 
         // <!-- LOGO -->
 &__logo {
 position: relative;
-         margin: 0px auto 25px 74px;
+         margin: 0px auto 25px 390px;
 }
 
 
@@ -19,14 +19,37 @@ position: relative;
 &__main-text {
 
 
-margin-left: 74px;
+margin-left: 390px;
 
 }
 
 
 
 // <!-- AMEDA HILSON--> - display: none
-      
+     &__ameda {
+      display: block;
+      margin-right: 52px;
+
+      &__title {
+font-family: $baseFontFamilyOriginal;
+        font-weight: 600;
+font-size: 24px;
+line-height: 30px;
+letter-spacing: -0.025em;
+margin-bottom: 19px;
+      }
+
+      &__list {
+        list-style: none;
+        padding-inline-start: 0;
+
+        font-weight: 400;
+font-size: 16px;
+line-height: 34px;
+letter-spacing: -0.025em;
+      }
+
+     } 
 
 
 
@@ -34,26 +57,10 @@ margin-left: 74px;
 
 
 &__other {
-  display: block;
-  margin-left: 112px;
+  // display: block;
+  margin-left: 0px;
+  margin-right: 99px;
 
-  &__title {
-font-family: $baseFontFamilyOriginal;
-    font-weight: 600;
-font-size: 24px;
-line-height: 30px;
-letter-spacing: -0.025em;
-margin-bottom: 19px;
-  }
-
-  &__list {
-    list-style: none;
-    font-weight: 400;
-font-size: 16px;
-line-height: 34px;
-letter-spacing: -0.025em;
-padding-inline-start: 0;
-}
 
 }
 
@@ -62,13 +69,13 @@ padding-inline-start: 0;
 // <!-- JOIN OUR COMMUNITY -->
 
 &__join {
-  margin: 73px 0 0 74px;
+  margin: 0 0 0 0;
 
 
 
 &__text {
 
-margin-bottom: 13px;
+margin-bottom: 15px;
 
 }
 
@@ -80,34 +87,20 @@ margin-bottom: 13px;
 
 
 &__apps {
-  position: relative;
-  padding-bottom: 51px;
-
-  width: 319px;
-  display: flex;
-  justify-content: space-between;
-
-  &__playstore, &__appstore {
-    display: block;
-
-  }
-
-  &__appstore-min, &__playstore-min {
-    display: none;
-  }
+  padding-bottom: 30px;
 }
 
 
 // <!-- CONNECT SOCIALLY -->
 
 &__connect {
-  margin: 73px auto 0px 74px;
+  margin: 0px auto 0px 0px;
 
   
 
   &__list {
     
-    margin-bottom: 97px;
+    margin-bottom: 113px;
 
    
 
@@ -122,13 +115,8 @@ width: 100%;
 border-top: 1px solid $itemsStripe;
 
 &__text {
-  margin: 22px auto 0;
-  width: 396px;
-  font-family: $baseFontFamily;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: -0.025em;
+  margin: 48px auto 0;
+  
 
 }
 }
@@ -136,6 +124,12 @@ border-top: 1px solid $itemsStripe;
 // FOR DISPLAY: FLEX
 
 &__logo-main-text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 82px;
+}
+
+&__join-connect {
   display: flex;
   flex-direction: column;
 }

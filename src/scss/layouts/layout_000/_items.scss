@@ -27,12 +27,13 @@ line-height: 26px;
 text-align: center;
 letter-spacing: -0.025em;
 width: 87.8%;
+max-width: 557px;
 margin: 0 auto 57px;
 }
 
 &__list {
     display: flex;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     list-style: none;
     max-width: 1140px;
     padding-inline-start: 0px;

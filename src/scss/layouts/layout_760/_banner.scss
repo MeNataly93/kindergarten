@@ -122,7 +122,9 @@
 
 }
 
-
+&:active {
+    background: none;
+}
 
 }
 
@@ -132,7 +134,7 @@
     @include black-search (-14px, hidden);
     }
 
-&:hover 
+&:active 
      {
         background-size:50px 50px;
 
@@ -148,7 +150,7 @@
         @include black-search (-14px, hidden);
         }
 
-&:hover 
+&:active 
      {
         background-size:50px 50px;
         background-position-x: 9px;
@@ -156,13 +158,15 @@
         & .banner__items__li2__black-search {
             @include black-search (-5px, visible);
             }
-}}
+}
+
+}
 
 &__li3 {
     &__black-search {
         @include black-search (-14px, hidden);
         }
-    &:hover 
+    &:active 
      {
         background-size:50px 50px;
         & .banner__items__li3__black-search {

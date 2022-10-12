@@ -4,24 +4,17 @@
         padding-top: 100px;
         padding-bottom: 41px;
 
-        // display: flex;
+        display: flex;
         // flex-wrap: wrap;
 
         // <!-- LOGO -->
 &__logo {
 position: relative;
-         margin: 0px auto 25px 390px;
+         margin: 0px auto 25px 0;
 }
 
 
-// <!-- MAIN TEXT -->
 
-&__main-text {
-
-
-margin-left: 390px;
-
-}
 
 
 
@@ -133,4 +126,19 @@ border-top: 1px solid $itemsStripe;
   display: flex;
   flex-direction: column;
 }
+
+
 }
+
+.footer-in {
+  min-width: 1131px;
+  width: 1131px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+// .footer__logo-main-text-other-links {
+//   display: inline-block;
+// }
+

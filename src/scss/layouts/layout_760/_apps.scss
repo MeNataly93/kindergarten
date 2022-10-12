@@ -9,7 +9,8 @@ padding-bottom: 0px;
     font-size: 60px;
     line-height: 82px;
     width: 685px;
-    margin: 0 auto 30px 57px;
+    min-width: 685px;
+    margin: 0 0 30px 57px;
     padding-top: 70px;
 }
 
@@ -32,7 +33,7 @@ padding-bottom: 0px;
 &__bg-pics {
 width: 757px;
 position: absolute;
-left: 170px;
+right: -160px;
 top: 45px;
 
 }}

@@ -17,11 +17,14 @@
 font-size: 48px;
 line-height: 65px;
     width: 603px;
-    margin: 0 auto 83px 4.82%;
+    margin: 0 auto 4.82%;
    
 }
 
 &__list {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
     
 
 
@@ -32,7 +35,7 @@ line-height: 65px;
     &__img {
         display: block;
         position: absolute;
-        left: 88px;
+        left: 0px;
     
 
     }
@@ -41,7 +44,8 @@ line-height: 65px;
             font-size: 24px;
             line-height: 33px;
             width: 263px;
-            margin: 0 auto 26px 205px;
+            // margin: 0 auto 26px 205px;
+            margin: 0 0 26px 117px;
            
         }
 
@@ -49,8 +53,8 @@ line-height: 65px;
         font-family: $baseFontFamily;
         font-size: 16px;
         line-height: 15px;
-        width: 383px;
-        margin: 0 auto 55px 205px;
+        width: 380px;
+        margin: 0 0 55px 117px;
         text-align: left;
 
         &_3 {

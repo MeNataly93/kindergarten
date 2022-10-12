@@ -51,6 +51,8 @@ margin-right: auto;
         border: 1px solid $borderColor;
         border-radius: 33px;
         padding-left: 40.4px;
+        font-size: 16px;
+        font-family: $baseFontFamily;
 
       
 
@@ -125,7 +127,7 @@ margin-right: auto;
 
 }
 
-&:hover {
+&:active {
     background: none;
 }
 
@@ -137,7 +139,7 @@ margin-right: auto;
     @include black-search (-20px, hidden);
     }
 
-&:hover 
+&:active 
      {
         background: url(../../../i/optim/banner_icon1_hov.svg) no-repeat;
         background-size:38.17px 38.17px;
@@ -155,20 +157,22 @@ margin-right: auto;
         @include black-search (-20px, hidden);
         }
 
-&:hover 
+&:active 
      {
         background: url(../../../i/optim/banner_icon2_hov.svg) no-repeat;
         background-size:38.17px 38.17px;
         & .banner__items__li2__black-search {
             @include black-search (-20px, visible);}
-}}
+}
+
+}
 
 &__li3 {
     position: relative;
     &__black-search {
         @include black-search (-20px, hidden);
         }
-    &:hover 
+    &:active 
      {
         background: url(../../../i/optim/banner_icon3_hov.svg) no-repeat;
         background-size:38.17px 38.17px;

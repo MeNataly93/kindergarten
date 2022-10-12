@@ -45,7 +45,7 @@
         }
 
     &__text {
-        width: 22%;
+        width: 383px;
         margin: 0 auto 55px 117px;
         
 
@@ -61,35 +61,13 @@
 
 &__bg-pics {
     display: block;
-    width: 668px;
+    width: 36%;
     position: absolute;
-    left: 50.78%;
-    top: 113px;
+    // left: 50.78%;
+    right: 8%;
+    top: 25%;
 
-    // &_1 {
-    //     width: 268px;
-    //     height: 221px;
-    //     position: absolute;
-    //     left: 1148px;
-    //     top: 113px;
-    //     display: block;
-    // }
-    // &_2 {
-    //     width: 263;
-    //     height: 256px;
-    //     position: absolute;
-    //     left: 975px;
-    //     top: 331px;
-    //     display: block;
-    // }
-    // &_3{
-    //     width: 287;
-    //     height: 308px;
-    //     position: absolute;
-    //     left: 1264px;
-    //     top: 358px;
-    //     display: block;
-    // }
+    
 }
 
 }

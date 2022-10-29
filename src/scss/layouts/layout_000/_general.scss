@@ -1,59 +1,59 @@
-* {
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
-
-html {
-}
-
-
-body {
-    font-family: $baseFontFamily;
-    background: url(../../../i/img/header-bg.png) no-repeat;
-    background-position: -409px 22px;
-    background-size: 340% auto;
-    position: relative;
-    color: $black;
-width: 100vw;
-overflow-x: hidden;
-}
-// .bg {
-//     width: 1090px;
-//     position: absolute;
-//     z-index: -1;
-//     top: 22px;
-//     left: -954px;
-    
+// * {
+//     margin-block-start: 0;
+//     margin-block-end: 0;
 // }
-
-
 
 
 // html {
-//   @include getCssVar(font-size);
 // }
+
 
 // body {
-//   @include getCssVar(font-family);
-//   font-size: 1rem;
-//   background: $bgColor url(#{$i}bg.jpg) repeat-x;
+//     font-family: $baseFontFamily;
+//     background: url(../../../i/img/header-bg.png) no-repeat;
+//     background-position: -409px 22px;
+//     background-size: 340% auto;
+//     position: relative;
+//     color: $black;
+// width: 100vw;
+// overflow-x: hidden;
 // }
+// // .bg {
+// //     width: 1090px;
+// //     position: absolute;
+// //     z-index: -1;
+// //     top: 22px;
+// //     left: -954px;
+    
+// // }
 
-// .container {
-//   max-width: 960px;
-//   width: 100%;
-//   margin: auto;
-//   display: flex;
-//   flex-direction: column;
-//   min-height: 100vh;
-//   padding: 0 $mobilePadding;
-// }
-// .content-box {
-//   flex: 1;
-// }
-// .fluid-box__img {
-//   width: 100%;
-//   max-width: 100%;
-//   height: auto;
-// }
+
+
+
+// // html {
+// //   @include getCssVar(font-size);
+// // }
+
+// // body {
+// //   @include getCssVar(font-family);
+// //   font-size: 1rem;
+// //   background: $bgColor url(#{$i}bg.jpg) repeat-x;
+// // }
+
+// // .container {
+// //   max-width: 960px;
+// //   width: 100%;
+// //   margin: auto;
+// //   display: flex;
+// //   flex-direction: column;
+// //   min-height: 100vh;
+// //   padding: 0 $mobilePadding;
+// // }
+// // .content-box {
+// //   flex: 1;
+// // }
+// // .fluid-box__img {
+// //   width: 100%;
+// //   max-width: 100%;
+// //   height: auto;
+// // }

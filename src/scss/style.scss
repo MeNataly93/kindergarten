@@ -1,33 +1,3 @@
 @import "base/index";
 
 @import "layouts/layout_000/index";
-
-@media (min-width: 350px) {
-  @import "layouts/layout_350/index";
-}
-
-@media (min-width: 500px) {
-  @import "layouts/layout_500/index";
-}
-
-@media (min-width: 760px) {
-  @import "layouts/layout_760/index";
-}
-
-@media (min-width: 890px) {
-  @import "layouts/layout_890/index";
-}
-
-@media (min-width: 1170px) {
-  @import "layouts/layout_1170/index";
-}
-
-@media (min-width: 1350px) {
-  @import "layouts/layout_1350/index";
-}
-
-@media (min-width: 1800px) {
-  @import "layouts/layout_1800/index";
-}
-
-

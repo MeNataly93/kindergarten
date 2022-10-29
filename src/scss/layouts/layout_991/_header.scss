@@ -1,0 +1,65 @@
+.header {  
+display: inherit;
+&__contacts{
+    list-style-type: none;
+    display: flex;
+    width: auto;
+    
+    &__item{    
+        text-decoration: none;
+        position: relative;
+        margin-right: 50px;
+        font-family: $mainFontFamily;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.4em;
+        &_item1::before{
+            content: "";
+            background-color: $main;
+            background-image: url(../../../i/optim/envelope.svg);
+            background-size: 10px;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+            border-radius: 100%;
+            position: absolute;
+            left: -25px;
+        }
+        &_item2::before{
+            content: "";
+            background-color: $main;
+            background-image: url(../../../i/optim/geo.svg);
+            background-size: 10px;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+            border-radius: 100%;
+            position: absolute;
+            left: -25px;
+        }
+        &_item3::before{
+            content: "";
+            background-color: $main;
+            background-image: url(../../../i/optim/phone-call.svg);
+            background-size: 10px;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+            border-radius: 100%;
+            position: absolute;
+            left: -25px;
+        }
+
+
+        &__link{
+            text-decoration: none;
+            color: $dark-grey;
+            &:visited{
+                color: $dark-grey;
+            }
+        }
+}}}
+

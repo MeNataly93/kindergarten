@@ -2,6 +2,10 @@
 
 @import "layouts/layout_000/index";
 
-@media (min-width:991px){
-    @import "layouts/layout_991/index";
+@media (min-width:990px){
+    @import "layouts/layout_990/index";
+} 
+
+@media (min-width:1200px){
+    @import "layouts/layout_1200/index";
 } 

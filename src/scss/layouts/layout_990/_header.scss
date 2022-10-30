@@ -1,0 +1,140 @@
+.container {
+margin: 0;
+background-color: $blue-bg;
+position: relative;
+
+}
+
+.header {  
+display: flex;
+padding: 15px 15px 0px;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+justify-content: space-between;
+
+&__contacts {
+        list-style-type: none;
+        display: flex;
+        width: auto;
+        margin-top: 0;
+        padding-inline-start: 0;
+         margin-block-end: 0;
+        visibility: hidden;
+
+        &__item {
+            text-decoration: none;
+            position: relative;
+            margin-right: 45px;
+            font-family: $mainFontFamily;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.4em;
+            padding-top: 6px;
+
+            &_item1::before {
+                content: "";
+                background-color: $main;
+                background-image: url(../../../i/optim/envelope.svg);
+                background-size: 10px;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 18px;
+                height: 18px;
+                border-radius: 100%;
+                position: absolute;
+                left: -30px;
+                cursor: pointer;
+            }
+
+            &_item2::before {
+                content: "";
+                background-color: $main;
+                background-image: url(../../../i/optim/geo.svg);
+                background-size: 10px;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 18px;
+                height: 18px;
+                border-radius: 100%;
+                position: absolute;
+                left: -30px;
+                cursor: pointer;
+            }
+
+            &_item3::before {
+                content: "";
+                background-color: $main;
+                background-image: url(../../../i/optim/phone-call.svg);
+                background-size: 10px;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 18px;
+                height: 18px;
+                border-radius: 100%;
+                position: absolute;
+                left: -30px;
+                cursor: pointer;
+            }
+
+
+            &__link {
+                text-decoration: none;
+                color: $dark-grey;
+
+                &:visited {
+                    color: $dark-grey;
+                }
+            }
+        }
+    }
+
+&__icons {
+
+    width: 174px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    
+    &__item {
+        list-style-type: none;
+                    padding-top: 6px;
+        &__svg {
+            width: 20px;
+            height: 20px;
+            fill: $dark-grey;
+            &:hover {
+                fill: $main;
+                border-color: $main;
+            }
+            &_2{
+                border: 1.8px solid $dark-grey;
+                border-radius: 100%;
+            }
+        }
+    }
+}
+
+&__waves {
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+
+& svg {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+& .shape-fill {
+    fill: #C9DDE2;
+}
+}
+
+}
+
+

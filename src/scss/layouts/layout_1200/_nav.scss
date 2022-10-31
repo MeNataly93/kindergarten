@@ -1,0 +1,48 @@
+.nav-container {
+   
+
+    &__logo{
+       display: block;
+&__img{
+       
+    }}
+
+    &__nav{
+        display: block;
+        list-style-type: none;
+        padding-inline-start: 0;
+        display: flex;
+        &__item{
+          margin-right: 50px;  
+          font-family: $mainFontFamily;
+          text-transform: uppercase;
+          font-style: 14px;
+          font-weight: 700;
+          color: $dark-grey;
+          letter-spacing: 0;
+
+          &::after{
+            content: "!!";
+            height: 10px;
+                background: $dark-grey;
+                border-radius: 50px;
+          }
+
+          &:hover{
+            color: $main;
+            cursor: pointer;
+          }
+        }
+        
+    }
+
+    &__btn{
+        display: block;
+    }
+
+    &__menu{
+        display: none;
+
+    }
+  
+}

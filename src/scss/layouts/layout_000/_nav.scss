@@ -1,0 +1,33 @@
+.nav-container {
+   padding: 15px 15px 0px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    &__logo{
+        display: flex;
+        justify-content: center;
+&__img{
+        width: 143px;
+        margin-left: auto;
+        margin-right: auto;
+    }}
+
+    &__nav{
+        display: none;
+    }
+
+    &__btn{
+        display: none;
+    }
+
+    &__menu{
+        position: absolute;
+        right: 20px;
+        top: 27px;
+        fill: $dark-grey;
+
+    }
+  
+}

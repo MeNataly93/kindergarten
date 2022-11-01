@@ -1,6 +1,7 @@
 .nav-container {
     display: flex;
     align-items: center;
+    
    
 
     &__logo{
@@ -11,7 +12,6 @@
     }}
 
     &__nav{
-        display: block;
         list-style-type: none;
         padding-inline-start: 0;
         display: flex;
@@ -49,13 +49,34 @@
         
     }
 
-    &__btn{
+    &__btn-section{
         display: block;
         flex-basis: 20%;
+        position: relative;
+        
+
+        
+       
+        &__btn{
+          
+          display: block;
+          padding: 18px 40px;
+            background-color: $main;
+            border-radius: 25px;
+            font-family: $mainFontFamily;
+            color: $white;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 12px;
+            position: absolute;
+            right: 0;
+            top: 18px;
+        }
     }
 
     &__menu{
         display: none;
+        
 
     }
   

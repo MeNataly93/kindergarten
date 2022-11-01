@@ -4,6 +4,7 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    margin-top: 60px;
 
     &__logo{
         display: flex;
@@ -18,7 +19,7 @@
         display: none;
     }
 
-    &__btn{
+    &__btn-section__btn{
         display: none;
     }
 

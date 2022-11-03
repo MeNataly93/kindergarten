@@ -1,0 +1,71 @@
+.title {
+  padding: 15px 15px 0px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  &__intro {
+    font-family: $descriptionFontFamily;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1em;
+    color: $main;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: $titleFontFamily;
+    font-size: 40px;
+    line-height: 1.25em;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: $dark-grey;
+    margin-top: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+    &_span {
+      color: $main;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-family: $mainFontFamily;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: $grey;
+    margin-top: 20px;
+  }
+  &__button-section {
+    margin-top: 70px;
+    text-align: center;
+    &__button {
+      min-width: 210px;
+      padding: 18px 67px 18px 40px;
+      background-color: $main;
+      border-radius: 22px;
+      font-family: $mainFontFamily;
+      color: $white;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 1s linear;
+      position: relative;
+
+      &:hover {
+        background-color: $dark-grey;
+      }
+    }
+    &__arrow {
+      width: 27px;
+      position: absolute;
+      top: 11px;
+      right: 40px;
+    }
+  }
+}

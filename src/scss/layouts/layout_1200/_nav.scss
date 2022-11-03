@@ -1,98 +1,80 @@
 .nav-container {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    display: block;
+    flex-basis: 20%;
+  }
+
+  &__nav {
+    list-style-type: none;
+    padding-inline-start: 0;
     display: flex;
-    align-items: center;
-    
-   
+    justify-content: center;
+    flex-basis: 60%;
+    &__item {
+      margin-right: 50px;
+      font-family: $mainFontFamily;
+      text-transform: uppercase;
+      font-style: 14px;
+      font-weight: 700;
+      color: $dark-grey;
+      letter-spacing: 0;
+      position: relative;
 
-    &__logo{
-       display: block;
-       flex-basis: 20%;
-}
+      &__point {
+        fill: $dark-grey;
+        position: absolute;
+        top: 6px;
+        right: -10px;
+      }
 
-    &__nav{
-        list-style-type: none;
-        padding-inline-start: 0;
-        display: flex;
-        justify-content: center;
-        flex-basis: 60%;
-        &__item{
-          margin-right: 50px;  
-          font-family: $mainFontFamily;
-          text-transform: uppercase;
-          font-style: 14px;
-          font-weight: 700;
-          color: $dark-grey;
-          letter-spacing: 0;
-          position: relative;
+      &:hover {
+        color: $main;
+        cursor: pointer;
 
-          &__point {
-            fill: $dark-grey;
-            position: absolute;
-            top: 6px;
-            right: -10px;
-          }
-
-     
-          &:hover{
-            color: $main;
-            cursor: pointer;    
-            
-           & .point{
-                fill: $main; 
-            }
-          } 
-             
-         
+        & .point {
+          fill: $main;
         }
-        
+      }
     }
+  }
 
-    &__btn-section{
-        display: block;
-        flex-basis: 20%;
-        position: relative;
-        
+  &__btn-section {
+    display: block;
+    flex-basis: 20%;
+    position: relative;
 
-        
-       
-        &__btn{
-          
-          display: block;
-          padding: 18px 67px 18px 40px;
-            background-color: $main;
-            border-radius: 25px;
-            font-family: $mainFontFamily;
-            color: $white;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 12px;
-            position: absolute;
-            right: 0;
-            top: 18px;
-            cursor: pointer;
-            transition: 1s linear;
-            &:hover{
-              background-color: $dark-grey;
-            }
+    &__btn {
+      display: block;
+      padding: 18px 67px 18px 40px;
+      background-color: $main;
+      border-radius: 25px;
+      font-family: $mainFontFamily;
+      color: $white;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 12px;
+      position: absolute;
+      right: 0;
+      top: 18px;
+      cursor: pointer;
+      transition: 1s linear;
+      &:hover {
+        background-color: $dark-grey;
+      }
 
-            &__arrow {
-                width: 27px;
-                position: absolute;
-                top: 9px;
-                right: 35px;
-              }
-
-            
-        }
+      &__arrow {
+        width: 27px;
+        position: absolute;
+        top: 9px;
+        right: 35px;
+      }
     }
+  }
 
-    &__menu{
-        display: none;
-        
-
-    }
-  
+  &__menu {
+    display: none;
+  }
 }
-
-
-

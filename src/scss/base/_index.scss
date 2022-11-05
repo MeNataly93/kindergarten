@@ -1,13 +1,10 @@
-
 @import "vars";
 
 @if variable_exists(google-font) {
   @import url($google-font);
 }
 
-
 @import "mixins/utilites";
 
 @import "normalize";
 @import "reset_form";
-;

@@ -39,6 +39,8 @@
     line-height: 1.5em;
     color: $grey;
     margin-top: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
   }
   &__button-section {
     margin-top: 70px;
@@ -54,7 +56,7 @@
       text-transform: uppercase;
       font-size: 14px;
       cursor: pointer;
-      transition: 1s linear;
+      // transition: 1s linear;
       position: relative;
 
       &:hover {
@@ -95,5 +97,10 @@
     letter-spacing: 0;
     font-family: $titleFontFamily;
     color: $dark-grey;
+  }
+
+  &__slider {
+    width: 100%;
+    margin-top: 45px;
   }
 }

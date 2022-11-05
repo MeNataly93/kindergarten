@@ -16,10 +16,10 @@
     flex-basis: 60%;
     &__item {
       margin-right: 50px;
-      font-family: $mainFontFamily;
+      font-family: $titleFontFamily;
       text-transform: uppercase;
-      font-style: 14px;
-      font-weight: 700;
+      font-size: 14px;
+      font-weight: 400;
       color: $dark-grey;
       letter-spacing: 0;
       position: relative;
@@ -61,7 +61,7 @@
       right: 0;
       top: 18px;
       cursor: pointer;
-      transition: 1s linear;
+      // transition: 1s linear;
       &:hover {
         background-color: $dark-grey;
       }

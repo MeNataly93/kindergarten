@@ -1,0 +1,29 @@
+.title {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  &__container-1200 {
+    flex-basis: 570px;
+  }
+  &__slider-container {
+    flex-basis: 48%;
+  }
+  &__title {
+    font-size: 64px;
+  }
+  &__intro,
+  &__title,
+  &__description {
+    text-align: left;
+  }
+
+  &__button-and-phone {
+    justify-content: start;
+  }
+
+  &__slider {
+    width: 80%;
+    margin-bottom: auto;
+  }
+}

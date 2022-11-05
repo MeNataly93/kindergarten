@@ -1,0 +1,31 @@
+.title {
+  &__title {
+    font-size: 48px;
+  }
+  &__button-and-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65px;
+  }
+
+  &__phone-section {
+    margin-top: 0;
+    margin-left: 15px;
+  }
+
+  &__button-section {
+    margin-right: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &__slider-container {
+    display: flex;
+    justify-content: center;
+  }
+  &__slider {
+    max-width: 750px;
+    margin-top: 60px;
+  }
+}

@@ -1,8 +1,12 @@
 .statinfo-container {
   width: 93%;
 
+  &__dragon {
+    right: 300px;
+  }
+
   &__cactus {
-    left: -60px;
+    left: -30px;
   }
 }
 .statinfo {

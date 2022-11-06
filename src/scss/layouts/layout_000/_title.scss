@@ -100,29 +100,8 @@
     color: $dark-grey;
   }
 
-  // &__slider {
-  //   width: 100%;
-  //   margin-top: 72px;
-  // }
-
-  &__slider-container {
-    width: 100%;
-    height: 100%;
-    background-color: $blue;
-    clip-path: url(#path);
-    text-align: center;
-    vertical-align: middle;
-    padding: 10px;
-    position: relative;
-    margin-top: 72px;
-  }
-
   &__slider {
-    width: 777px;
-    height: 593px;
-    clip-path: url(#path);
-    position: absolute;
-    top: -44px;
-    left: 15px;
+    width: 100%;
+    margin-top: 72px;
   }
 }

@@ -1,0 +1,39 @@
+.statinfo-container {
+  width: 93%;
+
+  &__cactus {
+    left: -60px;
+  }
+}
+.statinfo {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "col1 col2 col3" "col1 col2 col3" "col1 col2 col3";
+  padding-top: 95px;
+  padding-bottom: 85px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__item {
+    &_1 {
+      grid-area: col1;
+      border-right: 4px dashed $border;
+    }
+    &_2 {
+      grid-area: col2;
+      border-right: 4px dashed $border;
+    }
+    &_3 {
+      grid-area: col3;
+    }
+
+    &__count {
+      margin-top: 0;
+    }
+
+    &__title {
+      margin-top: 25px;
+    }
+  }
+}

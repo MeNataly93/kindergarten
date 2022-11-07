@@ -1,0 +1,36 @@
+.about-container {
+  width: 93%;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 115px;
+  margin-top: 130px;
+  &__for-1200 {
+  }
+}
+
+.about {
+  &__img {
+  }
+
+  &__intro {
+    text-align: left;
+  }
+  &__title {
+    text-align: left;
+    font-size: 50px;
+  }
+  &__description {
+    text-align: left;
+    &_2 {
+      margin-bottom: 0;
+    }
+  }
+
+  &__button-section {
+    &__btn {
+      margin-left: 0;
+    }
+  }
+}

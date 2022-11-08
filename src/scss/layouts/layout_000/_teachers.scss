@@ -34,6 +34,7 @@
         width: 100%;
         max-width: 100%;
         border-radius: 50%;
+        cursor: pointer;
       }
       &__title {
         margin-bottom: 4px;
@@ -43,6 +44,10 @@
         font-weight: 400;
         color: $dark-grey;
         text-align: center;
+        cursor: pointer;
+        &:hover {
+          color: $main;
+        }
       }
 
       &__description {

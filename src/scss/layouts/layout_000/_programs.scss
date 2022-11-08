@@ -137,6 +137,9 @@
     position: absolute;
     left: calc(50% - 25px);
     bottom: -25px;
+    &:hover {
+      background-color: $dark-grey;
+    }
     &__img {
       width: 40px;
       padding: 5px;
@@ -163,4 +166,8 @@
     }
   }
   // WAVES-2 END
+
+  &__bg-img {
+    display: none;
+  }
 }

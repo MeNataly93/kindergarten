@@ -8,22 +8,14 @@
     grid-template-columns: repeat(4, 1fr);
 
     &__item__img {
-      // border: 4px dashed red;
-      // padding: 10px;
-      transition: all 0.2s ease;
-      position: relative;
+      padding: 5px;
+      border: 4px dashed red;
+      animation: border 2s linear infinite;
 
-      &::before {
-        content: "!!!";
-        border: 4px dashed red;
-        top: -10px;
-        right: -10px;
-        bottom: -10px;
-        left: -10px;
-        border-radius: 50%;
-        position: absolute;
-        animation: spinner 20250ms infinite linear;
-        transition: all 0.2s ease;
+      @keyframes border {
+        to {
+          transition: rotate(360deg);
+        }
       }
     }
   }

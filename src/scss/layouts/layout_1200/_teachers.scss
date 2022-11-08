@@ -1,0 +1,10 @@
+.teachers {
+  width: 100%;
+
+  &__title {
+    font-size: 54px;
+  }
+  &__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

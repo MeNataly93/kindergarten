@@ -7,14 +7,27 @@
   &__list {
     grid-template-columns: repeat(4, 1fr);
 
-    &__item__img {
-      padding: 5px;
-      border: 4px dashed red;
-      animation: border 2s linear infinite;
+    &__item {
+      &__outset {
+        position: relative;
+      }
+      &__inset {
+        position: absolute;
+        width: 105%;
+        height: 105%;
+        border-radius: 50%;
+        border: 4px dashed transparent;
+        top: -10px;
+        left: -8px;
+        animation: spin 20250ms linear infinite;
+        &:hover {
+          border-color: $dark-blue;
+        }
 
-      @keyframes border {
-        to {
-          transition: rotate(360deg);
+        @keyframes spin {
+          to {
+            transform: rotate(360deg);
+          }
         }
       }
     }

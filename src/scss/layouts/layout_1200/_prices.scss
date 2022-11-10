@@ -1,0 +1,39 @@
+.prices {
+  width: 95%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 38% 1fr;
+  grid-gap: 32px;
+  padding-top: 40px;
+  padding-left: 0;
+  padding-right: 0;
+  &__intro {
+    text-align: left;
+    margin-top: 80px;
+  }
+  &__title {
+    font-size: 54px;
+    text-align: left;
+    margin-bottom: 28px;
+  }
+
+  &__description {
+    text-align: left;
+  }
+
+  &__prices-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: start;
+    margin-top: 0;
+    padding-bottom: 50px;
+
+    &__item_1 {
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+  }
+}

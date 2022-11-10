@@ -191,6 +191,9 @@
       margin-right: auto;
       margin-top: 30px;
       line-height: 1.7em;
+      &:hover {
+        background-color: $dark-grey;
+      }
 
       &__arrow {
         width: 25px;
@@ -211,12 +214,12 @@
   left: 0;
 
   &_1 {
-    top: -90px;
+    top: -88px;
     transform: rotate(180deg);
   }
 
   &_2 {
-    bottom: -90px;
+    bottom: -88px;
   }
 
   & svg {

@@ -1,0 +1,10 @@
+.prices {
+  width: 1560px;
+  max-width: 1560px;
+  grid-gap: 140px;
+  padding-top: 150px;
+
+  &__prices-list {
+    padding-bottom: 120px;
+  }
+}

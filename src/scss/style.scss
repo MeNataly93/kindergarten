@@ -18,6 +18,14 @@
   @import "layouts/layout_1200/index";
 }
 
+@media (min-width: 1320px) {
+  @import "layouts/layout_1320/index";
+}
+
+@media (min-width: 1600px) {
+  @import "layouts/layout_1600/index";
+}
+
 @media (min-width: 1920px) {
   @import "layouts/layout_1920/index";
 }

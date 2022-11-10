@@ -1,9 +1,10 @@
 .prices-container {
   background-color: $beige;
+  position: relative;
 }
 
 .prices {
-  padding: 0 16px;
+  padding: 60px 16px 0;
 
   &__intro {
     color: $main;
@@ -24,6 +25,7 @@
     font-size: 36px;
     text-align: center;
     color: $dark-grey;
+    margin-top: 0;
   }
 
   &__description {
@@ -32,6 +34,7 @@
     font-family: $mainFontFamily;
     font-size: 16px;
     line-height: 1.7em;
+    margin-bottom: 32px;
   }
 
   &__competencies-list {
@@ -92,11 +95,18 @@
   &__prices-list {
     list-style-type: none;
     padding-inline-start: 0;
+
+    padding-bottom: 70px;
     &__item {
       background-color: $white;
       padding: 0px 0px 40px 0px;
       text-align: center;
       border-radius: 40px;
+
+      &_1 {
+        margin-top: 64px;
+        margin-bottom: 50px;
+      }
 
       &__img-container {
         background-size: cover;
@@ -111,6 +121,112 @@
           background-image: url(../../../i/img/prices/prices_foto_02.jpg);
         }
       }
+
+      &__price {
+        font-family: $mainFontFamily;
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: 600;
+        padding: 0 20px;
+        color: $dark-grey;
+        margin: 0;
+
+        &__usd {
+          vertical-align: super;
+          font-size: 24px;
+        }
+      }
+
+      &__level {
+        font-family: $titleFontFamily;
+        font-weight: 400;
+        color: $dark-blue;
+        font-size: 22px;
+        line-height: 28px;
+        padding: 0 20px;
+        margin: 4px 0 18px;
+        text-align: center;
+      }
+
+      &__sublist {
+        list-style-type: none;
+        padding-inline-start: 0;
+        margin-bottom: 28px;
+        padding: 0 30px;
+
+        &__subitem {
+          font-family: $mainFontFamily;
+          font-size: 16px;
+          line-height: 22px;
+          text-align: left;
+          padding: 8px 0px;
+          color: $dark-grey;
+          &__check {
+            color: $main;
+            font-family: $descriptionFontFamily;
+            font-size: 24px;
+            margin-right: 5px;
+          }
+        }
+      }
     }
+  }
+
+  &__btn-section {
+    &__btn {
+      min-width: 180px;
+      border-radius: 22px;
+      text-transform: uppercase;
+      font-size: 14px;
+      background-color: $main;
+      font-weight: 700;
+      font-family: $mainFontFamily;
+      padding: 12px 51px 12px 24px;
+
+      display: block;
+      color: $white;
+      cursor: pointer;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      line-height: 1.7em;
+
+      &__arrow {
+        width: 25px;
+        position: absolute;
+        top: 11px;
+        right: 35px;
+      }
+    }
+  }
+}
+
+.prices-waves {
+  position: absolute;
+
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  left: 0;
+
+  &_1 {
+    top: -90px;
+    transform: rotate(180deg);
+  }
+
+  &_2 {
+    bottom: -90px;
+  }
+
+  & svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 90px;
+  }
+
+  &__shape-fill {
+    fill: #f4eee5;
   }
 }

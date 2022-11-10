@@ -1,0 +1,116 @@
+.prices-container {
+  background-color: $beige;
+}
+
+.prices {
+  padding: 0 16px;
+
+  &__intro {
+    color: $main;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-family: $descriptionFontFamily;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 500;
+    line-height: 1em;
+    text-align: center;
+  }
+
+  &__title {
+    line-height: 1.1em;
+    font-family: $titleFontFamily;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: $dark-grey;
+  }
+
+  &__description {
+    color: $grey;
+    text-align: center;
+    font-family: $mainFontFamily;
+    font-size: 16px;
+    line-height: 1.7em;
+  }
+
+  &__competencies-list {
+    list-style-type: none;
+    padding-inline-start: 0;
+
+    &__item {
+      &__title {
+        font-family: $titleFontFamily;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 7px;
+        color: $dark-grey;
+      }
+      &__rating-border {
+        padding: 5px;
+        margin-top: 8px;
+        border: 2px dashed $rating-border;
+        border-radius: 100px;
+        position: relative;
+      }
+
+      &__rating-string {
+        background-color: $rating-string;
+        height: 6px;
+        line-height: 6px;
+        border-radius: 30px;
+        font-size: 11px;
+
+        &_92 {
+          width: 92%;
+        }
+
+        &_75 {
+          width: 75%;
+        }
+
+        &_63 {
+          width: 63%;
+        }
+      }
+
+      &__rating-number {
+        font-family: $mainFontFamily;
+        font-weight: 600;
+        line-height: 16px;
+        font-size: 20px;
+        color: $dark-grey;
+        position: absolute;
+        right: 0;
+        top: -30px;
+        margin: 0;
+      }
+    }
+  }
+
+  &__prices-list {
+    list-style-type: none;
+    padding-inline-start: 0;
+    &__item {
+      background-color: $white;
+      padding: 0px 0px 40px 0px;
+      text-align: center;
+      border-radius: 40px;
+
+      &__img-container {
+        background-size: cover;
+        min-height: 240px;
+        border-radius: 30px;
+        margin-bottom: 20px;
+
+        &_1 {
+          background-image: url(../../../i/img/prices/prices_foto_01.jpg);
+        }
+        &_2 {
+          background-image: url(../../../i/img/prices/prices_foto_02.jpg);
+        }
+      }
+    }
+  }
+}

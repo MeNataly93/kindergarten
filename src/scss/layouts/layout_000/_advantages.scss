@@ -1,8 +1,7 @@
 .advantages {
   margin-top: 90px;
-  padding-top: 64px;
-  padding-left: 10px;
-  padding-right: 10px;
+
+  padding: 64px 10px 80px;
   &__intro {
     margin-bottom: 12px;
     font-size: 16px;
@@ -32,6 +31,7 @@
 
     &__item {
       padding-left: 120px;
+      margin-bottom: 40px;
       &__title {
         font-size: 26px;
         line-height: 1.1em;
@@ -109,6 +109,10 @@
         font-size: 16px;
         font-family: $mainFontFamily;
         color: $dark-grey;
+      }
+
+      &__container {
+        min-height: 98px;
       }
     }
   }

@@ -1,0 +1,115 @@
+.advantages {
+  margin-top: 90px;
+  padding-top: 64px;
+  padding-left: 10px;
+  padding-right: 10px;
+  &__intro {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-family: $descriptionFontFamily;
+    color: $main;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 500;
+    line-height: 1em;
+    text-align: center;
+  }
+
+  &__title {
+    line-height: 1.1em;
+    margin: 0;
+    font-family: $titleFontFamily;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: $dark-grey;
+    padding-bottom: 64px;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-inline-start: 0;
+
+    &__item {
+      padding-left: 120px;
+      &__title {
+        font-size: 26px;
+        line-height: 1.1em;
+        margin: 0;
+        font-family: $titleFontFamily;
+        font-weight: 400;
+        color: $dark-grey;
+        position: relative;
+        padding-top: 4px;
+
+        &::before {
+          content: "";
+          background-size: 48px 48px;
+          background-repeat: no-repeat;
+          background-position: center;
+          left: -120px;
+
+          border-radius: 30px;
+          width: 98px;
+          height: 98px;
+          position: absolute;
+        }
+
+        &_1 {
+          &::before {
+            content: "";
+            background-image: url(../../../i/optim/toys.svg);
+            background-color: $beige;
+          }
+        }
+        &_2 {
+          &::before {
+            content: "";
+            background-image: url(../../../i/optim/learning.svg);
+            background-color: $rating-border;
+          }
+        }
+
+        &_3 {
+          &::before {
+            content: "";
+            background-image: url(../../../i/optim/rooms.svg);
+            background-color: $beige;
+          }
+        }
+        &_4 {
+          &::before {
+            content: "";
+            background-image: url(../../../i/optim/play.svg);
+            background-color: $rating-border;
+          }
+        }
+
+        &_5 {
+          &::before {
+            content: "";
+            background-image: url(../../../i/optim/food.svg);
+            background-color: $beige;
+          }
+        }
+
+        &_6 {
+          &::before {
+            content: "";
+            background-image: url(../../../i/optim/safe.svg);
+            background-color: $rating-border;
+          }
+        }
+      }
+
+      &__description {
+        margin-top: 14px;
+        opacity: 0.7;
+        line-height: 1.6em;
+        font-size: 16px;
+        font-family: $mainFontFamily;
+        color: $dark-grey;
+      }
+    }
+  }
+}

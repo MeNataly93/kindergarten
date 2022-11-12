@@ -1,0 +1,13 @@
+.gallery {
+  &__title {
+    font-size: 48px;
+  }
+
+  &__slider {
+    &__img {
+      width: 308px;
+      min-width: 308px;
+      height: 265px;
+    }
+  }
+}

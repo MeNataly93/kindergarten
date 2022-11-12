@@ -1,0 +1,14 @@
+.gallery {
+  padding: 42px 25px 120px;
+  &__title {
+    font-size: 54px;
+  }
+
+  &__slider {
+    &__img {
+      width: 243px;
+      min-width: 243px;
+      height: 209px;
+    }
+  }
+}

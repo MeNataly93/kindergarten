@@ -1,8 +1,10 @@
 .signup {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(../../../i/img/sign-bg-1200.png);
   padding: 130px 15px 79px 15px;
   position: relative;
-  animation: dragon 3s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
   &__title {
     font-size: 54px;
   }
@@ -18,12 +20,16 @@
       width: 172px;
       top: -97px;
       left: -73px;
-
-      transform: translateY(-30px);
-      // animation-name: dragon;
-      // animation-duration: 3s;
-      // animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-      // animation-iteration-count: infinite;
+      animation: dragon 1.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+      animation-direction: alternate;
+      @keyframes dragon {
+        from {
+          top: -97px;
+        }
+        to {
+          top: -67px;
+        }
+      }
     }
     &_cloud {
       width: 214px;
@@ -34,6 +40,18 @@
       width: 27px;
       top: 266px;
       right: -75px;
+
+      animation: spinning 3s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+      @keyframes spinning {
+        35% {
+          rotate: 360deg;
+        }
+        70% {
+          rotate: 0deg;
+        }
+        100% {
+        }
+      }
     }
   }
 }

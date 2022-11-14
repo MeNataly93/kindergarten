@@ -1,0 +1,27 @@
+.signup {
+  &__input-container {
+    width: 530px;
+  }
+
+  &__img {
+    &_dragon {
+      top: -125px;
+      left: -170px;
+
+      @keyframes dragon {
+        from {
+          top: -125px;
+        }
+        to {
+          top: -95px;
+        }
+      }
+    }
+    &_cloud {
+      left: -290px;
+    }
+    &_star {
+      top: 175px;
+    }
+  }
+}

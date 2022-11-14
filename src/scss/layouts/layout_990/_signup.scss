@@ -1,0 +1,39 @@
+.signup {
+  margin-left: 75px;
+  margin-right: 75px;
+  background-image: url(../../../i/img/sign-bg-1200.png);
+  padding: 130px 15px 79px 15px;
+  position: relative;
+
+  &__input-container {
+    width: 521px;
+  }
+
+  &__img {
+    display: block;
+    position: absolute;
+    &_dragon {
+      width: 172px;
+      top: -128px;
+      right: 14px;
+      animation: dragon 1.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+      animation-direction: alternate;
+      @keyframes dragon {
+        from {
+          top: -128px;
+        }
+        to {
+          top: -98px;
+        }
+      }
+    }
+    &_cloud {
+      width: 214px;
+      bottom: -40px;
+      left: -65px;
+    }
+    &_star {
+      display: none;
+    }
+  }
+}

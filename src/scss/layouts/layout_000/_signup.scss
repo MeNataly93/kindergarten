@@ -3,7 +3,7 @@
   padding: 64px 15px 64px 15px;
   background-color: $beige;
   border-radius: 60px;
-  margin-bottom: 130px;
+  margin-bottom: 220px;
   &__intro {
     color: $main;
     margin-bottom: 12px;
@@ -38,6 +38,8 @@
   }
   &__input-container {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
   }
   &__input {
     background-color: $white;
@@ -70,6 +72,9 @@
     padding-top: 40px;
     display: flex;
     justify-content: space-between;
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
   }
   &__follow {
     line-height: 1.4em;

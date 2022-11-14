@@ -1,34 +1,26 @@
 .signup {
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-
-  &__title {
-    font-size: 54px;
-  }
-
   &__img {
     &_dragon {
-      top: -97px;
-      left: -73px;
+      top: -105px;
+      left: -130px;
 
       @keyframes dragon {
         from {
-          top: -97px;
+          top: -105px;
         }
         to {
-          top: -67px;
+          top: -75px;
         }
       }
     }
     &_cloud {
-      bottom: 15px;
+      left: -115px;
     }
     &_star {
       display: block;
-      width: 27px;
-      top: 266px;
-      right: -75px;
+      width: 80px;
+      top: 230px;
+      right: -90px;
 
       animation: spinning 3s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
       @keyframes spinning {

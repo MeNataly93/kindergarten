@@ -1,0 +1,103 @@
+.footer {
+  background-color: $beige;
+  padding-top: 55px;
+  position: relative;
+  margin-top: 110px;
+
+  &__main-section {
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 34px;
+  }
+
+  &__logo {
+    &__img {
+      width: 143px;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 32px;
+    font-size: 16px;
+    font-family: $mainFontFamily;
+    line-height: 1.7em;
+    color: $dark-grey;
+  }
+  &__phone-section {
+    display: flex;
+    justify-content: center;
+  }
+  &__circle {
+    background-color: $main;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+  }
+
+  &__svg-call {
+    width: 16px;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+  }
+
+  &__number-call {
+    font-family: $titleFontFamily;
+    font-size: 26px;
+    line-height: 1.1em;
+    font-weight: 400;
+    color: $dark-grey;
+    margin: 0 0 0 10px;
+  }
+
+  &__section-2,
+  &__section-3 {
+    display: none;
+  }
+
+  &__rights-container {
+    padding: 0 15px;
+    text-align: center;
+    border-top: 1px solid $footer-border;
+  }
+
+  &__rights {
+    font-size: 12px;
+    font-family: $mainFontFamily;
+    color: $dark-grey;
+    line-height: 1.7em;
+    padding: 22px 0;
+    margin: 0;
+    &__span {
+      color: $main;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  &__waves {
+    position: absolute;
+    top: -89px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    & svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 90px;
+    }
+
+    &__shape-fill {
+      fill: #f4eee5;
+    }
+  }
+}

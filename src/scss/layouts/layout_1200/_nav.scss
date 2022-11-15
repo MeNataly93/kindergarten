@@ -24,6 +24,14 @@
       letter-spacing: 0;
       position: relative;
 
+      &_current {
+        color: $main;
+      }
+
+      & .point_current {
+        fill: $main;
+      }
+
       &__point {
         fill: $dark-grey;
         position: absolute;

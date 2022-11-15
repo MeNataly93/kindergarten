@@ -1,0 +1,121 @@
+.footer {
+  margin: 0;
+  padding-top: 40px;
+
+  &__section-2,
+  &__section-3 {
+    display: block;
+  }
+
+  &__main-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    margin: 0 auto;
+    padding-bottom: 34px;
+    width: 1180px;
+    max-width: 1180px;
+  }
+  &__company {
+    line-height: 1em;
+    margin: 0 0 24px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: $titleFontFamily;
+    color: $dark-grey;
+    padding-top: 25px;
+
+    &__list {
+      list-style-type: none;
+      padding-inline-start: 0;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+
+      &__item {
+        font-size: 16px;
+        padding: 4px 0;
+        line-height: 1.7em;
+        font-family: $mainFontFamily;
+        color: $dark-grey;
+
+        &_current {
+          color: $main;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  &__galleries {
+    line-height: 1em;
+    margin: 0 0 24px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: $titleFontFamily;
+    color: $dark-grey;
+    padding-top: 25px;
+
+    &__slider {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 12px;
+      max-width: 276px;
+      padding: 6px;
+
+      &__img {
+        width: 60px;
+        max-width: 60px;
+        border-radius: 8px;
+        height: 52px;
+        background-size: 100% 100%;
+
+        &_1 {
+          background-image: url(../../../i/img/gallery/gallery_01.jpg);
+        }
+        &_2 {
+          background-image: url(../../../i/img/gallery/gallery_02.jpg);
+        }
+        &_3 {
+          background-image: url(../../../i/img/gallery/gallery_03.jpg);
+        }
+        &_4 {
+          background-image: url(../../../i/img/gallery/gallery_04.jpg);
+        }
+        &_5 {
+          background-image: url(../../../i/img/gallery/gallery_05.jpg);
+        }
+        &_6 {
+          background-image: url(../../../i/img/gallery/gallery_06.jpg);
+        }
+        &_7 {
+          background-image: url(../../../i/img/gallery/gallery_07.jpg);
+        }
+        &_8 {
+          background-image: url(../../../i/img/gallery/gallery_08.jpg);
+        }
+      }
+    }
+  }
+
+  &__section-1 {
+    text-align: left;
+  }
+  &__text {
+    max-width: 250px;
+    margin-left: 0;
+  }
+  &__phone-section {
+    justify-content: start;
+  }
+
+  &__logo__img {
+    margin-bottom: 36px;
+  }
+
+  &__section-2 {
+    text-align: left;
+  }
+  &__section-3 {
+    text-align: left;
+  }
+}

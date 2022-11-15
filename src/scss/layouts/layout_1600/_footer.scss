@@ -1,0 +1,13 @@
+.footer {
+  padding-right: 231px;
+
+  &__main-section {
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(3, 523.5px);
+  }
+
+  &__text {
+    max-width: 383px;
+  }
+}

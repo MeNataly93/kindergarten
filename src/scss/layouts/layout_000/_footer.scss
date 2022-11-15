@@ -25,6 +25,9 @@
     font-family: $mainFontFamily;
     line-height: 1.7em;
     color: $dark-grey;
+    max-width: 763px;
+    margin-left: auto;
+    margin-right: auto;
   }
   &__phone-section {
     display: flex;

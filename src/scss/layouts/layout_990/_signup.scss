@@ -35,5 +35,15 @@
     &_star {
       display: none;
     }
+
+    &_giraffe {
+      width: 20%;
+      right: 0;
+      top: 430px;
+    }
+  }
+
+  &__follow-section {
+    position: relative;
   }
 }

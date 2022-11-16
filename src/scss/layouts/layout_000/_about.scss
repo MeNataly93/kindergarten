@@ -102,9 +102,31 @@
       margin-right: auto;
       margin-top: 48px;
 
-      &:hover {
-        background-color: $dark-grey;
+      // ANIMATION OF BUTTON_START
+      z-index: 1;
+      overflow: hidden;
+      transition: color 0.25s ease-in-out;
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 100%;
+        background: $dark-grey;
+        z-index: -1;
+        transition: width 0.25s ease-in-out;
       }
+      &:hover {
+        color: #fff;
+        &:after {
+          width: 100%;
+        }
+      }
+      // ANIMATION OF BUTTON_END
+
       &__arrow {
         width: 27px;
         position: absolute;

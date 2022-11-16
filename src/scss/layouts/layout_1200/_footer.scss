@@ -38,6 +38,10 @@
         font-family: $mainFontFamily;
         color: $dark-grey;
 
+        &__span {
+          cursor: pointer;
+        }
+
         &_current {
           color: $main;
           font-weight: 600;

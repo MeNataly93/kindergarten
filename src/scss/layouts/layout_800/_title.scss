@@ -16,13 +16,28 @@
   &__phone-section {
     margin-top: 0;
     margin-left: 15px;
+    &:hover .number {
+      background-color: $dark-grey;
+    }
   }
 
   &__button-section {
     margin-right: 15px;
     margin-top: auto;
     margin-bottom: auto;
+
+    &__button {
+      &:hover {
+        color: #fff;
+        &:after {
+          width: 100%;
+        }
+      }
+    }
   }
-
-
+  &__circle {
+    &:hover {
+      background-color: $dark-grey;
+    }
+  }
 }

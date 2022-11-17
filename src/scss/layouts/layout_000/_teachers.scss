@@ -46,7 +46,7 @@
         color: $dark-grey;
         text-align: center;
         cursor: pointer;
-        &:hover {
+        &:focus {
           color: $main;
         }
       }

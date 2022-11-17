@@ -209,7 +209,7 @@
         z-index: -1;
         transition: width 0.25s ease-in-out;
       }
-      &:hover {
+      &:focus {
         color: #fff;
         &:after {
           width: 100%;

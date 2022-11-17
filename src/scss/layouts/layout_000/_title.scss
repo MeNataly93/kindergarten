@@ -73,7 +73,7 @@
         z-index: -1;
         transition: width 0.25s ease-in-out;
       }
-      &:hover {
+      &:focus {
         color: #fff;
         &:after {
           width: 100%;
@@ -96,7 +96,7 @@
     cursor: pointer;
     transition: 0.2s ease;
 
-    &:hover .number {
+    &:focus .number {
       background-color: $dark-grey;
     }
   }
@@ -112,7 +112,7 @@
     margin-right: 15px;
     cursor: pointer;
     transition: 0.2s ease;
-    &:hover {
+    &:focus {
       background-color: $dark-grey;
     }
   }

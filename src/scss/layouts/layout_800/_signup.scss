@@ -21,4 +21,17 @@
     width: 270px;
     max-width: 270px;
   }
+  &__button {
+    &:hover {
+      background-color: $signup-button;
+    }
+  }
+
+  &__follow-list {
+    &__item {
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
+  }
 }

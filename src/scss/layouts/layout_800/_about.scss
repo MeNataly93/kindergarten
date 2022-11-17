@@ -1,0 +1,12 @@
+.about {
+  &__button-section {
+    &__btn {
+      &:hover {
+        color: #fff;
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

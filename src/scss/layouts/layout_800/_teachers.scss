@@ -5,4 +5,14 @@
   &__title {
     font-size: 48px;
   }
+
+  &__list {
+    &__item {
+      &__title {
+        &:hover {
+          color: $main;
+        }
+      }
+    }
+  }
 }

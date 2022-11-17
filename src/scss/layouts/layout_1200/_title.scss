@@ -4,7 +4,7 @@
   justify-content: space-between;
 
   &__container-1200 {
-    flex-basis: 37%;
+    flex-basis: 620px;
   }
   &__slider-container {
     flex-basis: 45%;
@@ -15,6 +15,10 @@
   }
   &__title {
     font-size: 64px;
+  }
+
+  &__description {
+    width: 90%;
   }
   &__intro,
   &__title,

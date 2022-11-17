@@ -4,11 +4,14 @@
   justify-content: space-between;
 
   &__container-1200 {
-    flex-basis: 570px;
+    flex-basis: 37%;
   }
   &__slider-container {
-    flex-basis: 48%;
-    justify-content: end;
+    flex-basis: 45%;
+
+    margin-top: 95px;
+    margin-bottom: 30px;
+    margin-right: 0;
   }
   &__title {
     font-size: 64px;
@@ -25,7 +28,6 @@
 
   &__slider {
     width: 100%;
-    margin-bottom: auto;
-    margin-top: 100px;
+    margin-top: 25px;
   }
 }

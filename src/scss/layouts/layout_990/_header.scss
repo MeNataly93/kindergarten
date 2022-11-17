@@ -98,6 +98,10 @@
     &__item {
       list-style-type: none;
       padding-top: 6px;
+
+      &_3 {
+        position: relative;
+      }
       &__svg {
         width: 20px;
         height: 20px;
@@ -109,6 +113,25 @@
         &_2 {
           border: 1.8px solid $dark-grey;
           border-radius: 100%;
+        }
+        &_3 {
+          &_buy {
+            background-color: $main;
+            color: $white;
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            z-index: 1000;
+            font-size: 12px;
+            font-weight: 400;
+            font-family: $titleFontFamily;
+            line-height: 18px;
+            text-align: center;
+            margin: 0;
+            top: 0;
+            right: -10px;
+          }
         }
       }
     }

@@ -32,10 +32,8 @@
       grid-template-columns: 1fr 1.5fr;
 
       &__item {
-        font-size: 16px;
         padding: 4px 0;
-        line-height: 1.7em;
-        font-family: $mainFontFamily;
+
         color: $dark-grey;
 
         &__span {

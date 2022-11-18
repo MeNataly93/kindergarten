@@ -5,34 +5,21 @@
   border-radius: 60px;
   margin-bottom: 220px;
   &__intro {
-    color: $main;
+    @include intro;
     margin-bottom: 12px;
-    font-size: 16px;
-    font-family: $descriptionFontFamily;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-weight: 500;
-    line-height: 1em;
-    text-align: center;
+    margin-top: 0;
   }
 
   &__title {
-    line-height: 1.1em;
+    @include h2;
     margin: 0;
-    font-family: $titleFontFamily;
-    font-weight: 400;
-    font-size: 36px;
-    color: $dark-grey;
-    text-align: center;
     padding-bottom: 32px;
   }
 
   &__description {
     color: $grey;
-    font-family: $mainFontFamily;
-    font-size: 16px;
+
     text-align: center;
-    line-height: 1.7em;
     padding-bottom: 40px;
     margin: 0;
   }
@@ -47,7 +34,6 @@
     font-weight: 400;
     font-size: 16px;
     border-radius: 22px;
-    font-family: $mainFontFamily;
     padding: 16px 0px 16px 20px;
     line-height: 1.15;
     width: 100%;

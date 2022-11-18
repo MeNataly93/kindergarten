@@ -1,143 +1,63 @@
-@mixin black-search ($left, $visibility) {
-    width: 80px;
-    position: absolute;
-    left: $left;
-    display: block;
-    font-family: "Quicksand", sans-serif;
-    color: $white;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 10px;
-    letter-spacing: -0.025em;
-    text-transform: uppercase;
-    background: url(../../../i/optim/black-bottom.svg) no-repeat;
-    background-size: 80px 36px;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-top: 16px;
-    padding-bottom: 10px;
-    text-align: center;
-    margin-top: 12px;
-    visibility: $visibility;
-    @content;
-}
+// BUTTON
 
-@mixin red-stripes ($mt, $w, $l, $r) {
-    width: 212px;
-    display: flex;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 15px;
-    letter-spacing: -0.025em;
-    margin-top: $mt;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    text-align: center;
+@mixin button {
+  padding: 18px 67px 18px 40px;
+  background-color: $main;
+  border-radius: 22px;
+  font-family: $mainFontFamily;
 
-
-&::before {
-content: "";
-background: url(../../../i/optim/red-stripe.svg) no-repeat;
-width: $w;
-height: 16px;
-position: absolute;
-left: $l;
-top: 50%;
-}
-
-&::after {
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 0.25s ease-in-out;
+  &:after {
     content: "";
-    background: url(../../../i/optim/red-stripe.svg) no-repeat;
-    width: $w;
-    height: 16px;
     position: absolute;
-    right: $r;
-    top: 50%;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: $dark-grey;
+    z-index: -1;
+    transition: width 0.25s ease-in-out;
+  }
+  &:focus {
+    color: #fff;
+    &:after {
+      width: 100%;
     }
-    @content;
+  }
+  @content;
 }
 
+// INTRO
+@mixin intro {
+  color: $main;
+  font-family: $descriptionFontFamily;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+}
 
-
-// @function image($file) {
-//   @return url($imagesPath + $file);
-// }
-
-// @function font($file) {
-//   @return url($fontsPath + $file);
-// }
-
-// @function userfile($file) {
-//   @return url($usersFilesPath + $file);
-// }
-
-// @function asset($type, $file) {
-//   @if $type == image {
-//     @return url($imagesPath + $file);
-//   } @else if $type == font {
-//     @return url($fontsPath + $file);
-//   } @else if $type == userfile {
-//     @return url($usersFilesPath + $file);
-//   }
-// }
-
-// @function em($target, $current: $baseFontSize) {
-//   @return ($target / $current) * 1em;
-// }
-
-// @function rem($target) {
-//   @return ($target / $baseFontSize) * 1rem;
-// }
-
-// @mixin e($element) {
-//   &__#{$element} {
-//     @content;
-//   }
-// }
-
-// @mixin m($modifier) {
-//   &_#{$modifier} {
-//     @content;
-//   }
-// }
-
-// @mixin mq($width) {
-//   @media (min-width: $width) {
-//     @content;
-//   }
-// }
-
-// @mixin noselect() {
-//   -webkit-touch-callout: none;
-//   -webkit-user-select: none;
-//   -moz-user-select: none;
-//   -ms-user-select: none;
-//   user-select: none;
-// }
-
-// @mixin font($f, $s, $w: "") {
-//   font: #{$w} $s $f;
-// }
-
-// @mixin setCssVar($cssProp, $val) {
-//   $prefix: if(variable-exists(prefix), #{$prefix}, "");
-//   --#{$prefix}#{$cssProp}: #{$val};
-// }
-
-// @mixin getCssVar($cssProp, $cssVar: $cssProp) {
-//   $prefix: if(variable-exists(prefix), #{$prefix}, "");
-//   #{$cssProp}: var(--#{$prefix}#{$cssVar});
-// }
-
-// @mixin before($img, $w, $h) {
-//   &::before {
-//     content: "";
-//     display: block;
-//     position: absolute;
-//     background: url(#{$i}#{$img}) no-repeat;
-//     width: $w;
-//     height: $h;
-//     @content;
-//   }
-// }
+// H2
+@mixin h2 {
+  font-family: $titleFontFamily;
+  line-height: 1.1em;
+  font-size: 36px;
+  font-weight: 400;
+  color: $dark-grey;
+  text-align: center;
+  margin-block-start: 0;
+  letter-spacing: 0;
+  margin-block-end: 0;
+  @content;
+}

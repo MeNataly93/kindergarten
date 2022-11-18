@@ -3,25 +3,15 @@
 
   padding: 64px 10px 80px;
   &__intro {
+    @include intro;
     margin-bottom: 12px;
-    font-size: 16px;
-    font-family: $descriptionFontFamily;
-    color: $main;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-weight: 500;
-    line-height: 1em;
-    text-align: center;
+    margin-top: 0;
   }
 
   &__title {
-    line-height: 1.1em;
+    @include h2;
     margin: 0;
-    font-family: $titleFontFamily;
-    font-weight: 400;
-    font-size: 36px;
-    text-align: center;
-    color: $dark-grey;
+
     padding-bottom: 64px;
   }
 
@@ -107,7 +97,6 @@
         opacity: 0.7;
         line-height: 1.6em;
         font-size: 16px;
-        font-family: $mainFontFamily;
         color: $dark-grey;
       }
 

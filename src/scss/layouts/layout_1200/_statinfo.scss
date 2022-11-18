@@ -38,5 +38,10 @@
     &__title {
       margin-top: 25px;
     }
+
+    &__description {
+      width: 100%;
+      min-width: auto;
+    }
   }
 }

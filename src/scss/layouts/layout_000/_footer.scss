@@ -21,9 +21,7 @@
 
   &__text {
     margin: 0 0 32px;
-    font-size: 16px;
-    font-family: $mainFontFamily;
-    line-height: 1.7em;
+
     color: $dark-grey;
     max-width: 763px;
     margin-left: auto;
@@ -73,9 +71,7 @@
 
   &__rights {
     font-size: 12px;
-    font-family: $mainFontFamily;
     color: $dark-grey;
-    line-height: 1.7em;
     padding: 22px 0;
     margin: 0;
     &__span {

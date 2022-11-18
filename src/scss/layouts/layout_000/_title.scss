@@ -34,7 +34,6 @@
 
   &__description {
     text-align: center;
-    font-family: $mainFontFamily;
     font-size: 18px;
     line-height: 1.5em;
     color: $grey;
@@ -44,42 +43,10 @@
     margin-top: 70px;
     text-align: center;
     &__button {
+      @include button;
       min-width: 210px;
-      padding: 18px 67px 18px 40px;
-      background-color: $main;
-      border-radius: 22px;
-      font-family: $mainFontFamily;
-      color: $white;
-      font-weight: 700;
-      text-transform: uppercase;
       font-size: 14px;
-      cursor: pointer;
       position: relative;
-
-      // ANIMATION OF BUTTON_START
-      z-index: 1;
-      overflow: hidden;
-      transition: color 0.25s ease-in-out;
-      &:after {
-        content: "";
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 100%;
-        background: $dark-grey;
-        z-index: -1;
-        transition: width 0.25s ease-in-out;
-      }
-      &:focus {
-        color: #fff;
-        &:after {
-          width: 100%;
-        }
-      }
-      // ANIMATION OF BUTTON_END
     }
     &__arrow {
       width: 27px;

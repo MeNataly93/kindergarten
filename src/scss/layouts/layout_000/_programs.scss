@@ -32,24 +32,11 @@
   // WAVES END
 
   &__intro {
-    color: $main;
-    font-size: 16px;
-    font-family: $descriptionFontFamily;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-weight: 500;
-    line-height: 1em;
-    margin-bottom: 12px;
-    text-align: center;
+    @include intro;
   }
 
   &__title {
-    line-height: 1.1em;
-    font-family: $titleFontFamily;
-    font-weight: 400;
-    font-size: 36px;
-    color: $dark-grey;
-    text-align: center;
+    @include h2;
     padding-bottom: 48px;
     margin-bottom: 0;
     margin-top: 0;
@@ -110,9 +97,7 @@
 
       &__sub-item {
         padding: 8px 0px;
-        font-size: 16px;
         line-height: 24px;
-        font-family: $mainFontFamily;
         color: $dark-grey;
         &_3 {
           color: $white;
@@ -130,39 +115,13 @@
     text-align: center;
   }
   &__btn {
-    background-color: $main;
-    border-radius: 22px;
+    @include button;
+    padding: 0;
     width: 50px;
     height: 50px;
     position: absolute;
     left: calc(50% - 25px);
     bottom: -25px;
-    cursor: pointer;
-
-    // ANIMATION OF BUTTON_START
-    z-index: 1;
-    overflow: hidden;
-    transition: color 0.25s ease-in-out;
-    &:after {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 0;
-      height: 100%;
-      background: $dark-grey;
-      z-index: -1;
-      transition: width 0.25s ease-in-out;
-    }
-    &:focus {
-      color: #fff;
-      &:after {
-        width: 100%;
-      }
-    }
-    // ANIMATION OF BUTTON_END
 
     &__img {
       width: 40px;

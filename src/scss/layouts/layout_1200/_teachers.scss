@@ -16,10 +16,10 @@
       &__inset {
         position: absolute;
         width: 105%;
-        height: 105%;
-        border-radius: 50%;
+        height: 102%;
+        border-radius: 100%;
         border: 4px dashed transparent;
-        top: -10px;
+        top: -7px;
         left: -8px;
         animation: spin 20250ms linear infinite;
         &:hover {

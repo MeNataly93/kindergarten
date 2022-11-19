@@ -24,7 +24,7 @@
       &__img {
         width: 100%;
         max-width: 100%;
-        border-radius: 50%;
+        border-radius: 100%;
         cursor: pointer;
       }
       &__title {
@@ -36,6 +36,7 @@
         color: $dark-grey;
         text-align: center;
         cursor: pointer;
+        margin-top: 25px;
         &:focus {
           color: $main;
         }

@@ -15,7 +15,7 @@
   <!-- HEADER -->
 
 
-  <header class="header-container">
+  <header class="header-container" id="header-container">
     <section class="header">
       <ul class="header__contacts">
         <li class="header__contacts__item header__contacts__item_item1"><a href="#"
@@ -68,45 +68,47 @@
   <!-- NAV -->
 
 
-  <section class="nav-container">
-    <a class="nav-container__logo" href="#"><img src="i/img/logo_buba_2x.png" alt="Logo"
-        class="nav-container__logo__img"></a>
-    <svg class="nav-container__menu" xmlns="http://www.w3.org/2000/svg" iewBox='0 0 490.667 490.667' width="28"
-      height="28">
-      <use xlink: href="i/sprite.svg#menu-burger"> </use>
-    </svg>
+  <div class="nav" id="nav">
+    <section class="nav-container">
+      <a class="nav-container__logo" href="#"><img src="i/img/logo_buba_2x.png" alt="Logo"
+          class="nav-container__logo__img"></a>
+      <svg class="nav-container__menu" xmlns="http://www.w3.org/2000/svg" iewBox='0 0 490.667 490.667' width="28"
+        height="28">
+        <use xlink: href="i/sprite.svg#menu-burger"> </use>
+      </svg>
 
-    <ul class="nav-container__nav">
-      <li class="nav-container__nav__item nav-container__nav__item_current"><a>Home <svg
-            class="nav-container__nav__item__point point point_current" xmlns="http://www.w3.org/2000/svg"
-            viewBox='0 0 200 200' width="6" height="6">
-            <use xlink: href="i/sprite.svg#point"></use>
-          </svg></a></li>
-      <li class="nav-container__nav__item"><a>About Us <svg class="nav-container__nav__item__point point"
-            xmlns="http://www.w3.org/2000/svg" viewBox='0 0 200 200' width="6" height="6">
-            <use xlink: href="i/sprite.svg#point"></use>
-          </svg></a></li>
-      <li class="nav-container__nav__item"><a>Products <svg class="nav-container__nav__item__point point"
-            xmlns="http://www.w3.org/2000/svg" viewBox='0 0 200 200' width="6" height="6">
-            <use xlink: href="i/sprite.svg#point"></use>
-          </svg></a></li>
-      <li class="nav-container__nav__item"><a>Blog <svg class="nav-container__nav__item__point point"
-            xmlns="http://www.w3.org/2000/svg" viewBox='0 0 200 200' width="6" height="6">
-            <use xlink: href="i/sprite.svg#point"></use>
-          </svg></a></li>
-      <li class="nav-container__nav__item"><a>Contacts <svg class="nav-container__nav__item__point point"
-            xmlns="http://www.w3.org/2000/svg" viewBox='0 0 200 200' width="6" height="6">
-            <use xlink: href="i/sprite.svg#point"></use>
-          </svg></a></li>
-    </ul>
+      <ul class="nav-container__nav">
+        <li class="nav-container__nav__item nav-container__nav__item_current"><a>Home <svg
+              class="nav-container__nav__item__point point point_current" xmlns="http://www.w3.org/2000/svg"
+              viewBox='0 0 200 200' width="6" height="6">
+              <use xlink: href="i/sprite.svg#point"></use>
+            </svg></a></li>
+        <li class="nav-container__nav__item"><a>About Us <svg class="nav-container__nav__item__point point"
+              xmlns="http://www.w3.org/2000/svg" viewBox='0 0 200 200' width="6" height="6">
+              <use xlink: href="i/sprite.svg#point"></use>
+            </svg></a></li>
+        <li class="nav-container__nav__item"><a>Products <svg class="nav-container__nav__item__point point"
+              xmlns="http://www.w3.org/2000/svg" viewBox='0 0 200 200' width="6" height="6">
+              <use xlink: href="i/sprite.svg#point"></use>
+            </svg></a></li>
+        <li class="nav-container__nav__item"><a>Blog <svg class="nav-container__nav__item__point point"
+              xmlns="http://www.w3.org/2000/svg" viewBox='0 0 200 200' width="6" height="6">
+              <use xlink: href="i/sprite.svg#point"></use>
+            </svg></a></li>
+        <li class="nav-container__nav__item"><a>Contacts <svg class="nav-container__nav__item__point point"
+              xmlns="http://www.w3.org/2000/svg" viewBox='0 0 200 200' width="6" height="6">
+              <use xlink: href="i/sprite.svg#point"></use>
+            </svg></a></li>
+      </ul>
 
-    <section class="nav-container__btn-section">
-      <button class="nav-container__btn-section__btn">Book a visit <img class="nav-container__btn-section__btn__arrow"
-          src="i/img/right-arrow-white.png" alt="arrow"></button>
+      <section class="nav-container__btn-section">
+        <button class="nav-container__btn-section__btn">Book a visit <img class="nav-container__btn-section__btn__arrow"
+            src="i/img/right-arrow-white.png" alt="arrow"></button>
 
 
+      </section>
     </section>
-  </section>
+  </div>
 
 
   <!-- TITLE -->
@@ -769,6 +771,14 @@
       </section>
   </section>
 
+  <!-- ARROW (SCROLL) -->
+  <a class="arrow" id="arrow" href="#header-container"><img class="arrow__img" src="i/img/right-arrow-white.png"
+      alt="arrow"></a>
+
+
+
+
+  <script src="js/script.js"></script>
 
 
 </body>

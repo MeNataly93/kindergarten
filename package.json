@@ -41,6 +41,7 @@
     "webpack-merge-and-include-globally": "^2.3.4"
   },
   "dependencies": {
-    "copy-webpack-plugin": "^11.0.0"
+    "copy-webpack-plugin": "^11.0.0",
+    "smooth-scroll": "^16.1.3"
   }
 }

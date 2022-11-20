@@ -41,3 +41,33 @@
 .box-shadow {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+
+// OPENED NAV
+
+.nav {
+  &__hidden-block {
+    width: 250px;
+    padding: 6px 0px 8px;
+    border-radius: 30px;
+    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.15);
+    background-color: $white;
+  }
+
+  &__hidden-list {
+    list-style-type: none;
+    padding-inline-start: 0;
+
+    &__item {
+      padding: 4px 16px 6px 16px;
+      margin: 0 10px;
+      color: $dark-grey;
+      cursor: pointer;
+      &_arrow {
+        padding-left: 7px;
+      }
+      &:hover {
+        color: $main;
+      }
+    }
+  }
+}

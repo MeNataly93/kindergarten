@@ -72,11 +72,20 @@
     <section class="nav-container">
       <a class="nav-container__logo" href="#"><img src="i/img/logo_buba_2x.png" alt="Logo"
           class="nav-container__logo__img"></a>
-      <a href="#"><svg class="nav-container__menu" xmlns="http://www.w3.org/2000/svg" viewBox='0 0 490.667 490.667'
-          width="28" height="28">
-          <use xlink: href="i/sprite.svg#menu-burger"> </use>
-        </svg>
-      </a>
+
+      <!-- Menu button -->
+      <div id="menu-button-container">
+        <a href="#"><svg id="menu-button" class="nav-container__menu" xmlns="http://www.w3.org/2000/svg"
+            viewBox='0 0 490.667 490.667' width="28" height="28">
+            <use xlink: href="i/sprite.svg#menu-burger"> </use>
+          </svg>
+        </a>
+        <a href="#"><svg id="close-button" class="nav-container__menu none" xmlns="http://www.w3.org/2000/svg"
+            viewBox='0 0 24 24' width="28" height="28">
+            <use xlink: href="i/sprite.svg#close"> </use>
+          </svg>
+        </a>
+      </div>
 
       <ul class="nav-container__nav">
         <li class="nav-container__nav__item nav-container__nav__item_current">Home <svg
@@ -112,7 +121,14 @@
   </div>
 
   <!-- OPENED NAV (small)-->
-  <div class="nav__small__hidden-block nav__small__hidden-block_container">
+  <div id="menu-container-small" class="nav__small__hidden-block nav__small__hidden-block_container active">
+
+
+
+
+
+
+
     <ul class="nav__small__hidden-list">
 
       <!-- Home -->
@@ -972,8 +988,7 @@
 
 
 
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.6.1.min.js"></script>
   <script src="js/script.js"></script>
 
 

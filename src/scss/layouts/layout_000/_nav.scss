@@ -50,8 +50,9 @@
 
 .nav__small {
   &__hidden-block {
-    background-color: $dark-grey;
-
+    background-color: $beige;
+    display: none;
+    position: relative;
     &_container {
       padding-top: 50px;
       padding-bottom: 50px;
@@ -65,14 +66,14 @@
       font-family: $titleFontFamily;
       line-height: 1.5em;
       font-size: 18px;
-      color: $white;
-      margin: 4px 10px 4px 0;
+      color: $grey;
+      margin: 6px 10px 0px 0;
       padding-left: 45px;
       position: relative;
 
       &_main {
         font-size: 22px;
-        color: $white;
+        color: $dark-grey;
         padding-left: 35px;
         padding-top: 20px;
       }
@@ -80,6 +81,9 @@
       &_arrow {
         position: absolute;
         right: 35px;
+        font-size: 22px;
+        color: $grey;
+        cursor: pointer;
       }
     }
   }

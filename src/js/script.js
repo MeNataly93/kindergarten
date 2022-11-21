@@ -30,18 +30,25 @@ const mobileMenuContainer = $("#menu-container-small");
 menuButtonContainer.on("click", function (e) {
   e.preventDefault();
   menuButton.toggleClass("none");
-  closeButton.toggleClass("none");
-  mobileMenuContainer.slideToggle();
+  if (menuButton.hasClass("none")) {
+    closeButton.removeClass("none");
+    mobileMenuContainer.slideDown();
+  } else {
+    closeButton.addClass("none");
+    mobileMenuContainer.slideUp();
+  }
 });
 
 function resetMobileMenu() {
-  menuButton.removeClass("active");
+  menuButton.removeClass("none");
+  closeButton.addClass("none");
+
   mobileMenuContainer.hide();
-  menuButton.toggleClass("none");
-  if (menuButton.hasClass("none")) {
-    closeButton.addClass("none");
-    menuButton.removeClass("none");
-  }
+  // menuButton.toggleClass("none");
+  // if (menuButton.hasClass("none")) {
+  //   closeButton.addClass("none");
+  //   menuButton.removeClass("none");
+  // }
 }
 
 // _________________________________________________________________________
@@ -69,14 +76,14 @@ ssm.addStates([
   },
   {
     id: "tablet",
-    query: "(min-width: 641px) and (max-width: 992px)",
+    query: "(min-width: 641px) and (max-width: 1199px)",
     onEnter: function () {
       initTablet();
     },
   },
   {
     id: "desktop",
-    query: "(min-width: 993px)",
+    query: "(min-width: 1200px)",
     onEnter: function () {
       initDesktop();
     },

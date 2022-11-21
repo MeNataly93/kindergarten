@@ -35,6 +35,10 @@
     top: 27px;
 
     fill: $dark-grey;
+    cursor: pointer;
+    &:active {
+      fill: $main;
+    }
   }
 }
 
@@ -42,7 +46,45 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-// OPENED NAV
+// OPENED NAV (SMALL)
+
+.nav__small {
+  &__hidden-block {
+    background-color: $dark-grey;
+
+    &_container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+  &__hidden-list {
+    list-style-type: none;
+    padding-inline-start: 0;
+
+    &__item {
+      font-family: $titleFontFamily;
+      line-height: 1.5em;
+      font-size: 18px;
+      color: $white;
+      margin: 4px 10px 4px 0;
+      padding-left: 45px;
+      position: relative;
+
+      &_main {
+        font-size: 22px;
+        color: $white;
+        padding-left: 35px;
+        padding-top: 20px;
+      }
+
+      &_arrow {
+        position: absolute;
+        right: 35px;
+      }
+    }
+  }
+}
+// OPENED NAV (BIG)
 
 .nav {
   &__hidden-block {

@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "copy-webpack-plugin": "^11.0.0",
+    "jquery": "^3.6.1",
     "smooth-scroll": "^16.1.3"
   }
 }

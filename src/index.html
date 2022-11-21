@@ -27,15 +27,15 @@
       </ul>
 
       <ul class="header__icons">
-        <li class="header__icons__item"><a><svg class="header__icons__item__svg" xmlns="http://www.w3.org/2000/svg"
-              viewBox='0 0 20 20' width="20" height="20">
+        <li class="header__icons__item"><a href="#"><svg class="header__icons__item__svg"
+              xmlns="http://www.w3.org/2000/svg" viewBox='0 0 20 20' width="20" height="20">
               <use xlink: href="i/sprite.svg#search"></use>
             </svg></a></li>
-        <li class="header__icons__item"><a><svg class="header__icons__item__svg header__icons__item__svg_2"
+        <li class="header__icons__item"><a href="#"><svg class="header__icons__item__svg header__icons__item__svg_2"
               xmlns="http://www.w3.org/2000/svg" viewBox='0 0 20 20' width="20" height="20">
               <use xlink: href="i/sprite.svg#user"></use>
             </svg></a></li>
-        <li class="header__icons__item header__icons__item_3"><a><svg
+        <li class="header__icons__item header__icons__item_3"><a href="#"><svg
               class="header__icons__item__svg header__icons__item__svg_3" xmlns="http://www.w3.org/2000/svg"
               viewBox='0 0 20 20' width="20" height="20">
               <use xlink: href="i/sprite.svg#shopping-cart"></use>
@@ -72,33 +72,34 @@
     <section class="nav-container">
       <a class="nav-container__logo" href="#"><img src="i/img/logo_buba_2x.png" alt="Logo"
           class="nav-container__logo__img"></a>
-      <svg class="nav-container__menu" xmlns="http://www.w3.org/2000/svg" iewBox='0 0 490.667 490.667' width="28"
-        height="28">
-        <use xlink: href="i/sprite.svg#menu-burger"> </use>
-      </svg>
+      <a href="#"><svg class="nav-container__menu" xmlns="http://www.w3.org/2000/svg" viewBox='0 0 490.667 490.667'
+          width="28" height="28">
+          <use xlink: href="i/sprite.svg#menu-burger"> </use>
+        </svg>
+      </a>
 
       <ul class="nav-container__nav">
-        <li class="nav-container__nav__item nav-container__nav__item_current"><a>Home <svg
-              class="nav-container__nav__item__point point point_current" xmlns="http://www.w3.org/2000/svg"
-              viewBox='0 0 200 200' width="6" height="6">
-              <use xlink: href="i/sprite.svg#point"></use>
-            </svg></a></li>
-        <li class="nav-container__nav__item"><a>About Us <svg class="nav-container__nav__item__point point"
-              xmlns="http://www.w3.org/2000/svg" viewBox='0 0 200 200' width="6" height="6">
-              <use xlink: href="i/sprite.svg#point"></use>
-            </svg></a></li>
-        <li class="nav-container__nav__item"><a>Products <svg class="nav-container__nav__item__point point"
-              xmlns="http://www.w3.org/2000/svg" viewBox='0 0 200 200' width="6" height="6">
-              <use xlink: href="i/sprite.svg#point"></use>
-            </svg></a></li>
-        <li class="nav-container__nav__item"><a>Blog <svg class="nav-container__nav__item__point point"
-              xmlns="http://www.w3.org/2000/svg" viewBox='0 0 200 200' width="6" height="6">
-              <use xlink: href="i/sprite.svg#point"></use>
-            </svg></a></li>
-        <li class="nav-container__nav__item"><a>Contacts <svg class="nav-container__nav__item__point point"
-              xmlns="http://www.w3.org/2000/svg" viewBox='0 0 200 200' width="6" height="6">
-              <use xlink: href="i/sprite.svg#point"></use>
-            </svg></a></li>
+        <li class="nav-container__nav__item nav-container__nav__item_current">Home <svg
+            class="nav-container__nav__item__point point point_current" xmlns="http://www.w3.org/2000/svg"
+            viewBox='0 0 200 200' width="6" height="6">
+            <use xlink: href="i/sprite.svg#point"></use>
+          </svg></li>
+        <li class="nav-container__nav__item">About Us <svg class="nav-container__nav__item__point point"
+            xmlns="http://www.w3.org/2000/svg" viewBox='0 0 200 200' width="6" height="6">
+            <use xlink: href="i/sprite.svg#point"></use>
+          </svg></li>
+        <li class="nav-container__nav__item">Products <svg class="nav-container__nav__item__point point"
+            xmlns="http://www.w3.org/2000/svg" viewBox='0 0 200 200' width="6" height="6">
+            <use xlink: href="i/sprite.svg#point"></use>
+          </svg></li>
+        <li class="nav-container__nav__item">Blog <svg class="nav-container__nav__item__point point"
+            xmlns="http://www.w3.org/2000/svg" viewBox='0 0 200 200' width="6" height="6">
+            <use xlink: href="i/sprite.svg#point"></use>
+          </svg></li>
+        <li class="nav-container__nav__item">Contacts <svg class="nav-container__nav__item__point point"
+            xmlns="http://www.w3.org/2000/svg" viewBox='0 0 200 200' width="6" height="6">
+            <use xlink: href="i/sprite.svg#point"></use>
+          </svg></li>
       </ul>
 
       <section class="nav-container__btn-section">
@@ -110,40 +111,169 @@
     </section>
   </div>
 
-  <!-- OPENED NAV -->
+  <!-- OPENED NAV (small)-->
+  <div class="nav__small__hidden-block nav__small__hidden-block_container">
+    <ul class="nav__small__hidden-list">
+
+      <!-- Home -->
+      <li class="nav__small__hidden-list__item nav__small__hidden-list__item_main">Home<span
+          class="nav__small__hidden-list__item_arrow">+</span></li>
+      <ul class="nav__small__hidden-list">
+        <li class="nav__small__hidden-list__item">Kindergarten</li>
+        <li class="nav__small__hidden-list__item">Preschool</li>
+        <li class="nav__small__hidden-list__item">Private Nanny</li>
+        <li class="nav__small__hidden-list__item">Education Agency</li>
+      </ul>
+
+      <!-- About us -->
+      <li class="nav__small__hidden-list__item nav__small__hidden-list__item_main">About Us<span
+          class="nav__small__hidden-list__item_arrow">+</span></li>
+      <ul class="nav__small__hidden-list">
+
+
+        <li class="nav__small__hidden-list__item">About Us</li>
+        <li class="nav__small__hidden-list__item">Testimonials</li>
+        <li class="nav__small__hidden-list__item">FAQ</li>
+
+        <!-- About us - Gallery -->
+        <li class="nav__small__hidden-list__item">Gallery<span class="nav__small__hidden-list__item_arrow">+</span>
+        </li>
+        <ul class="nav__small__hidden-list">
+          <li class="nav__small__hidden-list__item">
+            Gallery 2-columns
+          </li>
+          <li class="nav__small__hidden-list__item">
+            Gallery 3-columns
+          </li>
+          <li class="nav__small__hidden-list__item">
+            Gallery 4-columns
+          </li>
+        </ul>
+        <li class="nav__small__hidden-list__item">404 Page</li>
+      </ul>
+
+      <!-- Products -->
+      <li class="nav__small__hidden-list__item nav__small__hidden-list__item_main">Products<span
+          class="nav__small__hidden-list__item_arrow">+</span></li>
+      <ul class="nav__small__hidden-list">
+        <li class="nav__small__hidden-list__item">Shop</li>
+        <li class="nav__small__hidden-list__item">Wishlist</li>
+        <li class="nav__small__hidden-list__item">Cart</li>
+        <li class="nav__small__hidden-list__item">Checkout</li>
+        <li class="nav__small__hidden-list__item">My account</li>
+      </ul>
+
+
+      <!-- Blog -->
+      <li class="nav__small__hidden-list__item nav__small__hidden-list__item_main">Blog<span
+          class="nav__small__hidden-list__item_arrow">+</span></li>
+      <ul class="nav__small__hidden-list">
+        <li class="nav__small__hidden-list__item">Blog with Sidebar</li>
+        <li class="nav__small__hidden-list__item">Blog without Sidebar</li>
+      </ul>
+
+      <!-- Contacts -->
+      <li class="nav__small__hidden-list__item nav__small__hidden-list__item_main">Contacts</li>
+    </ul>
+  </div>
+
+  <!-- NAV-HOME -->
+  <!-- <div class="nav__small__home nav__small__hidden-block">
+      <ul class="nav__small__hidden-list">
+        <li class="nav__small__hidden-list__item">Kindergarten</li>
+        <li class="nav__small__hidden-list__item">Preschool</li>
+        <li class="nav__small__hidden-list__item">Private Nanny</li>
+        <li class="nav__small__hidden-list__item">Education Agency</li>
+      </ul>
+    </div> -->
+
+  <!-- NAV-ABOUT -->
+  <!-- <div class="nav__small__about nav__small__hidden-block">
+      <ul class="nav__small__hidden-list">
+        <li class="nav__small__hidden-list__item">About Us</li>
+        <li class="nav__small__hidden-list__item">Testimonials</li>
+        <li class="nav__small__hidden-list__item">FAQ</li>
+        <li class="nav__small__hidden-list__item">Gallery<span class="nav__small__hidden-list__item_arrow">&#62;</span>
+        </li>
+        <li class="nav__small__hidden-list__item">404 Page</li>
+      </ul> -->
+
+  <!-- NAV-ABOUT-GALLERY -->
+  <!-- <div class="nav__small__about_in-gallery nav__small__hidden-block">
+      <ul class="nav__small__hidden-list">
+        <li class="nav__small__hidden-list__item">
+          Gallery 2-columns
+        </li>
+        <li class="nav__small__hidden-list__item">
+          Gallery 3-columns
+        </li>
+        <li class="nav__small__hidden-list__item">
+          Gallery 4-columns
+        </li>
+      </ul>
+    </div>
+  </div> -->
+
+  <!-- NAV-PRODUCTS -->
+  <!-- <div class="nav__small__products nav__small__hidden-block">
+    <ul class="nav__small__hidden-list">
+      <li class="nav__small__hidden-list__item">Sho></li>
+      <li class="nav__small__hidden-list__item">Wishlist</li>
+      <li class="nav__small__hidden-list__item">Cart</li>
+      <li class="nav__small__hidden-list__item">Checkout</li>
+      <li class="nav__small__hidden-list__item">My account</li>
+    </ul>
+  </div> -->
+
+  <!-- NAV-BLOG -->
+  <!-- <div class="nav__small__blog nav__small__hidden-block">
+      <ul class="nav__small__hidden-list">
+        <li class="nav__small__hidden-list__item">Blog with Sidebar</li>
+        <li class="nav__small__hidden-list__item">Blog without Sidebar</li>
+      </ul>
+    </div>
+  </div> -->
+
+
+
+
+  <!-- OPENED NAV (big)-->
 
   <!-- NAV-HOME -->
   <div class="nav__home nav__hidden-block">
     <ul class="nav__hidden-list">
-      <li class="nav__hidden-list__item"><a>Kindergarten</a></li>
-      <li class="nav__hidden-list__item"><a>Preschool</a></li>
-      <li class="nav__hidden-list__item"><a>Private Nanny</a></li>
-      <li class="nav__hidden-list__item"><a>Education Agency</a></li>
+      <li class="nav__hidden-list__item">Kindergarten</li>
+      <li class="nav__hidden-list__item">Preschool</li>
+      <li class="nav__hidden-list__item">Private Nanny</li>
+      <li class="nav__hidden-list__item">Education Agency</li>
     </ul>
+
+
+
   </div>
 
   <!-- NAV-ABOUT -->
   <div class="nav__about nav__hidden-block">
     <ul class="nav__hidden-list">
-      <li class="nav__hidden-list__item"><a>About Us</a></li>
-      <li class="nav__hidden-list__item"><a>Testimonials</a></li>
-      <li class="nav__hidden-list__item"><a>FAQ</a></li>
-      <li class="nav__hidden-list__item"><a>Gallery<span class="nav__hidden-list__item_arrow">&#62;</span>
-        </a> </li>
-      <li class="nav__hidden-list__item"><a>404 Page</a></li>
+      <li class="nav__hidden-list__item">About Us</li>
+      <li class="nav__hidden-list__item">Testimonials</li>
+      <li class="nav__hidden-list__item">FAQ</li>
+      <li class="nav__hidden-list__item">Gallery<span class="nav__hidden-list__item_arrow">&#62;</span>
+      </li>
+      <li class="nav__hidden-list__item">404 Page</li>
     </ul>
 
     <!-- NAV-ABOUT-GALLERY -->
     <div class="nav__about_in-gallery nav__hidden-block">
       <ul class="nav__hidden-list">
         <li class="nav__hidden-list__item">
-          <a>Gallery 2-columns</a>
+          Gallery 2-columns
         </li>
         <li class="nav__hidden-list__item">
-          <a>Gallery 3-columns</a>
+          Gallery 3-columns
         </li>
         <li class="nav__hidden-list__item">
-          <a>Gallery 4-columns</a>
+          Gallery 4-columns
         </li>
       </ul>
     </div>
@@ -152,19 +282,19 @@
   <!-- NAV-PRODUCTS -->
   <div class="nav__products nav__hidden-block">
     <ul class="nav__hidden-list">
-      <li class="nav__hidden-list__item"><a>Shop</a></li>
-      <li class="nav__hidden-list__item"><a>Wishlist</a></li>
-      <li class="nav__hidden-list__item"><a>Cart</a></li>
-      <li class="nav__hidden-list__item"><a>Checkout</a></li>
-      <li class="nav__hidden-list__item"><a>My account</a></li>
+      <li class="nav__hidden-list__item">Sho></li>
+      <li class="nav__hidden-list__item">Wishlist</li>
+      <li class="nav__hidden-list__item">Cart</li>
+      <li class="nav__hidden-list__item">Checkout</li>
+      <li class="nav__hidden-list__item">My account</li>
     </ul>
   </div>
 
   <!-- NAV-BLOG -->
   <div class="nav__blog nav__hidden-block">
     <ul class="nav__hidden-list">
-      <li class="nav__hidden-list__item"><a>Blog with Sidebar</a></li>
-      <li class="nav__hidden-list__item"><a>Blog without Sidebar</a></li>
+      <li class="nav__hidden-list__item">Blog with Sidebar</li>
+      <li class="nav__hidden-list__item">Blog without Sidebar</li>
     </ul>
   </div>
 
@@ -210,7 +340,8 @@
       <li class="statinfo__item statinfo__item_1">
         <p class="statinfo__item__count statinfo__item__count_1">221</p>
         <h3 class="statinfo__item__title">Happy children</h3>
-        <p class="statinfo__item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor semper
+        <p class="statinfo__item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor
+          semper
           tincidunt ut feugiat nulla. Nisl
           vivamus id donec eu aliquet sagittis tincidunt pellentesque.</p>
       </li>
@@ -248,7 +379,8 @@
       <p class="about__description">We are constantly expanding the range of services offered, taking care of children
         of
         all ages. Our goal is to
-        carefully educate and develop children in a fun way. We strive to turn the learning process into a bright event
+        carefully educate and develop children in a fun way. We strive to turn the learning process into a bright
+        event
         so
         that children study with pleasure.</p>
       <ul class="about__list">
@@ -256,7 +388,8 @@
           <img class="about__list__item__icon" src="i/img/about/about_icon_01.png" alt="icon1">
           <div class="about__list__item__container">
             <h3 class="about__list__item__title">Experienced teachers</h3>
-            <p class="about__list__item__description">Libero, sagittis pretium vel ipsum luctus amet et quam sit. Semper
+            <p class="about__list__item__description">Libero, sagittis pretium vel ipsum luctus amet et quam sit.
+              Semper
               aenean enim, in enim, ut venenatis, purus.
               Id in
               enim
@@ -267,7 +400,8 @@
           <img class="about__list__item__icon" src="i/img/about/about_icon_02.png" alt="icon2">
           <div class="about__list__item__container">
             <h3 class="about__list__item__title">Unique approach</h3>
-            <p class="about__list__item__description about__list__item__description_2">Justo proin amet faucibus sed eu.
+            <p class="about__list__item__description about__list__item__description_2">Justo proin amet faucibus sed
+              eu.
               Nisi mauris, vulputate ut ut
               habitant id diam, accumsan. Convallis neque,
               pretium ac
@@ -632,7 +766,8 @@
       <li class="advantages__list__item">
         <section class="advantages__list__item__container">
           <h3 class="advantages__list__item__title advantages__list__item__title_3">Large bright rooms</h3>
-          <p class="advantages__list__item__description">Congue ornare morbi amet egestas risus eu. Faucibus enim a, in
+          <p class="advantages__list__item__description">Congue ornare morbi amet egestas risus eu. Faucibus enim a,
+            in
             adipiscing diam malesuada in quis cum in
             iaculis
             ultricies auctor tellus.</p>
@@ -650,7 +785,8 @@
       <li class="advantages__list__item">
         <section class="advantages__list__item__container">
           <h3 class="advantages__list__item__title advantages__list__item__title_5">Tasty & healthy food</h3>
-          <p class="advantages__list__item__description">Vulputate fringilla amet arcu malesuada aliquet eget ultricies
+          <p class="advantages__list__item__description">Vulputate fringilla amet arcu malesuada aliquet eget
+            ultricies
             sit tellus elementum fringilla. Nibh sagittis
             metus ut
             cursus amet magnis mauris.</p>
@@ -778,26 +914,28 @@
           <h3 class="footer__company">Company</h3>
           <ul class="footer__company__list">
             <section class="footer__company__list__part-1">
-              <li class="footer__company__list__item footer__company__list__item_current"><a><span
-                    class="footer__company__list__item__span">Home</span></a></li>
-              <li class="footer__company__list__item"><a><span class="footer__company__list__item__span">About Us</span>
-                </a></li>
-              <li class="footer__company__list__item"><a><span class="footer__company__list__item__span">Products</span>
-                </a></li>
-              <li class="footer__company__list__item"><a><span class="footer__company__list__item__span">Blog</span></a>
+              <li class="footer__company__list__item footer__company__list__item_current"><span
+                  class="footer__company__list__item__span">Home</span></li>
+              <li class="footer__company__list__item"><span class="footer__company__list__item__span">About
+                  Us</span>
               </li>
-              <li class="footer__company__list__item"><a><span class="footer__company__list__item__span">Contacts</span>
-                </a></li>
+              <li class="footer__company__list__item"><span class="footer__company__list__item__span">Products</span>
+              </li>
+              <li class="footer__company__list__item"><span class="footer__company__list__item__span">Blog</span>
+              </li>
+              <li class="footer__company__list__item"><span class="footer__company__list__item__span">Contacts</span>
+              </li>
             </section>
             <section class="footer__company__list__part-2">
-              <li class="footer__company__list__item"><a><span class="footer__company__list__item__span">Articles</span>
-                </a></li>
-              <li class="footer__company__list__item"><a><span class="footer__company__list__item__span">Products</span>
-                </a> </li>
-              <li class="footer__company__list__item"><a><span class="footer__company__list__item__span">FAQ</span></a>
+              <li class="footer__company__list__item"><span class="footer__company__list__item__span">Articles</span>
               </li>
-              <li class="footer__company__list__item"><a><span class="footer__company__list__item__span">Gallery</span>
-                </a></li>
+              <li class="footer__company__list__item"><span class="footer__company__list__item__span">Products</span>
+              </li>
+              <li class="footer__company__list__item"><span class="footer__company__list__item__span">FAQ</span>
+              </li>
+              <li class="footer__company__list__item"><span class="
+                  footer__company__list__item__span">Gallery</span>
+              </li>
             </section>
           </ul>
         </section>
@@ -834,7 +972,8 @@
 
 
 
-
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 
 

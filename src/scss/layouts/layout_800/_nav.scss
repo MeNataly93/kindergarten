@@ -1,0 +1,7 @@
+.nav-container {
+  &__menu {
+    &:hover {
+      fill: $main;
+    }
+  }
+}

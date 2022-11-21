@@ -25,14 +25,24 @@ setInterval(arrowNone, 1);
 const menuButtonContainer = $("#menu-button-container");
 const menuButton = $("#menu-button");
 const closeButton = $("#close-button");
-const menuContainerSmall = $("#menu-container-small");
+const mobileMenuContainer = $("#menu-container-small");
 
 menuButtonContainer.on("click", function (e) {
   e.preventDefault();
   menuButton.toggleClass("none");
   closeButton.toggleClass("none");
-  menuContainerSmall.slideToggle();
+  mobileMenuContainer.slideToggle();
 });
+
+function resetMobileMenu() {
+  menuButton.removeClass("active");
+  mobileMenuContainer.hide();
+  menuButton.toggleClass("none");
+  if (menuButton.hasClass("none")) {
+    closeButton.addClass("none");
+    menuButton.removeClass("none");
+  }
+}
 
 // _________________________________________________________________________
 
@@ -45,6 +55,7 @@ function initTablet() {
 }
 
 function initDesktop() {
+  resetMobileMenu();
   console.log("is-desktop");
 }
 

@@ -65,7 +65,7 @@
     cursor: pointer;
     transition: 0.2s ease;
 
-    &:focus .number {
+    &:active .number {
       background-color: $dark-grey;
     }
   }
@@ -81,7 +81,7 @@
     margin-right: 15px;
     cursor: pointer;
     transition: 0.2s ease;
-    &:focus {
+    &:active {
       background-color: $dark-grey;
     }
   }

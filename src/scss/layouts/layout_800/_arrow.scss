@@ -8,4 +8,10 @@
     width: 35px;
     margin-top: 13px;
   }
+
+  &:hover {
+    background-color: $dark-grey;
+    &__img {
+    }
+  }
 }

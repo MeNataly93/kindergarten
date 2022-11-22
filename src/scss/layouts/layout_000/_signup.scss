@@ -48,7 +48,7 @@
     position: absolute;
     right: 5px;
     cursor: pointer;
-    &:focus {
+    &:active {
       background-color: $signup-button;
     }
     &__img {
@@ -82,7 +82,7 @@
     &__item {
       transition: all 0.2s ease;
 
-      &:focus {
+      &:active {
         transform: translateY(-10px);
       }
       &__link {

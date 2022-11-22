@@ -27,6 +27,8 @@ const menuButton = $("#menu-button");
 const closeButton = $("#close-button");
 const mobileMenuContainer = $("#menu-container-small");
 const mobileMenuPlus = $(".nav__small__hidden-list__item_arrow");
+const mobileMenuSublist = $(".nav__small__hidden-list__sublist");
+const mobileMenuItem = $(".nav__small__hidden-list__item");
 
 // Click on menu-button
 menuButtonContainer.on("click", function (e) {
@@ -38,6 +40,8 @@ menuButtonContainer.on("click", function (e) {
   } else {
     closeButton.addClass("none");
     mobileMenuContainer.slideUp();
+    mobileMenuPlus.html("+");
+    mobileMenuSublist.hide();
   }
 });
 
@@ -46,24 +50,27 @@ function resetMobileMenu() {
   menuButton.removeClass("none");
   closeButton.addClass("none");
   mobileMenuContainer.hide();
+  mobileMenuPlus.html("+");
+  mobileMenuSublist.hide();
 }
 
 // Open subitems when click on +
-mobileMenuPlus.on("click", function () {
-  // $(this).html("-");
-  // $(this).parent().parent().children("#sub").removeClass("none");
-  if ($(this).is(`:contains("-")`)) {
-    $(this).html("+");
-    $(this).parent().next(".nav__small__hidden-list__sublist").slideUp();
+
+mobileMenuItem.on("click", function () {
+  if ($(this).children().is(`:contains("+")`)) {
+    console.log("ueeeee");
+    $(this).children().html("-");
+    $(this).next(".nav__small__hidden-list__sublist").slideDown();
     return;
-  }
-  if ($(this).is(`:contains("+")`)) {
-    $(this).html("-");
-    $(this).parent().next(".nav__small__hidden-list__sublist").slideDown();
+  } else if ($(this).children().is(`:contains("-")`)) {
+    console.log("ueeeee");
+    $(this).children().html("+");
+    $(this).next(".nav__small__hidden-list__sublist").slideUp();
     return;
-  }
+  } else return;
 });
-// _________________________________________________________________________
+
+// OTHER
 
 function initMobile() {
   console.log("is-mobile");

@@ -25,10 +25,11 @@ setInterval(arrowNone, 1);
 const menuButtonContainer = $("#menu-button-container");
 const menuButton = $("#menu-button");
 const closeButton = $("#close-button");
-const mobileMenuContainer = $("#menu-container-small");
-const mobileMenuPlus = $(".nav__small__hidden-list__item_arrow");
-const mobileMenuSublist = $(".nav__small__hidden-list__sublist");
-const mobileMenuItem = $(".nav__small__hidden-list__item");
+const mobileMenuContainer = $("#menu-container-mobile");
+const mobileMenuPlus = $(".nav__mobile__hidden-list__item_arrow");
+const mobileMenuSublist = $(".nav__mobile__hidden-list__sublist");
+const mobileMenuItem = $(".nav__mobile__hidden-list__item");
+const menuGallery = $("#menu-gallery");
 
 // Click on menu-button
 menuButtonContainer.on("click", function (e) {
@@ -45,7 +46,7 @@ menuButtonContainer.on("click", function (e) {
   }
 });
 
-// Hide opened menu in desctop version
+// Hide opened mobile-menu in desctop version
 function resetMobileMenu() {
   menuButton.removeClass("none");
   closeButton.addClass("none");
@@ -57,15 +58,20 @@ function resetMobileMenu() {
 // Open subitems when click on +
 
 mobileMenuItem.on("click", function () {
+  if ($(this) == $("#menu-gallery")) {
+    console.log("hi");
+  // } !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   if ($(this).children().is(`:contains("+")`)) {
-    console.log("ueeeee");
+    //
+
     $(this).children().html("-");
-    $(this).next(".nav__small__hidden-list__sublist").slideDown();
+    $(this).next(".nav__mobile__hidden-list__sublist").slideDown();
     return;
   } else if ($(this).children().is(`:contains("-")`)) {
-    console.log("ueeeee");
+    //
+
     $(this).children().html("+");
-    $(this).next(".nav__small__hidden-list__sublist").slideUp();
+    $(this).next(".nav__mobile__hidden-list__sublist").slideUp();
     return;
   } else return;
 });

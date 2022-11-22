@@ -88,3 +88,9 @@
     display: none;
   }
 }
+
+.nav {
+  &__hidden-block-container {
+    display: block;
+  }
+}

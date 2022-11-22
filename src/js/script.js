@@ -26,7 +26,9 @@ const menuButtonContainer = $("#menu-button-container");
 const menuButton = $("#menu-button");
 const closeButton = $("#close-button");
 const mobileMenuContainer = $("#menu-container-small");
+const mobileMenuPlus = $(".nav__small__hidden-list__item_arrow");
 
+// Click on menu-button
 menuButtonContainer.on("click", function (e) {
   e.preventDefault();
   menuButton.toggleClass("none");
@@ -39,18 +41,28 @@ menuButtonContainer.on("click", function (e) {
   }
 });
 
+// Hide opened menu in desctop version
 function resetMobileMenu() {
   menuButton.removeClass("none");
   closeButton.addClass("none");
-
   mobileMenuContainer.hide();
-  // menuButton.toggleClass("none");
-  // if (menuButton.hasClass("none")) {
-  //   closeButton.addClass("none");
-  //   menuButton.removeClass("none");
-  // }
 }
 
+// Open subitems when click on +
+mobileMenuPlus.on("click", function () {
+  // $(this).html("-");
+  // $(this).parent().parent().children("#sub").removeClass("none");
+  if ($(this).is(`:contains("-")`)) {
+    $(this).html("+");
+    $(this).parent().next(".nav__small__hidden-list__sublist").slideUp();
+    return;
+  }
+  if ($(this).is(`:contains("+")`)) {
+    $(this).html("-");
+    $(this).parent().next(".nav__small__hidden-list__sublist").slideDown();
+    return;
+  }
+});
 // _________________________________________________________________________
 
 function initMobile() {

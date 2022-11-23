@@ -106,11 +106,11 @@ menuItem.on("click", function () {
   let subItemTop =
     $(this).closest(".nav-container__nav__item ").position().top +
     $(this).closest(".nav-container__nav__item ").height();
-  console.log(subItemTop);
 
-  let subItemleft = $(this)
-    .closest(".nav-container__nav__item ")
-    .position().left;
+  let subItemleft =
+    $(this).closest(".nav-container__nav__item ").position().left -
+    $(this).next(".nav__desctop-list").width() * 0.4;
+  console.log(subItemleft);
 
   $(this).next(".nav__desctop-list").css({
     left: subItemleft,

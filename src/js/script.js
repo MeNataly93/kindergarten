@@ -21,17 +21,20 @@ function arrowNone() {
 }
 setInterval(arrowNone, 1);
 
-// MENU-BUTTON
+// MENU-BUTTON and MOBILE MENU
+// Button
 const menuButtonContainer = $("#menu-button-container");
 const menuButton = $("#menu-button");
 const closeButton = $("#close-button");
+
+// Mobile menu
 const mobileMenuContainer = $("#menu-container-mobile");
-const mobileMenuPlus = $(".nav__mobile__hidden-list__item_arrow");
 const mobileMenuSublist = $(".nav__mobile__hidden-list__sublist");
+const mobileMenuPlus = $(".nav__mobile__hidden-list__item_arrow");
 const mobileMenuItem = $(".nav__mobile__hidden-list__item");
-const menuGallery = $("#menu-gallery");
 
 // Click on menu-button
+
 menuButtonContainer.on("click", function (e) {
   e.preventDefault();
   menuButton.toggleClass("none");
@@ -58,22 +61,43 @@ function resetMobileMenu() {
 // Open subitems when click on +
 
 mobileMenuItem.on("click", function () {
-  if ($(this) == $("#menu-gallery")) {
-    console.log("hi");
-  // } !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  if ($(this).children().is(`:contains("+")`)) {
-    //
+  console.log($(this));
+  $(this)
+    .closest("li.first-list")
+    .prevAll("li.first-list")
+    .next("ul")
+    .slideUp()
+    .end()
+    .closest("li.first-list")
+    .children()
+    .html("+");
+  $(this)
+    .closest("li.first-list")
+    .nextAll("li.first-list")
+    .next("ul")
+    .slideUp()
+    .end()
+    .closest("li.first-list")
+    .children()
+    .html("+");
 
+  if ($("#about-arrow").is(`:contains("+")`)) {
+    console.log("contains");
+    $("#about-gallery-arrow").html("+");
+    $("#about-gallery-sublist").slideUp();
+  }
+
+  if ($(this).children().is(`:contains("+")`)) {
     $(this).children().html("-");
     $(this).next(".nav__mobile__hidden-list__sublist").slideDown();
     return;
   } else if ($(this).children().is(`:contains("-")`)) {
-    //
-
     $(this).children().html("+");
     $(this).next(".nav__mobile__hidden-list__sublist").slideUp();
+
     return;
-  } else return;
+  }
+  return;
 });
 
 // OTHER

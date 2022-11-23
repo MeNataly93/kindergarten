@@ -61,7 +61,6 @@ function resetMobileMenu() {
 // Open subitems when click on +
 
 mobileMenuItem.on("click", function () {
-  console.log($(this));
   $(this)
     .closest("li.first-list")
     .prevAll("li.first-list")
@@ -82,7 +81,6 @@ mobileMenuItem.on("click", function () {
     .html("+");
 
   if ($("#about-arrow").is(`:contains("+")`)) {
-    console.log("contains");
     $("#about-gallery-arrow").html("+");
     $("#about-gallery-sublist").slideUp();
   }
@@ -98,6 +96,23 @@ mobileMenuItem.on("click", function () {
     return;
   }
   return;
+});
+
+// DESCTOP MENU
+
+const menuItem = $(".nav-container__nav__item");
+menuItem.on("click", function () {
+  // const coordsMenuItem = $(this).closest(".nav-container__nav__item ").offset();
+  // console.log(coordsMenuItem.top);
+
+  $(this)
+    .next(".nav__desctop-list")
+    .offset({
+      top: $(this).closest(".nav-container__nav__item ").offsetHeight(),
+      left: 0,
+    });
+
+  $(this).next(".nav__desctop-list").slideToggle();
 });
 
 // OTHER

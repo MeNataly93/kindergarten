@@ -101,16 +101,22 @@ mobileMenuItem.on("click", function () {
 // DESCTOP MENU
 
 const menuItem = $(".nav-container__nav__item");
-menuItem.on("click", function () {
-  // const coordsMenuItem = $(this).closest(".nav-container__nav__item ").offset();
-  // console.log(coordsMenuItem.top);
 
-  $(this)
-    .next(".nav__desctop-list")
-    .offset({
-      top: $(this).closest(".nav-container__nav__item ").offsetHeight(),
-      left: 0,
-    });
+menuItem.on("click", function () {
+  let subItemTop =
+    $(this).closest(".nav-container__nav__item ").position().top +
+    $(this).closest(".nav-container__nav__item ").height();
+  console.log(subItemTop);
+
+  let subItemleft = $(this)
+    .closest(".nav-container__nav__item ")
+    .position().left;
+
+  $(this).next(".nav__desctop-list").css({
+    left: subItemleft,
+    top: subItemTop,
+    "margin-top": 15,
+  });
 
   $(this).next(".nav__desctop-list").slideToggle();
 });

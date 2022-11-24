@@ -105,61 +105,33 @@ mobileMenuItem.on("click", function () {
 const menuItem = $(".nav-container__nav__item");
 const menuSublist = $(".nav__desctop-list");
 
-// -Hover on menu item
+// -Hover on main menu item
 // *When hover on main menu - open list of nesessary item
 
-menuItem.mouseover(function () {
+menuItem.mouseenter(function () {
+  // *Close other blocks
+  $(this)
+    .siblings(".nav-container__nav__item")
+    .removeClass("opened")
+    .children(".nav__desctop-list")
+    .slideUp();
   // *Find coords and give it to item-block
-  let subItemTop =
-    $(this).closest(".nav-container__nav__item ").position().top +
-    $(this).closest(".nav-container__nav__item ").height();
+  let subItemTop = $(this).height();
 
-  let subItemleft =
-    $(this).closest(".nav-container__nav__item ").position().left -
-    $(this).next(".nav__desctop-list").width() * 0.4;
-  $(this).next(".nav__desctop-list").css({
+  let subItemleft = -$(this).children(".nav__desctop-list").width() * 0.4;
+
+  $(this).children(".nav__desctop-list").css({
     left: subItemleft,
     top: subItemTop,
     "margin-top": 15,
   });
 
-  // *Open item-block
-  $(this).addClass("opened").next(".nav__desctop-list").slideDown();
-
-  // $(this)
-  //   .next(".nav__desctop-list")
-  //   .mouseout(function () {
-  //     $(this)
-  //       .prev(".nav-container__nav__item")
-  //       .removeClass("opened")
-  //       .next(".nav__desctop-list")
-  //       .slideUp();
-  //     return;
-  //   });
+  // *Open nesessary item-block
+  $(this).addClass("opened").children(".nav__desctop-list").slideDown();
 });
 
-// -ONCLICK
-// menuItem.on("click", function () {
-//   let subItemTop =
-//     $(this).closest(".nav-container__nav__item ").position().top +
-//     $(this).closest(".nav-container__nav__item ").height();
-
-//   let subItemleft =
-//     $(this).closest(".nav-container__nav__item ").position().left -
-//     $(this).next(".nav__desctop-list").width() * 0.4;
-
-//   $(this).next(".nav__desctop-list").css({
-//     left: subItemleft,
-//     top: subItemTop,
-//     "margin-top": 15,
-//   });
-//   if ($(this).hasClass("opened")) {
-//     $(this).removeClass("opened").next(".nav__desctop-list").slideUp();
-//     return;
-//   }
-
-//   $(this).addClass("opened").next(".nav__desctop-list").slideDown();
-//   return;
+// menuItem.mouseout(function () {
+//   $(this).removeClass("opened").children(".nav__desctop-list").slideUp();
 // });
 
 // -Open second sublist
@@ -171,125 +143,51 @@ const secondSublist = $(".second-sublist");
 
 // * When mouse is on item with sublist - open sub item-block
 subItems.mouseover(function () {
-  // if ($(this).hasClass("sub-opened")) {
-  //   $(this).removeClass("sub-opened").next(".nav__desctop-list").slideUp();
-  //   return;
-  // }
+  // *Close other blocks
+
+  $(this)
+    .siblings(".nav__desctop-list__item__sub")
+    .removeClass("sub-opened")
+    .children("ul.nav__desctop-list")
+    .slideUp();
+
   // -Coords
+  let secondSubItemTop = $(this).position().top;
+  let secondSubItemleft = $(this).position().left + $(this).width();
 
-  let secondSubItemTop = $(this)
-    .closest(".nav__desctop-list__item")
-    .position().top;
-  let secondSubItemleft =
-    $(this).closest(".nav__desctop-list__item").position().left +
-    $(this).closest(".nav__desctop-list").width();
-
-  $(this).next(".nav__desctop-list").css({
+  $(this).children(".nav__desctop-list").css({
     left: secondSubItemleft,
     top: secondSubItemTop,
   });
 
-  $(this).addClass("is-here");
-
-  // *Close other sublists
-  $(this)
-    .parent()
-    .children(".nav__desctop-list__item")
-    .removeClass("sub-opened");
-  if ($(this).hasClass("no-sublist")) {
-    $(this).parent().children("ul.nav__desctop-list").slideUp();
-  }
+  // *Open nessessary block
 
   if ($(this).hasClass("second-sublist")) {
-    $(this).addClass("sub-opened").next("ul.nav__desctop-list").slideDown();
+    $(this).addClass("sub-opened").children("ul.nav__desctop-list").slideDown();
     return;
   }
 
   return;
-});
-
-// subItems.mouseleave(function () {
-//   if ($(this).hasClass("second-sublist")) {
-//     $(this).removeClass("sub-opened");
-//   }
-// });
-
-// secondSublist.next("ul").mouseover(function () {
-//   $(this).prev("second-sublist").addClass("in-here");
-// });
-
-secondSublist.next("ul.nav__desctop-list").mouseover(function () {
-  $(this).prev(".second-sublist").removeClass("is-here");
 });
 
 // -Close second sublist
-secondSublist.next("ul").mouseleave(function () {
-  // *!!!!!!!!!!!!!!!!!!!!!!!
-
-  $(this).prev(".second-sublist").removeClass("is-here");
-
-  if ($(this).parent().closest(".second-sublist").hasClass("is-here")) {
-    return;
-  }
-
-  // if (secondSublist.hasClass("sub-opened")) {
-  //   return;
-  // }
-  $(this)
-    .prev(".second-sublist")
-    .removeClass("sub-opened")
-    .next(".nav__desctop-list")
-    .slideUp();
-  return;
-});
-// secondSublist.mouseout(function () {
-//   // if ($(this).hasClass("sub-opened")) {
-//   //   return;
-//   // }
-//   $(this).removeClass("sub-opened").next(".nav__desctop-list").slideUp();
+// secondSublist.children("ul").mouseout(function () {
+//   $(this)
+//     .parent(".second-sublist")
+//     .removeClass("sub-opened")
+//     .children(".nav__desctop-list")
+//     .slideUp();
 //   return;
 // });
 
-// -Open only one submenu
-menuItem.on("click", function () {
-  if ($(this).hasClass("opened")) {
-    $(this)
-      .prevAll(".nav-container__nav__item")
-      .removeClass("opened")
-      .next(".nav__desctop-list")
-      .slideUp();
-    $(this)
-      .nextAll(".nav-container__nav__item")
-      .removeClass("opened")
-      .addClass("closed")
-      .next(".nav__desctop-list")
-      .slideUp();
-    $(this)
-      .prevAll(".nav-container__nav__item")
-      .next("ul.nav__desctop-list")
-      .children(".second-sublist")
-      .removeClass("sub-opened")
-      .next("ul.nav__desctop-list")
-      .slideUp();
-    $(this)
-      .nextAll(".nav-container__nav__item")
-      .next("ul.nav__desctop-list")
-      .children(".second-sublist")
-      .removeClass("sub-opened")
-      .next("ul.nav__desctop-list")
-      .slideUp();
-    return;
-  }
-});
-
 // -Hide opened desctop-menu in mobile/tablet version
 function resetDesctopMenu() {
-  menuItem.removeClass("opened").next(".nav__desctop-list").slideUp();
+  menuItem.removeClass("opened").children(".nav__desctop-list").slideUp();
   menuItem
-    .next("ul.nav__desctop-list")
+    .children("ul.nav__desctop-list")
     .children(".second-sublist")
     .removeClass("sub-opened")
-    .next("ul.nav__desctop-list")
+    .children("ul.nav__desctop-list")
     .slideUp();
   return;
 }

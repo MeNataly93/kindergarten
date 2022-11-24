@@ -26,6 +26,9 @@
 
   &__nav {
     display: none;
+    &__item {
+      position: relative;
+    }
   }
 
   &__btn-section__btn {
@@ -130,6 +133,9 @@
       margin: 0 10px;
       color: $dark-grey;
       cursor: pointer;
+      text-transform: capitalize;
+      font-family: $mainFontFamily;
+      font-size: 16px;
       &_arrow {
         padding-left: 7px;
       }

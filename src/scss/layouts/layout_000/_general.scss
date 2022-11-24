@@ -9,6 +9,8 @@ html {
   font-size: 16px;
   line-height: 1.7em;
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .active {

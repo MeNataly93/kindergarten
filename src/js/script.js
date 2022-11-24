@@ -106,7 +106,10 @@ const menuItem = $(".nav-container__nav__item");
 const menuSublist = $(".nav__desctop-list");
 
 // -Hover on menu item
+// *When hover on main menu - open list of nesessary item
+
 menuItem.mouseover(function () {
+  // *Find coords and give it to item-block
   let subItemTop =
     $(this).closest(".nav-container__nav__item ").position().top +
     $(this).closest(".nav-container__nav__item ").height();
@@ -119,6 +122,8 @@ menuItem.mouseover(function () {
     top: subItemTop,
     "margin-top": 15,
   });
+
+  // *Open item-block
   $(this).addClass("opened").next(".nav__desctop-list").slideDown();
 
   // $(this)
@@ -158,8 +163,13 @@ menuItem.mouseover(function () {
 // });
 
 // -Open second sublist
+// * Open second list, if it is
+// *All items
 const subItems = $(".nav__desctop-list__item__sub");
+// *Items, which have second list
 const secondSublist = $(".second-sublist");
+
+// * When mouse is on item with sublist - open sub item-block
 subItems.mouseover(function () {
   // if ($(this).hasClass("sub-opened")) {
   //   $(this).removeClass("sub-opened").next(".nav__desctop-list").slideUp();
@@ -179,15 +189,21 @@ subItems.mouseover(function () {
     top: secondSubItemTop,
   });
 
-  if ($(this).hasClass("second-sublist")) {
-    $(this).addClass("sub-opened").next("ul.nav__desctop-list").slideDown();
-    return;
-  }
+  $(this).addClass("is-here");
+
+  // *Close other sublists
   $(this)
     .parent()
     .children(".nav__desctop-list__item")
     .removeClass("sub-opened");
-  $(this).parent().children("ul.nav__desctop-list").slideUp();
+  if ($(this).hasClass("no-sublist")) {
+    $(this).parent().children("ul.nav__desctop-list").slideUp();
+  }
+
+  if ($(this).hasClass("second-sublist")) {
+    $(this).addClass("sub-opened").next("ul.nav__desctop-list").slideDown();
+    return;
+  }
 
   return;
 });
@@ -201,20 +217,24 @@ subItems.mouseover(function () {
 // secondSublist.next("ul").mouseover(function () {
 //   $(this).prev("second-sublist").addClass("in-here");
 // });
-secondSublist.next("ul").mouseout(function () {
-  $(this).prev("second-sublist").addClass("not-in-here");
+
+secondSublist.next("ul.nav__desctop-list").mouseover(function () {
+  $(this).prev(".second-sublist").removeClass("is-here");
 });
 
 // -Close second sublist
 secondSublist.next("ul").mouseleave(function () {
-  if (secondSublist.hasClass("not-in-here")) {
-    $(this).slideUp;
+  // *!!!!!!!!!!!!!!!!!!!!!!!
+
+  $(this).prev(".second-sublist").removeClass("is-here");
+
+  if ($(this).parent().closest(".second-sublist").hasClass("is-here")) {
     return;
   }
 
-  if (secondSublist.hasClass("sub-opened")) {
-    return;
-  }
+  // if (secondSublist.hasClass("sub-opened")) {
+  //   return;
+  // }
   $(this)
     .prev(".second-sublist")
     .removeClass("sub-opened")

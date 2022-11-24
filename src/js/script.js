@@ -130,9 +130,21 @@ menuItem.mouseenter(function () {
   $(this).addClass("opened").children(".nav__desctop-list").slideDown();
 });
 
-// menuItem.mouseout(function () {
-//   $(this).removeClass("opened").children(".nav__desctop-list").slideUp();
-// });
+// -Close menu when it is not hover
+
+// --@@@@@@@@@
+menuItem.children("ul.nav__desctop-list").mouseout(function () {
+  if (menuItem.is(":hover")) {
+    return;
+  }
+
+  $(this)
+    .parent(".nav-container__nav__item")
+    .removeClass("opened")
+    .children("ul.nav__desctop-list")
+    .slideUp();
+  return;
+});
 
 // -Open second sublist
 // * Open second list, if it is
@@ -170,15 +182,19 @@ subItems.mouseover(function () {
   return;
 });
 
-// -Close second sublist
-// secondSublist.children("ul").mouseout(function () {
-//   $(this)
-//     .parent(".second-sublist")
-//     .removeClass("sub-opened")
-//     .children(".nav__desctop-list")
-//     .slideUp();
-//   return;
-// });
+// -Close sublist when it is not hover
+secondSublist.children("ul").mouseout(function () {
+  if (secondSublist.is(":hover")) {
+    return;
+  }
+
+  $(this)
+    .parent(".second-sublist")
+    .removeClass("sub-opened")
+    .children(".nav__desctop-list")
+    .slideUp();
+  return;
+});
 
 // -Hide opened desctop-menu in mobile/tablet version
 function resetDesctopMenu() {

@@ -1,4 +1,4 @@
-// SHADOW FOR NAV IN SCROLL
+// --SHADOW FOR NAV IN SCROLL
 
 const nav = document.getElementById("nav");
 document.onscroll = function navStyleScroll() {
@@ -10,7 +10,7 @@ document.onscroll = function navStyleScroll() {
   }
 };
 
-// ARROW SCROLL - VISIBLE OR NOT
+// --ARROW SCROLL - VISIBLE OR NOT
 const arrow = document.getElementById("arrow");
 function arrowNone() {
   let scrollHeight = window.pageYOffset;
@@ -21,19 +21,19 @@ function arrowNone() {
 }
 setInterval(arrowNone, 1);
 
-// MENU-BUTTON and MOBILE MENU
-// Button
+// --MENU-BUTTON and MOBILE MENU
+// -Button
 const menuButtonContainer = $("#menu-button-container");
 const menuButton = $("#menu-button");
 const closeButton = $("#close-button");
 
-// Mobile menu
+// -Mobile menu
 const mobileMenuContainer = $("#menu-container-mobile");
 const mobileMenuSublist = $(".nav__mobile__hidden-list__sublist");
 const mobileMenuPlus = $(".nav__mobile__hidden-list__item_arrow");
 const mobileMenuItem = $(".nav__mobile__hidden-list__item");
 
-// Click on menu-button
+// -Open or close mobile-menu
 
 menuButtonContainer.on("click", function (e) {
   e.preventDefault();
@@ -49,7 +49,7 @@ menuButtonContainer.on("click", function (e) {
   }
 });
 
-// Hide opened mobile-menu in desctop version
+// -Hide opened mobile-menu in desctop version
 function resetMobileMenu() {
   menuButton.removeClass("none");
   closeButton.addClass("none");
@@ -58,7 +58,7 @@ function resetMobileMenu() {
   mobileMenuSublist.hide();
 }
 
-// Open subitems when click on +
+// -Open subitems when click on +
 
 mobileMenuItem.on("click", function () {
   $(this)
@@ -98,7 +98,9 @@ mobileMenuItem.on("click", function () {
   return;
 });
 
-// DESCTOP MENU
+// --DESCTOP MENU
+
+// -Open menu
 
 const menuItem = $(".nav-container__nav__item");
 
@@ -110,24 +112,100 @@ menuItem.on("click", function () {
   let subItemleft =
     $(this).closest(".nav-container__nav__item ").position().left -
     $(this).next(".nav__desctop-list").width() * 0.4;
-  console.log(subItemleft);
 
   $(this).next(".nav__desctop-list").css({
     left: subItemleft,
     top: subItemTop,
     "margin-top": 15,
   });
+  if ($(this).hasClass("opened")) {
+    $(this).removeClass("opened").next(".nav__desctop-list").slideUp();
+    return;
+  }
 
-  $(this).next(".nav__desctop-list").slideToggle();
+  $(this).addClass("opened").next(".nav__desctop-list").slideDown();
+  return;
 });
 
-// OTHER
+// -Open second sublist
+const secondSublist = $(".second-sublist");
+secondSublist.on("click", function () {
+  if ($(this).hasClass("sub-opened")) {
+    $(this).removeClass("sub-opened").next(".nav__desctop-list").slideUp();
+    return;
+  }
+  // -Coords
+
+  let secondSubItemTop = $(this)
+    .closest(".nav__desctop-list__item")
+    .position().top;
+  let secondSubItemleft =
+    $(this).closest(".nav__desctop-list__item").position().left +
+    $(this).closest(".nav__desctop-list").width();
+
+  $(this).next(".nav__desctop-list").css({
+    left: secondSubItemleft,
+    top: secondSubItemTop,
+  });
+
+  $(this).addClass("sub-opened").next("ul.nav__desctop-list").slideDown();
+
+  return;
+});
+
+// -Open only one submenu
+menuItem.on("click", function () {
+  if ($(this).hasClass("opened")) {
+    $(this)
+      .prevAll(".nav-container__nav__item")
+      .removeClass("opened")
+      .next(".nav__desctop-list")
+      .slideUp();
+    $(this)
+      .nextAll(".nav-container__nav__item")
+      .removeClass("opened")
+      .addClass("closed")
+      .next(".nav__desctop-list")
+      .slideUp();
+    $(this)
+      .prevAll(".nav-container__nav__item")
+      .next("ul.nav__desctop-list")
+      .children(".second-sublist")
+      .removeClass("sub-opened")
+      .next("ul.nav__desctop-list")
+      .slideUp();
+    $(this)
+      .nextAll(".nav-container__nav__item")
+      .next("ul.nav__desctop-list")
+      .children(".second-sublist")
+      .removeClass("sub-opened")
+      .next("ul.nav__desctop-list")
+      .slideUp();
+    return;
+  }
+});
+
+// -Hide opened desctop-menu in mobile/tablet version
+function resetDesctopMenu() {
+  menuItem.removeClass("opened").next(".nav__desctop-list").slideUp();
+  menuItem
+    .next("ul.nav__desctop-list")
+    .children(".second-sublist")
+    .removeClass("sub-opened")
+    .next("ul.nav__desctop-list")
+    .slideUp();
+  return;
+}
+
+// --OTHER
 
 function initMobile() {
+  resetDesctopMenu();
   console.log("is-mobile");
 }
 
 function initTablet() {
+  resetDesctopMenu();
   console.log("is-tablet");
 }
 

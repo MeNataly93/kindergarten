@@ -12,7 +12,7 @@
 <body>
 
 
-  <!-- HEADER -->
+  <!-- --HEADER -->
 
 
   <header class="header-container" id="header-container">
@@ -65,7 +65,7 @@
   </header>
 
 
-  <!-- NAV -->
+  <!-- --NAV -->
 
 
   <div class="nav" id="nav">
@@ -73,7 +73,7 @@
       <a class="nav-container__logo" href="#"><img src="i/img/logo_buba_2x.png" alt="Logo"
           class="nav-container__logo__img"></a>
 
-      <!-- Menu button -->
+      <!-- -Menu button -->
       <div id="menu-button-container">
         <a href="#"><svg id="menu-button" class="nav-container__menu" xmlns="http://www.w3.org/2000/svg"
             viewBox='0 0 490.667 490.667' width="28" height="28">
@@ -94,7 +94,7 @@
             <use xlink: href="i/sprite.svg#point"></use>
           </svg></li>
 
-        <!-- Home -->
+        <!-- -Home -->
         <ul class="nav__desctop-list">
           <li class="nav__desctop-list__item">Kindergarten</li>
           <li class="nav__desctop-list__item">Preschool</li>
@@ -108,28 +108,32 @@
             <use xlink: href="i/sprite.svg#point"></use>
           </svg></li>
 
-        <!-- About -->
+        <!-- -About -->
         <ul class="nav__desctop-list">
           <li class="nav__desctop-list__item">About Us</li>
           <li class="nav__desctop-list__item">Testimonials</li>
           <li class="nav__desctop-list__item">FAQ</li>
-          <li class="nav__desctop-list__item">Gallery<span class="nav__desctop-list__item_arrow">&#62;</span>
+          <li class="nav__desctop-list__item second-sublist">Gallery<span
+              class="nav__desctop-list__item_arrow">&#62;</span>
           </li>
+
+          <!-- -About-gallery -->
+          <ul class="nav__desctop-list">
+            <li class="nav__desctop-list__item">
+              Gallery 2-columns
+            </li>
+            <li class="nav__desctop-list__item">
+              Gallery 3-columns
+            </li>
+            <li class="nav__desctop-list__item">
+              Gallery 4-columns
+            </li>
+          </ul>
+
           <li class="nav__desctop-list__item">404 Page</li>
         </ul>
 
-        <!-- About-gallery -->
-        <ul class="nav__desctop-list">
-          <li class="nav__desctop-list__item">
-            Gallery 2-columns
-          </li>
-          <li class="nav__desctop-list__item">
-            Gallery 3-columns
-          </li>
-          <li class="nav__desctop-list__item">
-            Gallery 4-columns
-          </li>
-        </ul>
+
 
 
         <li class="nav-container__nav__item">Products <svg class="nav-container__nav__item__point point"
@@ -137,7 +141,7 @@
             <use xlink: href="i/sprite.svg#point"></use>
           </svg></li>
 
-        <!-- Products -->
+        <!-- -Products -->
         <ul class="nav__desctop-list">
           <li class="nav__desctop-list__item">Show</li>
           <li class="nav__desctop-list__item">Wishlist</li>
@@ -152,17 +156,14 @@
             <use xlink: href="i/sprite.svg#point"></use>
           </svg></li>
 
-        <!-- Blog -->
+        <!-- -Blog -->
         <ul class="nav__desctop-list">
           <li class="nav__desctop-list__item">Blog with Sidebar</li>
           <li class="nav__desctop-list__item">Blog without Sidebar</li>
         </ul>
 
 
-        <li class="nav-container__nav__item">Contacts <svg class="nav-container__nav__item__point point"
-            xmlns="http://www.w3.org/2000/svg" viewBox='0 0 200 200' width="6" height="6">
-            <use xlink: href="i/sprite.svg#point"></use>
-          </svg></li>
+        <li class="nav-container__nav__item">Contacts</li>
       </ul>
 
       <section class="nav-container__btn-section">
@@ -174,7 +175,7 @@
     </section>
 
 
-    <!-- OPENED NAV (mobile)-->
+    <!-- -OPENED NAV (mobile)-->
     <div id="menu-container-mobile" class="nav__mobile__hidden-block nav__mobile__hidden-block_container active">
 
       <ul class="nav__mobile__hidden-list">
@@ -246,19 +247,7 @@
 
 
 
-  <!-- OPENED NAV (desctop)-->
-
-
-
-
-
-
-
-
-
-
-
-  <!-- TITLE -->
+  <!-- --TITLE -->
 
 
   <section class="title">
@@ -292,7 +281,7 @@
   </section>
 
 
-  <!-- STATINFO -->
+  <!-- --STATINFO -->
 
 
   <section class="statinfo-container">
@@ -326,7 +315,7 @@
   </section>
 
 
-  <!-- ABOUT -->
+  <!-- --ABOUT -->
 
 
   <section class="about-container">
@@ -376,7 +365,7 @@
   </section>
 
 
-  <!-- PROGRAMS -->
+  <!-- --PROGRAMS -->
 
 
   <section class="programs">
@@ -401,7 +390,7 @@
     <h2 class="programs__title">Our programs</h2>
     <ul class="programs__list">
 
-      <!-- ONE -->
+      <!-- -ONE -->
 
       <li class="programs__list__item programs__list__item_1">
         <h3 class="programs__list__item__title">Junior group</h3>
@@ -425,7 +414,7 @@
         <img class="programs__bg-img programs__bg-img_1" src="i/img/programs/programs_01.png" alt="dragon-1">
       </li>
 
-      <!-- TWO -->
+      <!-- -TWO -->
 
       <li class="programs__list__item programs__list__item_2">
         <h3 class="programs__list__item__title">Junior group</h3>
@@ -449,7 +438,7 @@
         <img class="programs__bg-img programs__bg-img_2" src="i/img/programs/programs_02.png" alt="dragon-2">
       </li>
 
-      <!-- THREE -->
+      <!-- -THREE -->
 
       <li class="programs__list__item programs__list__item_3">
         <h3 class="programs__list__item__title">Junior group</h3>
@@ -491,14 +480,14 @@
   </section>
 
 
-  <!-- TEACHERS -->
+  <!-- --TEACHERS -->
 
 
   <section class="teachers">
     <p class="teachers__intro">Expert people</p>
     <h2 class="teachers__title">Our teachers</h2>
     <ul class="teachers__list">
-      <!-- ONE -->
+      <!-- -ONE -->
       <li class="teachers__list__item">
         <div class="teachers__list__item__outset"><img class="teachers__list__item__img"
             src="i/img/teachers/teacher_01-480x480.jpg" alt="teacher-1">
@@ -508,7 +497,7 @@
         <p class="teachers__list__item__description">Senior Winemaker</p>
       </li>
 
-      <!-- TWO -->
+      <!-- -TWO -->
 
       <li class="teachers__list__item">
         <div class="teachers__list__item__outset"><img class="teachers__list__item__img"
@@ -520,7 +509,7 @@
         <p class="teachers__list__item__description">Wine Critic</p>
       </li>
 
-      <!-- THREE -->
+      <!-- -THREE -->
 
       <li class="teachers__list__item">
         <div class="teachers__list__item__outset"><img class="teachers__list__item__img"
@@ -531,7 +520,7 @@
         <p class="teachers__list__item__description">Company Director</p>
       </li>
 
-      <!-- FOUR -->
+      <!-- -FOUR -->
 
       <li class="teachers__list__item">
         <div class="teachers__list__item__outset"><img class="teachers__list__item__img"
@@ -545,7 +534,7 @@
   </section>
 
 
-  <!--  PRICES -->
+  <!--  --PRICES -->
 
 
   <section class="prices-container">
@@ -611,12 +600,12 @@
         </ul>
       </section>
 
-      <!-- List with prices -->
+      <!-- -List with prices -->
 
       <section class="prices__for-1200_2">
         <ul class="prices__prices-list">
 
-          <!-- Item 1 -->
+          <!-- -Item 1 -->
 
           <li class="prices__prices-list__item prices__prices-list__item_1">
             <div class="prices__prices-list__item__img-container prices__prices-list__item__img-container_1"></div>
@@ -647,7 +636,7 @@
             </section>
           </li>
 
-          <!-- Item 2 -->
+          <!-- -Item 2 -->
 
           <li class="prices__prices-list__item prices__prices-list__item_2">
             <div class="prices__prices-list__item__img-container prices__prices-list__item__img-container_2"></div>
@@ -698,7 +687,7 @@
   </section>
 
 
-  <!-- ADVANTAGES -->
+  <!-- --ADVANTAGES -->
 
 
   <section class="advantages">
@@ -765,7 +754,7 @@
   </section>
 
 
-  <!-- GALLERY -->
+  <!-- --GALLERY -->
 
 
   <section class="gallery">
@@ -784,7 +773,7 @@
   </section>
 
 
-  <!-- SIGNUP -->
+  <!-- --SIGNUP -->
 
 
   <section class="signup" preserveAspectRatio="none">
@@ -829,7 +818,7 @@
   </section>
 
 
-  <!-- FOOTER -->
+  <!-- --FOOTER -->
 
   <section class="footer">
 
@@ -848,7 +837,7 @@
         </svg>
       </div>
 
-      <!-- SECTION 1 -->
+      <!-- -SECTION 1 -->
 
       <section class="footer__main-section">
         <section class="footer__section-1"><a class="footer__logo" href="#"><img src="i/img/logo_buba_2x.png" alt="Logo"
@@ -868,7 +857,7 @@
           </section>
         </section>
 
-        <!-- SECTION 2 -->
+        <!-- -SECTION 2 -->
 
         <section class="footer__section-2">
           <h3 class="footer__company">Company</h3>
@@ -900,7 +889,7 @@
           </ul>
         </section>
 
-        <!-- SECTION 3 -->
+        <!-- -SECTION 3 -->
 
         <section class="footer__section-3">
           <h3 class="footer__galleries">Our galleries</h3>
@@ -926,7 +915,7 @@
       </section>
   </section>
 
-  <!-- ARROW (SCROLL) -->
+  <!-- -ARROW (SCROLL) -->
   <a class="arrow" id="arrow" href="#header-container"><img class="arrow__img" src="i/img/right-arrow-white.png"
       alt="arrow"></a>
 

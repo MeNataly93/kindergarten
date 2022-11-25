@@ -123,27 +123,10 @@ menuItem.mouseenter(function () {
   $(this).children(".nav__desctop-list").css({
     left: subItemleft,
     top: subItemTop,
-    "margin-top": 15,
   });
 
   // *Open nesessary item-block
   $(this).addClass("opened").children(".nav__desctop-list").slideDown();
-});
-
-// -Close menu when it is not hover
-
-// --@@@@@@@@@
-menuItem.children("ul.nav__desctop-list").mouseout(function () {
-  if (menuItem.is(":hover")) {
-    return;
-  }
-
-  $(this)
-    .parent(".nav-container__nav__item")
-    .removeClass("opened")
-    .children("ul.nav__desctop-list")
-    .slideUp();
-  return;
 });
 
 // -Open second sublist
@@ -207,6 +190,22 @@ function resetDesctopMenu() {
     .slideUp();
   return;
 }
+
+// -Close menu when it is not hover
+$(document).mouseover(function (e) {
+  if ($(e.target).is(".nav-container__nav__item")) {
+    return;
+  }
+  if ($(e.target).is(".nav__desctop-list")) {
+    console.log("kkkkkk");
+    return;
+  }
+  if ($(e.target).is(".nav__desctop-list__item")) {
+    return;
+  }
+  console.log("ggggg");
+  resetDesctopMenu();
+});
 
 // --OTHER
 

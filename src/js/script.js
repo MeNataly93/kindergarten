@@ -108,13 +108,13 @@ const menuSublist = $(".nav__desctop-list");
 // -Hover on main menu item
 // *When hover on main menu - open list of nesessary item
 
-menuItem.mouseenter(function () {
+menuItem.mouseover(function () {
   // *Close other blocks
-  $(this)
-    .siblings(".nav-container__nav__item")
-    .removeClass("opened")
-    .children(".nav__desctop-list")
-    .slideUp();
+  // $(this)
+  //   .siblings(".nav-container__nav__item")
+  //   .removeClass("opened")
+  //   .children(".nav__desctop-list")
+  //   .slideUp("slow");
   // *Find coords and give it to item-block
   let subItemTop = $(this).height();
 
@@ -126,7 +126,7 @@ menuItem.mouseenter(function () {
   });
 
   // *Open nesessary item-block
-  $(this).addClass("opened").children(".nav__desctop-list").slideDown();
+  $(this).addClass("opened").children(".nav__desctop-list").slideDown("slow");
 });
 
 // -Open second sublist
@@ -144,7 +144,7 @@ subItems.mouseover(function () {
     .siblings(".nav__desctop-list__item__sub")
     .removeClass("sub-opened")
     .children("ul.nav__desctop-list")
-    .slideUp();
+    .slideUp("slow");
 
   // -Coords
   let secondSubItemTop = $(this).position().top;
@@ -158,7 +158,10 @@ subItems.mouseover(function () {
   // *Open nessessary block
 
   if ($(this).hasClass("second-sublist")) {
-    $(this).addClass("sub-opened").children("ul.nav__desctop-list").slideDown();
+    $(this)
+      .addClass("sub-opened")
+      .children("ul.nav__desctop-list")
+      .slideDown("slow");
     return;
   }
 
@@ -175,19 +178,19 @@ secondSublist.children("ul").mouseout(function () {
     .parent(".second-sublist")
     .removeClass("sub-opened")
     .children(".nav__desctop-list")
-    .slideUp();
+    .slideUp("slow");
   return;
 });
 
 // -Hide opened desctop-menu in mobile/tablet version
 function resetDesctopMenu() {
-  menuItem.removeClass("opened").children(".nav__desctop-list").slideUp();
+  menuItem.removeClass("opened").children(".nav__desctop-list").slideUp("slow");
   menuItem
     .children("ul.nav__desctop-list")
     .children(".second-sublist")
     .removeClass("sub-opened")
     .children("ul.nav__desctop-list")
-    .slideUp();
+    .slideUp("slow");
   return;
 }
 
@@ -196,14 +199,15 @@ $(document).mouseover(function (e) {
   if ($(e.target).is(".nav-container__nav__item")) {
     return;
   }
+  if ($(e.target).is(".nav-container__nav__item__point")) {
+    return;
+  }
   if ($(e.target).is(".nav__desctop-list")) {
-    console.log("kkkkkk");
     return;
   }
   if ($(e.target).is(".nav__desctop-list__item")) {
     return;
   }
-  console.log("ggggg");
   resetDesctopMenu();
 });
 

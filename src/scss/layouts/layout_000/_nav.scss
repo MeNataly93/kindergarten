@@ -136,6 +136,9 @@
       text-transform: capitalize;
       font-family: $mainFontFamily;
       font-size: 16px;
+      &_current {
+        color: $main;
+      }
       &_arrow {
         padding-left: 7px;
       }

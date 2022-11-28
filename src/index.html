@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="scss/slick.css" />
 </head>
 
 <body>
@@ -278,13 +279,27 @@
           <p class="title__number-call">+1 800 700 000</p>
         </section>
       </section>
+
     </div>
-    <section class="title__slider-container"><img class="title__slider" src="i/img/slider/slider-01.jpg" alt="slidet-01"
-        srcset="i/img/slider/slider-01-300.jpg 300w, i/img/slider/slider-01-480.jpg 480w, i/img/slider/slider-01-600.jpg 600w, i/img/slider/slider-01.jpg 736w"
-        sizes="(max-width: 736px) 100vw, 736px"></section>
+
+    <div class="container title__slider-container">
+      <div id="slider" class="slider">
+        <div class="slider__item"><img class="slider__img title__slider" src="i/img/slider/slider-01.jpg"
+            srcset="i/img/slider/slider-01-300.jpg 300w, i/img/slider/slider-01-480.jpg 480w, i/img/slider/slider-01-600.jpg 600w, i/img/slider/slider-01.jpg 736w"
+            sizes="(max-width: 736px) 100vw, 736px"></div>
+        <div class="slider__item"><img class="slider__img title__slider" src="i/img/slider/slider-02.jpg"
+            srcset="i/img/slider/slider-02-300.jpg 300w, i/img/slider/slider-02-480.jpg 480w, i/img/slider/slider-02-600.jpg 600w, i/img/slider/slider-02.jpg 736w"
+            sizes="(max-width: 736px) 100vw, 736px"></div>
+        <div class="slider__item"><img class="slider__img title__slider" src="i/img/slider/slider-03.jpg"
+            srcset="i/img/slider/slider-03-300.jpg 300w, i/img/slider/slider-03-480.jpg 480w, i/img/slider/slider-03-600.jpg 600w, i/img/slider/slider-03.jpg 736w"
+            sizes="(max-width: 736px) 100vw, 736px"></div>
+      </div>
+    </div>
 
 
-  </section>
+
+
+
 
 
   </section>
@@ -929,9 +944,18 @@
       alt="arrow"></a>
 
 
-
+  <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
   <script src="js/jquery-3.6.1.min.js"></script>
-  <script src="js/script.js"></script>
+
+  <script src="js/slick.js"></script>
+  <script>
+    $("#slider").slick({
+      arrows: false,
+      autoplay: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
+  </script>
 
 
 </body>

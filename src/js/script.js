@@ -202,6 +202,9 @@ $(document).mouseover(function (e) {
   if ($(e.target).is(".nav-container__nav__item__point")) {
     return;
   }
+  if ($(e.target).is(".nav-container__nav__item__point use")) {
+    return;
+  }
   if ($(e.target).is(".nav__desctop-list")) {
     return;
   }
@@ -210,6 +213,8 @@ $(document).mouseover(function (e) {
   }
   resetDesctopMenu();
 });
+
+// --TITLE SLIDER
 
 // --OTHER
 

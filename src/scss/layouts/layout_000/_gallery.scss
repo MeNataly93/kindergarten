@@ -22,17 +22,20 @@
       border-radius: 50px;
       overflow: hidden;
       vertical-align: middle;
+      transition: all 0.2s ease;
+      cursor: pointer;
       &:hover {
-        border-radius: 80px;
+        border-radius: 70px;
       }
       &:hover &_root {
-        transform: scale(1.5);
+        transform: scale(1.1);
       }
       &_root {
         width: 100%;
         max-width: 100%;
         vertical-align: top;
         height: 100%;
+        transition: all 0.4s ease;
       }
     }
   }
@@ -64,11 +67,13 @@
     background-color: transparent;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    color: transparent;
+    position: relative;
+
     &:focus {
       outline: none;
     }
-    &:hover,
-    &:active {
+    &:hover {
       transform: scale(1.5);
     }
   }
@@ -76,7 +81,21 @@
   & .slick-active button {
     border: 1px solid $dark-blue;
     // background: url(../../../i/point.svg) 100% 100% no-repeat;
-    background-color: red;
+    transition: all 0.3s ease;
+    transform: scale(1);
+
+    &::before {
+      content: "!";
+      background-image: url(../../../i/point.svg);
+      width: 100%;
+      background-size: 8px;
+      background-repeat: no-repeat;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 4px;
+      top: 4px;
+    }
   }
 }
 

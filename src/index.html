@@ -957,10 +957,10 @@
       alt="arrow"></a>
 
 
-  <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
-  <script src="js/jquery-3.6.1.min.js"></script>
 
+  <script src="js/jquery-3.6.1.min.js"></script>
   <script src="js/slick.js"></script>
+  <script src="js/script.js"></script>
   <script>
 
     // --SLIDER IN TITLE
@@ -990,9 +990,8 @@
       dotsClass: "dots-box",
       responsive: [{ breakpoint: 1600, settings: { slidesToShow: 4 } }, { breakpoint: 990, settings: { slidesToShow: 3 } }]
     }
-    $("#slider-main").slick(settings)
-    $(".dots-box button").text('')
 
+    $("#slider-main").slick(settings);
   </script>
 
 

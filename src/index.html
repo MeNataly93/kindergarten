@@ -784,15 +784,28 @@
   <section class="gallery">
     <p class="gallery__intro">Gallery</p>
     <h2 class="gallery__title">Our photos</h2>
-    <div class="gallery__slider">
-      <div class="gallery__slider__img gallery__slider__img_1"></div>
-      <div class="gallery__slider__img gallery__slider__img_2"></div>
-      <div class="gallery__slider__img gallery__slider__img_3"></div>
-      <div class="gallery__slider__img gallery__slider__img_4"></div>
-      <div class="gallery__slider__img gallery__slider__img_5"></div>
-      <div class="gallery__slider__img gallery__slider__img_6"></div>
-      <div class="gallery__slider__img gallery__slider__img_7"></div>
-      <div class="gallery__slider__img gallery__slider__img_8"></div>
+    <div class="container">
+      <div id="slider-main" class="gallery__slider slider">
+        <div class="slider__item gallery__slider__img "><img class="slider__img gallery__slider__img_root"
+            src="i/img/gallery/gallery_01.jpg"></div>
+        <div class="slider__item gallery__slider__img "><img class="slider__img gallery__slider__img_root"
+            src="i/img/gallery/gallery_02.jpg"></div>
+        <div class="slider__item gallery__slider__img "><img class="slider__img gallery__slider__img_root"
+            src="i/img/gallery/gallery_03.jpg"></div>
+        <div class="slider__item gallery__slider__img "><img class="slider__img gallery__slider__img_root"
+            src="i/img/gallery/gallery_04.jpg"></div>
+        <div class="slider__item gallery__slider__img "><img class="slider__img gallery__slider__img_root"
+            src="i/img/gallery/gallery_05.jpg"></div>
+        <div class="slider__item gallery__slider__img "><img class="slider__img gallery__slider__img_root"
+            src="i/img/gallery/gallery_06.jpg"></div>
+        <div class="slider__item gallery__slider__img "><img class="slider__img gallery__slider__img_root"
+            src="i/img/gallery/gallery_07.jpg"></div>
+        <div class="slider__item gallery__slider__img "><img class="slider__img gallery__slider__img_root"
+            src="i/img/gallery/gallery_08.jpg"></div>
+
+      </div>
+      <!-- -Dots -->
+      <div class="mydots"></div>
     </div>
   </section>
 
@@ -949,6 +962,8 @@
 
   <script src="js/slick.js"></script>
   <script>
+
+    // --SLIDER IN TITLE
     $("#slider").slick({
       arrows: false,
       autoplay: true,
@@ -957,9 +972,27 @@
       autoplaySpeed: 5000,
       infinity: true,
       fade: true,
-      speed: 2000
-
+      speed: 2000,
     });
+
+    // --MAIN SLIDER
+
+    $("#slider-main").slick({
+      arrows: false,
+      autoplay: true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplaySpeed: 5000,
+      infinity: true,
+      speed: 2000,
+      dots: true,
+      appendDots: ".mydots",
+      dotsClass: "dots-box"
+    }
+
+    )
+    $(".dots-box button").text('')
+
   </script>
 
 

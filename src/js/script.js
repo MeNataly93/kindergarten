@@ -214,8 +214,6 @@ $(document).mouseover(function (e) {
   resetDesctopMenu();
 });
 
-// --TITLE SLIDER
-
 // --OTHER
 
 function initMobile() {

@@ -17,27 +17,28 @@
   &__slider {
     margin-bottom: 64px;
     display: flex;
+    justify-content: space-between;
     &__img {
-      // width: 409px;
-      // min-width: 409px;
-      // height: 351px;
-      // margin-left: auto;
-      // margin-right: auto;
-      // border-radius: 50px;
-      // flex-basis: 100%;
-      // margin-right: 20px;
-      // overflow: hidden;
+      border-radius: 50px;
+      overflow: hidden;
+      vertical-align: middle;
+      &:hover {
+        border-radius: 80px;
+      }
+      &:hover &_root {
+        transform: scale(1.5);
+      }
       &_root {
         width: 100%;
         max-width: 100%;
         vertical-align: top;
-        // height: 100%;
-        border-radius: 50px;
+        height: 100%;
       }
     }
   }
 }
 
+// --Slick slider
 .container {
   margin-bottom: 64px;
   margin-left: auto;
@@ -77,4 +78,9 @@
     // background: url(../../../i/point.svg) 100% 100% no-repeat;
     background-color: red;
   }
+}
+
+.slick-slide {
+  margin-right: 7.5px;
+  margin-left: 7.5px;
 }

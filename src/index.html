@@ -977,20 +977,20 @@
 
     // --MAIN SLIDER
 
-    $("#slider-main").slick({
+    const settings = {
       arrows: false,
       autoplay: true,
-      slidesToShow: 5,
+      slidesToShow: 6,
       slidesToScroll: 1,
       autoplaySpeed: 5000,
       infinity: true,
       speed: 2000,
       dots: true,
       appendDots: ".mydots",
-      dotsClass: "dots-box"
+      dotsClass: "dots-box",
+      responsive: [{ breakpoint: 1600, settings: { slidesToShow: 4 } }, { breakpoint: 990, settings: { slidesToShow: 3 } }]
     }
-
-    )
+    $("#slider-main").slick(settings)
     $(".dots-box button").text('')
 
   </script>

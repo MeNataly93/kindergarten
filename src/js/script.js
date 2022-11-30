@@ -214,6 +214,39 @@ $(document).mouseover(function (e) {
   resetDesctopMenu();
 });
 
+// --SLIDER IN TITLE
+$("#slider").slick({
+  arrows: false,
+  autoplay: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplaySpeed: 5000,
+  infinity: true,
+  fade: true,
+  speed: 2000,
+});
+
+// --MAIN SLIDER
+
+const settings = {
+  arrows: false,
+  autoplay: true,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  autoplaySpeed: 5000,
+  infinity: true,
+  speed: 2000,
+  dots: true,
+  appendDots: ".mydots",
+  dotsClass: "dots-box",
+  responsive: [
+    { breakpoint: 1600, settings: { slidesToShow: 4 } },
+    { breakpoint: 990, settings: { slidesToShow: 3 } },
+  ],
+};
+
+$("#slider-main").slick(settings);
+
 // --OTHER
 
 function initMobile() {

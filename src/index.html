@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" type="text/css" href="scss/slick.css" />
+
 </head>
 
 <body>
@@ -959,40 +959,8 @@
 
 
   <script src="js/jquery-3.6.1.min.js"></script>
-  <script src="js/slick.js"></script>
   <script src="js/script.js"></script>
-  <script>
 
-    // --SLIDER IN TITLE
-    $("#slider").slick({
-      arrows: false,
-      autoplay: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplaySpeed: 5000,
-      infinity: true,
-      fade: true,
-      speed: 2000,
-    });
-
-    // --MAIN SLIDER
-
-    const settings = {
-      arrows: false,
-      autoplay: true,
-      slidesToShow: 6,
-      slidesToScroll: 1,
-      autoplaySpeed: 5000,
-      infinity: true,
-      speed: 2000,
-      dots: true,
-      appendDots: ".mydots",
-      dotsClass: "dots-box",
-      responsive: [{ breakpoint: 1600, settings: { slidesToShow: 4 } }, { breakpoint: 990, settings: { slidesToShow: 3 } }]
-    }
-
-    $("#slider-main").slick(settings);
-  </script>
 
 
 </body>

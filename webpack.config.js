@@ -10,6 +10,7 @@ const terser = require("terser");
 
 const jsArr = [
   path.resolve(__dirname, "src/js/ssm.min.js"),
+  path.resolve(__dirname, "src/js/slick.min.js"),
   path.resolve(__dirname, "src/js/script.js"),
 ];
 

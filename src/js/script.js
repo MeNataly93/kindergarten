@@ -247,6 +247,12 @@ const settings = {
 
 $("#slider-main").slick(settings);
 
+// --Fancy box
+Fancybox.bind("[data-fancybox]", {
+  Toolbar: false,
+  Thumbs: false,
+});
+
 // --OTHER
 
 function initMobile() {

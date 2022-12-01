@@ -247,27 +247,33 @@ const settings = {
 
 $("#slider-main").slick(settings);
 
-// --Fancy box
+// --FANCY BOX
 Fancybox.bind("[data-fancybox]", {
   Toolbar: false,
   Thumbs: false,
 });
 
-// --Counter
-// *!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-const statBlock = document.querySelector(".statinfo");
+// --COUNTER
 
-setInterval(checkCoords, 1);
+const statBlock = document.querySelector(".statinfo");
+// -Find nesessary coords
+// *Find coords every 10ms
+const checkCoordsInt = setInterval(checkCoords, 10);
 function checkCoords() {
-  const statCoords = statBlock.getBoundingClientRect().top;
-  const s = document.documentElement.clientHeight - 80;
-  if ((statCoords = s)) {
-    sss();
+  // *Coords from statBlock to top
+  let statCoords = statBlock.getBoundingClientRect().top;
+  // *85% of visible display
+  let displayHeight = document.documentElement.clientHeight * 0.85;
+
+  if (statCoords < displayHeight) {
+    clearInterval(checkCoordsInt);
+    counterActive();
   }
 }
 
-const counters = document.querySelectorAll(".js-counter");
-function sss() {
+// -Coutner in active phase
+function counterActive() {
+  const counters = document.querySelectorAll(".js-counter");
   counters.forEach((counter) => {
     counter.innerText = "0";
     const updateCounter = () => {

@@ -253,8 +253,38 @@ Fancybox.bind("[data-fancybox]", {
   Thumbs: false,
 });
 
-// --OTHER
+// --Counter
+// *!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+const statBlock = document.querySelector(".statinfo");
 
+setInterval(checkCoords, 1);
+function checkCoords() {
+  const statCoords = statBlock.getBoundingClientRect().top;
+  const s = document.documentElement.clientHeight - 80;
+  if ((statCoords = s)) {
+    sss();
+  }
+}
+
+const counters = document.querySelectorAll(".js-counter");
+function sss() {
+  counters.forEach((counter) => {
+    counter.innerText = "0";
+    const updateCounter = () => {
+      const target = +counter.getAttribute("data-target");
+      const c = +counter.innerText;
+      const increment = target / 32;
+
+      if (c < target) {
+        counter.innerText = `${Math.ceil(c + increment)}`;
+        setTimeout(updateCounter, 40);
+      } else counter.innerText = target;
+    };
+    updateCounter();
+  });
+}
+
+// --OTHER
 function initMobile() {
   resetDesctopMenu();
   console.log("is-mobile");

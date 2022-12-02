@@ -290,6 +290,31 @@ function counterActive() {
   });
 }
 
+// --PRICES - LINES ANIMATION
+const lineFirst = document.querySelector(".js-92");
+const lineSecond = document.querySelector(".js-75");
+const lineThird = document.querySelector(".js-63");
+// -Find nesessary coords
+// *Find coords every 10ms
+const checkLineCoordsInt = setInterval(checkLineCoords, 10);
+function checkLineCoords() {
+  // *Coords from Line to top
+  let lineCoords = lineFirst.getBoundingClientRect().top;
+  // *85% of visible display
+  let displayHeight = document.documentElement.clientHeight * 0.85;
+
+  if (lineCoords < displayHeight) {
+    lineFirst.classList.add("js-92_active");
+    setTimeout(function () {
+      lineSecond.classList.add("js-75_active");
+      setTimeout(function () {
+        lineThird.classList.add("js-63_active");
+      }, 100);
+      clearInterval(checkLineCoordsInt);
+    }, 100);
+  }
+}
+
 // --OTHER
 function initMobile() {
   resetDesctopMenu();

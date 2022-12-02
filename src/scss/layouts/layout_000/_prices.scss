@@ -54,9 +54,8 @@
         border-radius: 30px;
         font-size: 11px;
 
-        &_92 {
-          width: 92%;
-        }
+        // &_92 {
+        // }
 
         &_75 {
           width: 75%;
@@ -210,5 +209,31 @@
 
   &__shape-fill {
     fill: #f4eee5;
+  }
+}
+
+// --Lines animation
+.js-92 {
+  width: 0%;
+  transition: all 1s ease;
+
+  &_active {
+    width: 92%;
+  }
+}
+.js-75 {
+  width: 0%;
+  transition: all 1s ease;
+
+  &_active {
+    width: 75%;
+  }
+}
+.js-63 {
+  width: 0%;
+  transition: all 1s ease;
+
+  &_active {
+    width: 63%;
   }
 }

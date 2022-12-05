@@ -1,7 +1,7 @@
 .nav {
   position: sticky;
   top: 0;
-  z-index: 1500;
+  z-index: 700;
   background-color: $white;
 }
 .nav-container {
@@ -16,6 +16,9 @@
     display: flex;
     justify-content: center;
     cursor: default;
+    width: 143px;
+    margin-left: auto;
+    margin-right: auto;
     &__img {
       width: 143px;
       margin-left: auto;

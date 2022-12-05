@@ -10,7 +10,8 @@ document.onscroll = function navStyleScroll() {
   }
 };
 
-// --ARROW SCROLL - VISIBLE OR NOT
+// --ARROW SCROLL
+// -Visible or not
 const arrow = document.getElementById("arrow");
 function arrowNone() {
   let scrollHeight = window.pageYOffset;
@@ -20,6 +21,13 @@ function arrowNone() {
   }
 }
 setInterval(arrowNone, 1);
+// -Scroll to which element due to media query
+const mediaQuery = window.matchMedia("(min-width: 990px)");
+function scrollTo() {
+  if (mediaQuery.matches) {
+    arrow.href = "#header-container";
+  } else arrow.href = "#";
+}
 
 // --MENU-BUTTON and MOBILE MENU
 // -Button
@@ -318,16 +326,19 @@ function checkLineCoords() {
 // --OTHER
 function initMobile() {
   resetDesctopMenu();
+  scrollTo();
   console.log("is-mobile");
 }
 
 function initTablet() {
   resetDesctopMenu();
+  scrollTo();
   console.log("is-tablet");
 }
 
 function initDesktop() {
   resetMobileMenu();
+  scrollTo();
   console.log("is-desktop");
 }
 

@@ -8,6 +8,11 @@ document.onscroll = function navStyleScroll() {
   if (navCoords.top === 0) {
     nav.style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.2)";
   }
+
+  const scrollTop = document.documentElement.scrollTop;
+  if (scrollTop === 0) {
+    nav.style.boxShadow = "none";
+  }
 };
 
 // --ARROW SCROLL

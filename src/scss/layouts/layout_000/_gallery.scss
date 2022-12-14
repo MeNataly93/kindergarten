@@ -1,6 +1,7 @@
 .gallery {
   padding: 10px;
   overflow: hidden;
+  margin-bottom: 80px;
 
   &__intro {
     @include intro;
